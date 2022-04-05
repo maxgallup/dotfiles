@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/org/gnome/shell/extensions/tidalwm/" id="org.gnome.shell.extensions.tidalwm">
+        <key name="window-gaps" type="i">
+            <default>20</default>
+            <description>The space between windows once they are tiled</description>
+        </key>
+        <key name="tile-mode" type="i">
+            <default>0</default>
+            <description>How to arrange new windows, (0 = spiral, 1 = i3 style, 2 = binary)</description>
+        </key>
+        <key name="rotate-windows" type="as">
+            <default><![CDATA[['<Control><Alt>o']]]></default>
+            <description>Rotate window tiling order</description>
+        </key>
+        <key name="float-window" type="as">
+            <default><![CDATA[['<Control><Alt>f']]]></default>
+            <description>Toggle floating current window</description>
+        </key>
+        <key name="inactive-opacity" type="i">
+            <default>90</default>
+            <description>Opacity of unfocused windows</description>
+        </key>
+        <key name="always-float" type="as">
+            <default><![CDATA[['']]]></default>
+            <description>Comma separated list of window classes to always float</description>
+        </key>
+        <key name="smart-gaps" type="b">
+            <default>false</default>
+            <description>Gaps only enabled when more than one window is present</description>
+        </key>
+        <key name="initial-direction" type="i">
+            <default>0</default>
+            <description>Initial direction to split (0 = horizontal, 1 = vertical)</description>
+        </key>
+        <key name="log-level" type="i">
+            <default>0</default>
+            <description>Logging verbosity (0 = info, 1 = debug, 2 = verbose)</description>
+        </key>
+        <key name="smart-gaps-fullscreen" type="b">
+            <default>false</default>
+            <description>When using smart gaps, make the window fullscreen</description>
+        </key>
+        <key name="ignore-scale" type="b">
+            <default>false</default>
+            <description>(Experimental) Don't compute scaling for gaps, borders, etc. Use with framebuffer scaling.</description>
+        </key>
+        <key name="first-window-width-percent" type="i">
+            <default>50</default>
+            <description>When tiling windows, set the width of the first horizontal window</description>
+        </key>
+
+        <!-- active window highlight -->
+        <key name="highlight-active" type="b">
+            <default>true</default>
+            <description>Draw a border around the active window</description>
+        </key>
+        <key name="highlight-active-border-top" type="b">
+            <default>true</default>
+            <description>Draw top border around the active window</description>
+        </key>
+        <key name="highlight-active-border-right" type="b">
+            <default>true</default>
+            <description>Draw top border around the active window</description>
+        </key>
+        <key name="highlight-active-border-bottom" type="b">
+            <default>true</default>
+            <description>Draw top border around the active window</description>
+        </key>
+        <key name="highlight-active-border-left" type="b">
+            <default>true</default>
+            <description>Draw top border around the active window</description>
+        </key>
+        <key name="highlight-active-border-color" type="s">
+            <default>"#2d9f2d"</default>
+            <description>Color to use for active border</description>
+        </key>
+        <key name="highlight-active-border-width" type="i">
+            <default>5</default>
+            <description>Width of active border (pixels)</description>
+        </key>
+
+        <!-- splits -->
+        <key name="increase-hsplit" type="as">
+            <default><![CDATA[['<Shift><Super>Right']]]></default>
+            <description>Increases the horizontal split value of the focused window</description>
+        </key>
+        <key name="decrease-hsplit" type="as">
+            <default><![CDATA[['<Shift><Super>Left']]]></default>
+            <description>Decreases the horizontal split value of the focused window</description>
+        </key>
+        <key name="increase-vsplit" type="as">
+            <default><![CDATA[['<Shift><Super>Up']]]></default>
+            <description>Increases the vertical split value of the focused window</description>
+        </key>
+        <key name="decrease-vsplit" type="as">
+            <default><![CDATA[['<Shift><Super>Down']]]></default>
+            <description>Decreases the vertical split value of the focused window</description>
+        </key>
+
+        <!-- movement -->
+        <key name="select-window-right" type="as">
+            <default><![CDATA[['<Super>Right','<Super>l']]]></default>
+            <description>Select window to the right</description>
+        </key>
+        <key name="select-window-left" type="as">
+            <default><![CDATA[['<Super>Left','<Super>h']]]></default>
+            <description>Select window to the left</description>
+        </key>
+        <key name="select-window-above" type="as">
+            <default><![CDATA[['<Super>Up','<Super>k']]]></default>
+            <description>Select window above</description>
+        </key>
+        <key name="select-window-below" type="as">
+            <default><![CDATA[['<Super>Down','<Super>j']]]></default>
+            <description>Select window below</description>
+        </key>
+    </schema>
+</schemalist>

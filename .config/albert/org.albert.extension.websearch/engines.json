@@ -1,0 +1,68 @@
+[
+    {
+        "iconPath": ":duckduckgo",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{38cd0ab3-0de5-44a7-b370-5cff5932cfa0}.",
+        "name": "Translate English -> Dutch",
+        "trigger": "nl",
+        "url": "https://www.deepl.com/translator#nl/en/%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{67fb38f3-392f-462c-b99f-4d35d21065f0}.",
+        "name": "Translate English -> Czech",
+        "trigger": "cz",
+        "url": "https://www.deepl.com/translator#en/cs/%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{3958b83e-8caa-42d1-9dda-39606d2e6a5c}.",
+        "name": "Creates.io",
+        "trigger": "cr",
+        "url": "https://crates.io/search?q=%s"
+    },
+    {
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{ea508563-8dbd-4a16-922a-ee3c91f5e094}.",
+        "name": "FlatHub",
+        "trigger": "fh",
+        "url": "https://flathub.org/apps/search/%s"
+    },
+    {
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": ":amazon",
+        "name": "Amazon",
+        "trigger": "ama ",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "iconPath": ":ebay",
+        "name": "Ebay",
+        "trigger": "eb ",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": ":google",
+        "name": "Google",
+        "trigger": "gg ",
+        "url": "https://www.google.com/search?q=%s"
+    }
+]

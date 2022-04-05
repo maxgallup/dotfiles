@@ -1,0 +1,213 @@
+---
+
+# --- BRAVE ---
+- name: "brave-browser dependencies"
+  apt:
+    name:
+      - apt-transport-https
+      - curl
+  tags: apps
+
+- name: "brave-browser gpg key"
+  shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  tags: apps
+
+- name: "brave-browser add apt repo"
+  copy:
+    src: "../misc/brave-browser-release.list"
+    dest: "/etc/apt/sources.list.d/"
+    owner: root
+    group: root
+    mode: 0644
+  tags: apps
+
+- name: "brave-browser apt update"
+  apt:
+    update_cache: yes
+  tags: apps
+
+- name: "brave-browser install"
+  apt:
+    name: "brave-browser"
+  tags: apps
+
+# --- ALBERT ---
+- name: Install albert
+  apt:
+    deb: /home/max/dotfiles/packages/albert_0.17.2-0_amd64.deb
+  tags: apps
+
+# --- ESPANSO ---
+- name: Install espanso
+  apt:
+    deb: /home/max/dotfiles/packages/espanso-debian-x11-amd64.deb
+  tags: apps
+
+# --- MICRO ---
+- name: Install Micro
+  apt:
+    deb: /home/max/dotfiles/packages/micro-2.0.10-amd64.deb
+  tags: apps
+
+# --- VSCODE ---
+- name: Download VSCode key
+  shell: wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+  tags: code
+
+- name: Install VSCode key
+  shell: install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+  tags: code
+
+- name: Install VSCode .list file
+  shell: sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list' && rm -f packages.microsoft.gpg
+  tags: code
+
+- name: Install VSCode
+  apt:
+    name: code
+  tags: code
+
+# --- SIGNAL ---
+- name: Install Signal (flatpak)
+  flatpak:
+    name: org.signal.Signal
+  tags: apps
+
+
+# --- SPOTIFY ---
+- name: Install Spotify (flatpak)
+  flatpak:
+    name: com.spotify.Client
+  tags: apps
+
+
+# --- OBS STUDIO ---
+- name: Install OBS (flatpak)
+  flatpak:
+    name: com.obsproject.Studio
+  tags: apps
+
+# --- GIMP ---
+- name: Install GIMP (flatpak)
+  flatpak:
+    name: org.gimp.GIMP
+  tags: apps
+
+# --- DIAGRAMS.NET ---
+- name: Install drawio (flatpak)
+  flatpak:
+    name: com.jgraph.drawio.desktop
+  tags: apps
+
+# --- ONLYOFFICE ---
+- name: Install onlyoffice (flatpak)
+  flatpak:
+    name: org.onlyoffice.desktopeditors
+  tags: apps
+
+# --- DISCORD ---
+- name: Install Discord (flatpak)
+  flatpak:
+    name: com.discordapp.Discord
+  tags: apps
+
+# --- ZOOM ---
+- name: Install Zoom (flatpak)
+  flatpak:
+    name: us.zoom.Zoom
+  tags: apps
+
+# --- RASPBERRY PI IMAGE ---
+- name: Install Raspberry Pi Imager (flatpak)
+  flatpak:
+    name: org.raspberrypi.rpi-imager
+  tags: apps
+
+# --- GNOME EXTENSION MANAGER ---
+- name: Install Gnome Extension Manager (flatpak)
+  flatpak:
+    name: com.mattjakeman.ExtensionManager
+  tags: apps
+
+# --- DOLPHIN EMULATOR ---
+- name: Install Dolphin Emulator (flatpak)
+  flatpak:
+    name: org.DolphinEmu.dolphin-emu
+  tags: apps
+
+
+# --- PROTON VPN ---
+- name: protonvpn install
+  apt:
+    deb: https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
+  tags: apps
+
+# --- PROTON VPN SYS TRAY ---
+- name: protonvpn system tray install
+  apt:
+    name:
+      - gnome-shell-extension-appindicator
+      - gir1.2-appindicator3-0.1
+  tags: apps
+
+# --- input-remapper ---
+- name: input-remapper install
+  apt:
+    deb: /home/max/dotfiles/packages/input-remapper-1.4.2.deb
+  tags: apps
+
+
+
+# --- DOCKER ---
+- name: Add Docker apt-key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+  tags: 
+    - apps
+    - docker
+
+- name: Add Docker repo
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu focal stable
+  tags: 
+    - apps
+    - docker
+
+- name: Install Docker
+  apt:
+    name: 
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    update_cache: yes
+  tags: 
+    - apps
+    - docker
+
+- name: Add docker User Permissions
+  shell: "usermod -aG docker {{ user }}"
+  tags: 
+    - apps
+    - docker
+
+- name: Create Bindings Directory
+  file:
+    path: "{{ container_dir }}"
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0755
+  tags: 
+    - apps
+    - docker
+
+
+- name: Install autoclean
+  apt:
+    autoclean: yes
+  tags: apps
+
+- name: Install autoremove
+  apt:
+    autoremove: yes
+  tags: apps

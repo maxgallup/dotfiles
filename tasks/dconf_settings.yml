@@ -1,0 +1,7 @@
+---
+
+- name: Updating dconf-settings
+  shell: dconf load / < misc/dconf-settings
+  tags:
+    - settings
+

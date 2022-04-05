@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# pass in a dutch word as first argument, and it will return if it is de/het
+
+URL=https://www.welklidwoord.nl/$1
+echo $(curl --silent $URL | sed -n 's:.*<span>\(.*\)</span>.*:\1:p' | xargs) $1

@@ -1,0 +1,6 @@
+---
+
+user: max
+home: /home/max
+
+container_dir: /opt/docker

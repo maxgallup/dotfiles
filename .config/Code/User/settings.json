@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "United Ubuntu",
+    "workbench.startupEditor": "none",
+    "telemetry.telemetryLevel": "off",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 4,
+    "explorer.confirmDragAndDrop": false,
+    "editor.rulers": [
+        100
+    ],
+    "rst.preview.pythonPath": "python3",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.wordWrap": "on",
+    "cmake.configureOnOpen": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false
+}

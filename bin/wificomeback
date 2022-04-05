@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd ~/dotfiles/.drivers/rtw89
+
+sudo make
+sudo make install
+
+sudo modprobe -r rtw89pci
+sudo modprobe rtw89pci
+
+
+

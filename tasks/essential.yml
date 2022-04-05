@@ -1,0 +1,36 @@
+---
+
+- name: Update and Upgrade
+  apt:
+    update_cache: yes
+    upgrade: yes
+  tags: essential
+
+- name: Installing Essential Packages
+  apt:
+    name:
+      - vim
+      - htop
+      - neofetch
+      - tmux
+      - gnome-tweaks
+      - dconf-editor
+      - gnome-tweaks
+      - gimp
+      - qemu-kvm
+      - libvirt-daemon-system
+      - libvirt-clients
+      - bridge-utils
+      - virt-manager
+      - virtualbox
+      - whois
+      - flatpak
+      - x11-utils
+
+    state: latest
+  tags: essential
+  
+- name: Install Flathub Remote
+  flatpak_remote:
+    name: flathub
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo

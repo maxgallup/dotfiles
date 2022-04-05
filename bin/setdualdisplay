@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# DP="DisplayPort-0"
+# HDMI="HDMI-A-0"
+# BUILTIN="eDP"
+# isDP=$(xrandr -q | grep $DP | awk '{print $2}')
+# isHDMI=$(xrandr -q | grep $HDMI | awk '{print $2}')
+
+# if [ $isDP = "connected" ] || [ $isHDMI = "connected" ]
+# then
+#     if [ $isDP = "connected" ]
+#     then
+#         # create configuration with DisplayPort-0 as monitor
+#         # $(xrandr --output $DP --mode 3072x1728 --output $BUILTIN --pos 3072x288 --mode 2304x1440)
+# 	echo "configure me"
+#     else
+#         # create configuration with HDMI-A-0 as monitor
+#         # $(xrandr --output $HDMI --mode 3072x1728 --output $BUILTIN --pos 3072x288 --mode 2304x1440)
+# 	echo "configure me"
+#     fi
+# fi
+
+echo "currently not in use"

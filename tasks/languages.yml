@@ -1,0 +1,19 @@
+---
+
+- name: Install rustup
+  shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  tags:
+    - languages
+    - rust
+
+- name: Download go
+  shell: cd /opt/ && wget --https-only https://go.dev/dl/go1.18.linux-amd64.tar.gz
+  tags:
+    - langauges
+    - go
+
+- name: Install go
+  shell: rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+  tags:
+    - languages
+    - go

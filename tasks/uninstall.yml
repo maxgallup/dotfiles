@@ -1,0 +1,36 @@
+---
+
+- name: Uninstall LibreOffice
+  shell: apt remove --purge libreoffice* -y
+  tags: uninstall
+
+- name: Remove Snap Files
+  become: yes
+  file:
+    path: "{{ item.path }}"
+    state: absent
+  with_items:
+    - path: "/var/cache/snap"
+    - path: "/root/snap"
+    - path: "/var/snap"
+    - path: "/var/lib/snap"
+  tags: 
+    - uninstall
+
+- name: Uninstall snap
+  apt:
+    name: snapd
+    state: absent
+    purge: yes
+  tags: 
+    - uninstall
+
+- name: Uninstall autoclean
+  apt:
+    autoclean: yes
+  tags: uninstalls
+
+- name: Uninstall autoremove
+  apt:
+    autoremove: yes
+  tags: uninstalls

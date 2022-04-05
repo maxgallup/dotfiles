@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "please include name of latex file"
+    exit 1
+fi
+
+
+filename=${1%.*}
+echo $filename
+
+pdflatex $1
+echo "pdflatex complete"
+
+# rm $filename.log $filename.aux
+# echo "removed $filename.log/.aux files"'
