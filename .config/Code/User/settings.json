@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "United Ubuntu",
+    "workbench.colorTheme": "Default Light+",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -10,11 +10,15 @@
     ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
-    "terminal.integrated.enablePersistentSessions": false
+    "terminal.integrated.enablePersistentSessions": false,
+    "editor.detectIndentation": false,
+    "workbench.preferredDarkColorTheme": "United Ubuntu",
+    "workbench.preferredHighContrastLightColorTheme": "Default Light+",
+    "window.autoDetectColorScheme": true
 }
