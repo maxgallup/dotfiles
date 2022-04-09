@@ -27,6 +27,7 @@
       - flatpak
       - x11-utils
       - build-essential
+      - libssl-dev
 
     state: latest
   tags: essential
