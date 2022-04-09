@@ -6,6 +6,12 @@
         "url": "https://duckduckgo.com/?q=%s"
     },
     {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{5f56f0a4-3b03-4869-93eb-6474353390b1}.",
+        "name": "DuckDuckGo Images",
+        "trigger": "i",
+        "url": "https://duckduckgo.com/?q=%s&ia=images&iax=images"
+    },
+    {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{38cd0ab3-0de5-44a7-b370-5cff5932cfa0}.",
         "name": "Translate English -> Dutch",
         "trigger": "nl",
@@ -58,6 +64,12 @@
         "name": "Wolfram Alpha",
         "trigger": "=",
         "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{52586a08-5cc3-4c08-a59c-bef7852d7f27}.",
+        "name": "Google Maps",
+        "trigger": "gm",
+        "url": "https://www.google.com/maps/search/%s/@52.3565958,4.8269693,12z"
     },
     {
         "iconPath": ":google",
