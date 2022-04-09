@@ -26,6 +26,7 @@
       - whois
       - flatpak
       - x11-utils
+      - build-essential
 
     state: latest
   tags: essential
