@@ -31,6 +31,29 @@
     name: "brave-browser"
   tags: apps
 
+
+
+# --- TAILSCALE ---
+- name: Tailscale Signing Key
+  shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
+  tags: tailscale
+
+- name: Tailscale Repo
+  shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+  tags: tailscale
+
+- name: Apt Update
+  apt:
+    update_cache: yes
+  tags: tailscale
+
+- name: Install Tailscale
+  apt:
+    name: tailscale
+  tags: tailscale
+
+
+
 # --- ALBERT ---
 - name: Install albert
   apt:
