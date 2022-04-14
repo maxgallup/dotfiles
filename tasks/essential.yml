@@ -9,25 +9,34 @@
 - name: Installing Essential Packages
   apt:
     name:
+      # BASICS
       - vim
       - htop
       - neofetch
       - tmux
+      - gimp
+      - whois
+      - flatpak
+      # GNOME
       - gnome-tweaks
       - dconf-editor
       - gnome-tweaks
-      - gimp
+      # VIRTUALIZATION
+      - virt-manager
+      - virtualbox
       - qemu-kvm
+      # LINUX UTILS
       - libvirt-daemon-system
       - libvirt-clients
       - bridge-utils
-      - virt-manager
-      - virtualbox
-      - whois
-      - flatpak
       - x11-utils
       - build-essential
       - libssl-dev
+      # IPHONE PHOTOS MOUNT
+      - ifuse
+      # PROTON VPN SYS TRAY
+      - gnome-shell-extension-appindicator
+      - gir1.2-appindicator3-0.1
 
     state: latest
   tags: essential
@@ -36,3 +45,4 @@
   flatpak_remote:
     name: flathub
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+  tags: essential

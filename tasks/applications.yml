@@ -1,6 +1,7 @@
 ---
-
-# --- BRAVE ---
+# --------------------------------------
+# BRAVE
+# --------------------------------------
 - name: "brave-browser dependencies"
   apt:
     name:
@@ -32,8 +33,9 @@
   tags: apps
 
 
-
-# --- TAILSCALE ---
+# --------------------------------------
+# TAILSCALE
+# --------------------------------------
 - name: Tailscale Signing Key
   shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
   tags: tailscale
@@ -53,26 +55,9 @@
   tags: tailscale
 
 
-
-# --- ALBERT ---
-- name: Install albert
-  apt:
-    deb: /home/max/dotfiles/packages/albert_0.17.2-0_amd64.deb
-  tags: apps
-
-# --- ESPANSO ---
-- name: Install espanso
-  apt:
-    deb: /home/max/dotfiles/packages/espanso-debian-x11-amd64.deb
-  tags: apps
-
-# --- MICRO ---
-- name: Install Micro
-  apt:
-    deb: /home/max/dotfiles/packages/micro-2.0.10-amd64.deb
-  tags: apps
-
-# --- VSCODE ---
+# --------------------------------------
+# VSCODE
+# --------------------------------------
 - name: Download VSCode key
   shell: wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
   tags: code
@@ -90,98 +75,99 @@
     name: code
   tags: code
 
-# --- SIGNAL ---
+
+# --------------------------------------
+# Downloaded .deb installs
+# --------------------------------------
+- name: Install albert
+  apt:
+    deb: /home/max/dotfiles/packages/albert_0.17.2-0_amd64.deb
+  tags: apps
+
+- name: Install espanso
+  apt:
+    deb: /home/max/dotfiles/packages/espanso-debian-x11-amd64.deb
+  tags: apps
+
+- name: Install Micro
+  apt:
+    deb: /home/max/dotfiles/packages/micro-2.0.10-amd64.deb
+  tags: apps
+
+- name: Install Protonvpn
+  apt:
+    deb: https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
+  tags: apps
+
+- name: Install input-remapper
+  apt:
+    deb: /home/max/dotfiles/packages/input-remapper-1.4.2.deb
+  tags: apps
+
+
+# --------------------------------------
+# FLATPAK INSTALLS
+# --------------------------------------
 - name: Install Signal (flatpak)
   flatpak:
     name: org.signal.Signal
   tags: apps
 
-
-# --- SPOTIFY ---
 - name: Install Spotify (flatpak)
   flatpak:
     name: com.spotify.Client
   tags: apps
 
-
-# --- OBS STUDIO ---
 - name: Install OBS (flatpak)
   flatpak:
     name: com.obsproject.Studio
   tags: apps
 
-# --- GIMP ---
 - name: Install GIMP (flatpak)
   flatpak:
     name: org.gimp.GIMP
   tags: apps
 
-# --- DIAGRAMS.NET ---
 - name: Install drawio (flatpak)
   flatpak:
     name: com.jgraph.drawio.desktop
   tags: apps
 
-# --- ONLYOFFICE ---
 - name: Install onlyoffice (flatpak)
   flatpak:
     name: org.onlyoffice.desktopeditors
   tags: apps
 
-# --- DISCORD ---
 - name: Install Discord (flatpak)
   flatpak:
     name: com.discordapp.Discord
   tags: apps
 
-# --- ZOOM ---
 - name: Install Zoom (flatpak)
   flatpak:
     name: us.zoom.Zoom
   tags: apps
 
-# --- RASPBERRY PI IMAGE ---
 - name: Install Raspberry Pi Imager (flatpak)
   flatpak:
     name: org.raspberrypi.rpi-imager
   tags: apps
 
-# --- GNOME EXTENSION MANAGER ---
 - name: Install Gnome Extension Manager (flatpak)
   flatpak:
     name: com.mattjakeman.ExtensionManager
   tags: apps
 
-# --- DOLPHIN EMULATOR ---
 - name: Install Dolphin Emulator (flatpak)
   flatpak:
     name: org.DolphinEmu.dolphin-emu
   tags: apps
 
 
-# --- PROTON VPN ---
-- name: protonvpn install
-  apt:
-    deb: https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
-  tags: apps
+# --------------------------------------
+# DOCKER
+# --------------------------------------
 
-# --- PROTON VPN SYS TRAY ---
-- name: protonvpn system tray install
-  apt:
-    name:
-      - gnome-shell-extension-appindicator
-      - gir1.2-appindicator3-0.1
-  tags: apps
-
-# --- input-remapper ---
-- name: input-remapper install
-  apt:
-    deb: /home/max/dotfiles/packages/input-remapper-1.4.2.deb
-  tags: apps
-
-
-
-# --- DOCKER ---
 - name: Add Docker apt-key
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
@@ -224,6 +210,11 @@
     - apps
     - docker
 
+
+
+# --------------------------------------
+# Clean Up
+# --------------------------------------
 
 - name: Install autoclean
   apt:
