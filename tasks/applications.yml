@@ -163,6 +163,11 @@
     name: org.DolphinEmu.dolphin-emu
   tags: apps
 
+- name: Install Audacity (flatpak)
+  flatpak:
+    name: org.audacityteam.Audacity
+  tags: apps
+
 
 # --------------------------------------
 # DOCKER
