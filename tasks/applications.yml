@@ -168,7 +168,10 @@
     name: org.audacityteam.Audacity
   tags: apps
 
-
+- name: Install Bottles (flatpak)
+  flatpak:
+    name: com.usebottles.bottles
+  tags: apps
 # --------------------------------------
 # DOCKER
 # --------------------------------------

@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "United Ubuntu",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -10,7 +10,7 @@
     ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
@@ -20,5 +20,9 @@
     "editor.detectIndentation": false,
     "workbench.preferredDarkColorTheme": "United Ubuntu",
     "workbench.preferredHighContrastLightColorTheme": "Default Light+",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "rust-analyzer.inlayHints.typeHints": false,
+    "rust-analyzer.inlayHints.parameterHints": false,
+    "rust-analyzer.inlayHints.enable": false,
+    "window.zoomLevel": 1
 }

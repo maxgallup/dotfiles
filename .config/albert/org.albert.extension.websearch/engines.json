@@ -6,9 +6,9 @@
         "url": "https://duckduckgo.com/?q=%s"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{5f56f0a4-3b03-4869-93eb-6474353390b1}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{45679b65-55e6-46f0-9be0-806172b45f16}.",
         "name": "DuckDuckGo Images",
-        "trigger": "i",
+        "trigger": "im",
         "url": "https://duckduckgo.com/?q=%s&ia=images&iax=images"
     },
     {
