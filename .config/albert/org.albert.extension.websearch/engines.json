@@ -12,21 +12,27 @@
         "url": "https://duckduckgo.com/?q=%s&ia=images&iax=images"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{38cd0ab3-0de5-44a7-b370-5cff5932cfa0}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{e831a283-e559-41d6-bd8e-663955b40e35}.",
         "name": "Translate English -> Dutch",
-        "trigger": "nl",
+        "trigger": "nl ",
         "url": "https://www.deepl.com/translator#nl/en/%s"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{67fb38f3-392f-462c-b99f-4d35d21065f0}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{383dadcc-ff6c-4d78-9917-ed6591c1164d}.",
         "name": "Translate English -> Czech",
-        "trigger": "cz",
+        "trigger": "cz ",
         "url": "https://www.deepl.com/translator#en/cs/%s"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{3958b83e-8caa-42d1-9dda-39606d2e6a5c}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{eb78bba1-a707-4af1-bca3-38517074270c}.",
+        "name": "Docs.rs",
+        "trigger": "doc ",
+        "url": "https://docs.rs/%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{f3770b1d-42fc-4f2c-bdc3-ae80c256e852}.",
         "name": "Creates.io",
-        "trigger": "cr",
+        "trigger": "cr ",
         "url": "https://crates.io/search?q=%s"
     },
     {
@@ -36,9 +42,9 @@
         "url": "https://github.com/search?utf8=✓&q=%s"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{ea508563-8dbd-4a16-922a-ee3c91f5e094}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{88217d97-61b2-44bb-a2c9-8c210a257fc1}.",
         "name": "FlatHub",
-        "trigger": "fh",
+        "trigger": "fh ",
         "url": "https://flathub.org/apps/search/%s"
     },
     {
@@ -66,9 +72,9 @@
         "url": "https://www.wolframalpha.com/input/?i=%s"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{52586a08-5cc3-4c08-a59c-bef7852d7f27}.",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{1c5bc774-158f-4548-8ae8-6bc05332b438}.",
         "name": "Google Maps",
-        "trigger": "gm",
+        "trigger": "gm ",
         "url": "https://www.google.com/maps/search/%s/@52.3565958,4.8269693,12z"
     },
     {
