@@ -17,6 +17,8 @@
       - gimp
       - whois
       - flatpak
+      - pandoc
+      - android-sdk-platform-tools-common
       # GNOME
       - gnome-tweaks
       - dconf-editor
@@ -38,7 +40,7 @@
       - gnome-shell-extension-appindicator
       - gir1.2-appindicator3-0.1
       # BETAFLIGHT
-      # - libatomic1
+      # - libatomic1,
 
     state: latest
   tags: essential
