@@ -6,14 +6,20 @@
         "url": "https://duckduckgo.com/?q=%s"
     },
     {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{6e4d3a11-dead-41e4-8914-a9a14d998b37}.",
+        "name": "Invidios Search",
+        "trigger": "in ",
+        "url": "https://yewtu.be/search?q=%s"
+    },
+    {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{45679b65-55e6-46f0-9be0-806172b45f16}.",
         "name": "DuckDuckGo Images",
         "trigger": "im",
         "url": "https://duckduckgo.com/?q=%s&ia=images&iax=images"
     },
     {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{e831a283-e559-41d6-bd8e-663955b40e35}.",
-        "name": "Translate English -> Dutch",
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{2c64b0e3-3e53-4a9f-8fdc-e13fbe23723a}.",
+        "name": "Translate Dutch -> English",
         "trigger": "nl ",
         "url": "https://www.deepl.com/translator#nl/en/%s"
     },
@@ -48,10 +54,10 @@
         "url": "https://flathub.org/apps/search/%s"
     },
     {
-        "iconPath": ":youtube",
-        "name": "Youtube",
-        "trigger": "yt ",
-        "url": "https://www.youtube.com/results?search_query=%s"
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{70aa0c5f-56cb-43e6-b015-9f1b541941cd}.",
+        "name": "Fdroid",
+        "trigger": "fd ",
+        "url": "https://search.f-droid.org/?q=%s&lang=en"
     },
     {
         "iconPath": ":amazon",

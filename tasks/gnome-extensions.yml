@@ -1,0 +1,11 @@
+---
+
+- name: Install Gnome Extensions
+  include_role:
+    name: petermosmans.customize-gnome
+  vars:
+    gnome_extensions:
+      - id: 1160
+      - id: 2236
+      - id: 7
+      - id: 906

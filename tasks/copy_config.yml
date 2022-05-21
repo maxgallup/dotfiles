@@ -54,18 +54,18 @@
   tags: copy
 
 
-- name: Copying gnome-extensions
-  shell: ls gnome-extensions
-  register: extensions_dirs
-  tags: extensions
+# - name: Copying gnome-extensions
+#   shell: ls gnome-extensions
+#   register: extensions_dirs
+#   tags: extensions
 
-- name: Copying gnome-extensions
-  copy:
-    src: "../gnome-extensions/{{ item }}"
-    dest: "{{ home }}/.local/share/gnome-shell/extensions/"
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0775
-  loop: "{{ extensions_dirs.stdout_lines }}"
-  tags: extensions
+# - name: Copying gnome-extensions
+#   copy:
+#     src: "../gnome-extensions/{{ item }}"
+#     dest: "{{ home }}/.local/share/gnome-shell/extensions/"
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0775
+#   loop: "{{ extensions_dirs.stdout_lines }}"
+#   tags: extensions
 

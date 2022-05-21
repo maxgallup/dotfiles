@@ -43,9 +43,5 @@ alias myip='curl ifconfig.me'
 # ansible playbook
 alias ap='ansible-playbook main.yml'
 
-# tools 
-alias idea='/opt/idea-IC-213.6777.52/bin/idea.sh >/dev/null 2>/dev/null'
-alias ghidra='/home/max/sec/tools/ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/ghidraRun &'
-
 # rust
 alias cr='cargo run'

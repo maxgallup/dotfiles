@@ -1,9 +1,5 @@
 ---
 
-- name: Uninstall LibreOffice
-  shell: apt remove --purge libreoffice* -y
-  tags: uninstall
-
 - name: Remove Snap Files
   become: yes
   file:

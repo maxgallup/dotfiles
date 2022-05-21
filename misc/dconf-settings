@@ -1,27 +1,27 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/nautilus/preferences/search-view'
-saved-view='/org/gnome/nautilus/preferences/search-view'
+saved-pathbar-path='/org/gnome/shell/extensions/pop-shell/focus-down'
+saved-view='/org/gnome/shell/extensions/pop-shell/focus-down'
 show-warning=false
-window-height=997
+window-height=1011
 window-is-maximized=false
-window-width=1906
+window-width=1920
 
 [com/github/donadigo/eddy]
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
-window-height=978
-window-width=840
-window-x=840
-window-y=25
+window-height=981
+window-width=937
+window-x=967
+window-y=37
 
 [com/system76/hidpi]
 enable=false
-mode='lodpi'
+mode='hidpi'
 
 [io/elementary/appcenter/settings]
-last-refresh-time=int64 1649060828
+last-refresh-time=int64 1653114478
 window-maximized=false
-window-position=(7, 29)
-window-size=(1906, 1044)
+window-position=(846, 34)
+window-size=(822, 1004)
 
 [org/gnome/Geary]
 folder-list-pane-position-horizontal=100
@@ -48,8 +48,8 @@ window-size=[949, 471]
 [org/gnome/calendar]
 active-view='week'
 window-maximized=false
-window-position=(0, 27)
-window-size=(1920, 1006)
+window-position=(12, 34)
+window-size=(1896, 987)
 
 [org/gnome/cheese]
 burst-delay=1000
@@ -60,7 +60,7 @@ video-x-resolution=960
 video-y-resolution=540
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='wifi'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -230,7 +230,6 @@ move-to-workspace-down=['<Shift><Super>s']
 move-to-workspace-last=@as []
 move-to-workspace-up=['<Shift><Super>w']
 panel-main-menu=@as []
-panel-run-dialog=@as []
 switch-group=@as []
 switch-group-backward=@as []
 switch-input-source=@as []
@@ -247,19 +246,22 @@ toggle-maximized=['<Super>Space']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:close'
 
+[org/gnome/eog/ui]
+sidebar=false
+
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince/default]
-window-ratio=(1.5506535947712419, 1.2588383838383839)
+window-ratio=(1.3431372549019607, 1.2083333333333333)
 
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution-data-server/calendar]
-reminders-past=['d9680e12537e7cbde2ca76551ef2cf43f9c96b25\n96702cd6b0f955770dc989d693ca503b2388eef4\n1648425600\n1648425600\n1648512000\nBEGIN:VEVENT\r\nDTSTAMP:20220219T081934Z\r\nDTSTART;VALUE=DATE:20020328\r\nDTEND;VALUE=DATE:20020329\r\nUID:3C09E969-3218-4468-A68B-18FF1ECF4870\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Yuri van Dam UvA (2002)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2002\r\nX-EVOLUTION-CALDAV-ETAG:1b1928186f547f3be65651fde72d9a65\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Yuri van Dam UvA (2002)\r\nX-EVOLUTION-ALARM-UID:96702cd6b0f955770dc989d693ca503b2388eef4\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=['']
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -279,8 +281,8 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=471
-window-width=949
+window-height=987
+window-width=942
 
 [org/gnome/gedit/plugins]
 active-plugins=['filebrowser', 'time', 'docinfo', 'modelines', 'spell']
@@ -305,7 +307,7 @@ current-tab='processes'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(829, 967, 843, 29)
+window-state=(1656, 957, 12, 34)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -340,7 +342,7 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(949, 997)
+initial-size=(942, 987)
 maximized=false
 sidebar-width=189
 
@@ -368,7 +370,7 @@ info-stats-type='discharge-accuracy'
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=false
-night-light-schedule-from=20.0
+night-light-schedule-from=19.0
 night-light-schedule-to=9.0
 night-light-temperature=uint32 2700
 
@@ -405,10 +407,11 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
+command-history=['restart']
 disable-user-extensions=false
-disabled-extensions=['forge@jmmaranan.com', 'gnomesome@chwick.github.com']
-enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'sound-output-device-chooser@kgshank.net', 'wireguard-indicator@atareao.es', 'tidalwm@rustysec.github.io', 'nightthemeswitcher@romainvigier.fr', 'dash-to-panel@jderose9.github.com']
-favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'brave-browser.desktop', 'com.spotify.Client.desktop']
+disabled-extensions=[]
+enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'sound-output-device-chooser@kgshank.net', 'wireguard-indicator@atareao.es', 'nightthemeswitcher@romainvigier.fr', 'dash-to-panel@jderose9.github.com']
+favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'com.spotify.Client.desktop', 'brave-browser.desktop']
 had-bluetooth-devices-setup=true
 
 [org/gnome/shell/extensions/dash-to-panel]
@@ -452,7 +455,7 @@ primary-monitor=0
 show-appmenu=false
 show-apps-icon-file=''
 show-apps-icon-side-padding=4
-show-favorites=true
+show-favorites=false
 show-favorites-all-monitors=false
 show-running-apps=true
 show-tooltip=false
@@ -559,12 +562,12 @@ index=0
 [org/gnome/shell/extensions/pop-shell]
 activate-launcher=@as []
 active-hint=true
-focus-down=['<Super>k']
-focus-left=['<Super>j']
-focus-right=['<Super>l']
-focus-up=['<Super>i']
-gap-inner=uint32 0
-gap-outer=uint32 0
+focus-down=['<Super>k', '<Super>Down']
+focus-left=['<Super>j', '<Super>Left']
+focus-right=['<Super>l', '<Super>Right']
+focus-up=['<Super>Up', '<Super> i']
+gap-inner=uint32 3
+gap-outer=uint32 3
 hint-color-rgba='rgba(226,138,13,0.864865)'
 management-orientation=@as []
 pop-monitor-down=@as []
@@ -574,18 +577,13 @@ pop-monitor-up=@as []
 pop-workspace-down=@as []
 pop-workspace-up=@as []
 show-title=true
-tile-accept=@as []
-tile-by-default=false
-tile-enter=@as []
-tile-move-down=@as []
-tile-move-left=@as []
-tile-move-right=@as []
-tile-move-up=@as []
+smart-gaps=false
+snap-to-grid=true
+tile-by-default=true
 tile-orientation=@as []
-tile-reject=@as []
 tile-resize-down=@as []
-tile-resize-left=@as []
-tile-resize-right=@as []
+tile-resize-left=['u']
+tile-resize-right=['o']
 tile-resize-up=@as []
 tile-swap-down=@as []
 tile-swap-left=@as []
@@ -594,9 +592,9 @@ tile-swap-up=@as []
 toggle-floating=@as []
 toggle-stacking=@as []
 toggle-stacking-global=@as []
-toggle-tiling=@as []
 
 [org/gnome/shell/extensions/tidalwm]
+always-float=['']
 decrease-hsplit=['<Super>u']
 decrease-vsplit=['']
 float-window=['<Super>f']
@@ -616,7 +614,13 @@ select-window-below=['']
 select-window-left=['']
 select-window-right=['']
 smart-gaps=false
-window-gaps=15
+window-gaps=0
+
+[org/gnome/shell/extensions/unite]
+autofocus-windows=true
+extend-left-box=true
+greyscale-tray-icons=false
+hide-aggregate-menu-arrow=true
 
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
@@ -678,8 +682,8 @@ use-theme-transparency=false
 use-transparent-background=false
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.88627450980392153, 0.54117647058823537, 0.050980392156862821, 0.86486499999999999), (0.93333333333333335, 0.49019607843137253, 0.078431372549019607, 0.86486499999999999), (0.93333333333333335, 0.48844444444444446, 0.077777777777777807, 0.86486486486486491), (0.86274509803921573, 0.39215686274509803, 0.16470588235294117, 0.81418900000000005), (0.8633333333333334, 0.39095849889624723, 0.16403333333333331, 0.81418918918918914), (0.90196078431372551, 0.50196078431372548, 0.30980392156862746, 0.73310799999999998), (0.46346666666666669, 0.56157037037037028, 0.58666666666666667, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.88627450980392153, 0.54117647058823526, 0.050980392156862744, 0.86486499999999999), (0.88627450980392153, 0.54117647058823537, 0.050980392156862821, 0.86486499999999999), (0.93333333333333335, 0.49019607843137253, 0.078431372549019607, 0.86486499999999999), (0.93333333333333335, 0.48844444444444446, 0.077777777777777807, 0.86486486486486491), (0.86274509803921573, 0.39215686274509803, 0.16470588235294117, 0.81418900000000005), (0.8633333333333334, 0.39095849889624723, 0.16403333333333331, 0.81418918918918914), (0.90196078431372551, 0.50196078431372548, 0.30980392156862746, 0.73310799999999998), (0.46346666666666669, 0.56157037037037028, 0.58666666666666667, 1.0)]
+selected-color=(true, 0.88627450980392153, 0.54117647058823526, 0.050980392156862744, 0.86486499999999999)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -692,7 +696,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(412, 164)
+window-position=(292, 111)
 window-size=(1096, 726)
 
 [org/virt-manager/virt-manager]
