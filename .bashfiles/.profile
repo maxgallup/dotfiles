@@ -31,7 +31,6 @@ fi
 
 export GPG_TTY=$(tty)
 export GOPATH="$HOME/go"
-. "$HOME/.cargo/env"
 export PATH=$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
 
 export DOCKER_ID_USER="maxgallup"

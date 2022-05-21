@@ -1,10 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/extensions/pop-shell/focus-down'
-saved-view='/org/gnome/shell/extensions/pop-shell/focus-down'
+saved-pathbar-path='/org/gnome/desktop/background/picture-uri-dark'
+saved-view='/org/gnome/desktop/background/picture-uri-dark'
 show-warning=false
-window-height=1011
+window-height=972
 window-is-maximized=false
-window-width=1920
+window-width=1680
 
 [com/github/donadigo/eddy]
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
@@ -18,6 +18,7 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
+cached-drivers=@as []
 last-refresh-time=int64 1653114478
 window-maximized=false
 window-position=(846, 34)
@@ -60,7 +61,7 @@ video-x-resolution=960
 video-y-resolution=540
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='keyboard'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -82,6 +83,7 @@ color-shading-type='solid'
 draw-background=false
 picture-options='zoom'
 picture-uri='file:///home/max/dotfiles/pics/monterey-orange.jpg'
+picture-uri-dark='file:///home/max/dotfiles/pics/monterey-orange.jpg'
 primary-color='#000000'
 secondary-color='#000000'
 
@@ -98,8 +100,11 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 clock-show-seconds=false
 clock-show-weekday=false
+color-scheme='prefer-dark'
 enable-animations=false
 enable-hot-corners=false
+font-antialiasing='grayscale'
+font-hinting='slight'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Pop-dark'
 icon-theme='Pop'
@@ -261,7 +266,7 @@ migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution-data-server/calendar]
-reminders-past=['d9680e12537e7cbde2ca76551ef2cf43f9c96b25\nee23ed954a2dd145399554b93bdbb3b82664a23d\n1652054400\n1652054400\n1652140800\nBEGIN:VEVENT\r\nDTSTAMP:20220504T205600Z\r\nDTSTART;VALUE=DATE:20010509\r\nDTEND;VALUE=DATE:20010510\r\nUID:7CA3825B-6643-4B2E-BEBD-42E0096CBC6B\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Annika Radina UvA (2001)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2001\r\nX-EVOLUTION-CALDAV-ETAG:9abcda6d6bdc8b6383a7a048ab65deb9\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Annika Radina UvA (2001)\r\nX-EVOLUTION-ALARM-UID:ee23ed954a2dd145399554b93bdbb3b82664a23d\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'd9680e12537e7cbde2ca76551ef2cf43f9c96b25\nd650e5fd0e49251089028835ed3c96c891e9894f\n1651968000\n1651968000\n1652054400\nBEGIN:VEVENT\r\nDTSTAMP:20220219T081925Z\r\nDTSTART;VALUE=DATE:20010508\r\nDTEND;VALUE=DATE:20010509\r\nUID:7AFBF34D-3E4E-4D37-8FD3-4ACEA54C70B3\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Enrico VU (2001)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2001\r\nX-EVOLUTION-CALDAV-ETAG:85915761f906f047acfd60ce3c0f384e\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Enrico VU (2001)\r\nX-EVOLUTION-ALARM-UID:d650e5fd0e49251089028835ed3c96c891e9894f\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'd9680e12537e7cbde2ca76551ef2cf43f9c96b25\n7750aeae55d439bd118e63c678f7bc18521a4275\n1650844800\n1650844800\n1650931200\nBEGIN:VEVENT\r\nDTSTAMP:20220219T081909Z\r\nDTSTART;VALUE=DATE:20000425\r\nDTEND;VALUE=DATE:20000426\r\nUID:f7b57958-ef55-459d-9eff-e1976d6e12b8\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Robbie Cornwall (2000)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2000\r\nX-EVOLUTION-CALDAV-ETAG:7636f873423bbc5a3b9edd65b11e6d04\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Robbie Cornwall (2000)\r\nX-EVOLUTION-ALARM-UID:7750aeae55d439bd118e63c678f7bc18521a4275\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'd9680e12537e7cbde2ca76551ef2cf43f9c96b25\n53c8f2f836350dfea936b2eb923ebfe0b828494f\n1649894400\n1649894400\n1649980800\nBEGIN:VEVENT\r\nDTSTAMP:20220219T081934Z\r\nDTSTART;VALUE=DATE:20010414\r\nDTEND;VALUE=DATE:20010415\r\nUID:278ECCC8-7007-4BED-9FE6-65E640F46015\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Thea UvA (2001)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2001\r\nX-EVOLUTION-CALDAV-ETAG:ef751a8c9b4916175c310df303980c18\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Thea UvA (2001)\r\nX-EVOLUTION-ALARM-UID:53c8f2f836350dfea936b2eb923ebfe0b828494f\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'd9680e12537e7cbde2ca76551ef2cf43f9c96b25\n96702cd6b0f955770dc989d693ca503b2388eef4\n1648425600\n1648425600\n1648512000\nBEGIN:VEVENT\r\nDTSTAMP:20220219T081934Z\r\nDTSTART;VALUE=DATE:20020328\r\nDTEND;VALUE=DATE:20020329\r\nUID:3C09E969-3218-4468-A68B-18FF1ECF4870\r\nRRULE:FREQ=YEARLY\r\nSUMMARY:🎂 Yuri van Dam UvA (2002)\r\nTRANSP:TRANSPARENT\r\nX-NEXTCLOUD-BC-FIELD-TYPE:BDAY\r\nX-NEXTCLOUD-BC-UNKNOWN-YEAR:0\r\nX-NEXTCLOUD-BC-YEAR:2002\r\nX-EVOLUTION-CALDAV-ETAG:1b1928186f547f3be65651fde72d9a65\r\nBEGIN:VALARM\r\nTRIGGER:PT0S\r\nACTION:DISPLAY\r\nDESCRIPTION:🎂 Yuri van Dam UvA (2002)\r\nX-EVOLUTION-ALARM-UID:96702cd6b0f955770dc989d693ca503b2388eef4\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=['']
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -320,7 +325,7 @@ sort-order=0
 
 [org/gnome/mutter]
 edge-tiling=false
-experimental-features=@as []
+experimental-features=['x11-randr-fractional-scaling']
 overlay-key='Super_R'
 
 [org/gnome/mutter/keybindings]
@@ -342,7 +347,7 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(942, 987)
+initial-size=(834, 1019)
 maximized=false
 sidebar-width=189
 
@@ -394,6 +399,11 @@ window-screenshot=@as []
 window-screenshot-clip=@as []
 www=['<Primary>2']
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
+binding='Launch1'
+command='gnome-control-center wifi'
+name='WiFi'
+
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Primary>3'
 command='nautilus'
@@ -402,17 +412,19 @@ name='Launch File Manager'
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
 
-[org/gnome/settings-daemon/plugins/xsettings]
-antialiasing='grayscale'
-hinting='slight'
-
 [org/gnome/shell]
+app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'Pop-Office': <{'position': <4>}>, 'Pop-System': <{'position': <5>}>, 'Pop-Utility': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.gedit.desktop': <{'position': <9>}>, 'gimp.desktop': <{'position': <10>}>, 'htop.desktop': <{'position': <11>}>, 'display-im6.q16.desktop': <{'position': <12>}>, 'remote-viewer.desktop': <{'position': <13>}>, 'org.gnome.tweaks.desktop': <{'position': <14>}>, 'virt-manager.desktop': <{'position': <15>}>, 'virtualbox.desktop': <{'position': <16>}>, 'vim.desktop': <{'position': <17>}>, 'albert.desktop': <{'position': <18>}>, 'input-remapper.desktop': <{'position': <19>}>, 'com.brave.Browser.desktop': <{'position': <20>}>, 'com.visualstudio.code.desktop': <{'position': <21>}>, 'org.signal.Signal.desktop': <{'position': <22>}>}, {'com.obsproject.Studio.desktop': <{'position': <0>}>, 'com.jgraph.drawio.desktop.desktop': <{'position': <1>}>, 'org.gimp.GIMP.desktop': <{'position': <2>}>, 'com.discordapp.Discord.desktop': <{'position': <3>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <4>}>, 'org.audacityteam.Audacity.desktop': <{'position': <5>}>, 'org.DolphinEmu.dolphin-emu.desktop': <{'position': <6>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <7>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <8>}>, 'com.mojang.Minecraft.desktop': <{'position': <9>}>, 'us.zoom.Zoom.desktop': <{'position': <10>}>, 'firefox.desktop': <{'position': <11>}>, 'io.elementary.appcenter.desktop': <{'position': <12>}>, 'gnome-control-center.desktop': <{'position': <13>}>, 'pop-cosmic-applications.desktop': <{'position': <14>}>, 'pop-cosmic-launcher.desktop': <{'position': <15>}>, 'pop-cosmic-workspaces.desktop': <{'position': <16>}>}]
 command-history=['restart']
 disable-user-extensions=false
-disabled-extensions=['forge@jmmaranan.com', 'gnomesome@chwick.github.com', 'unite@hardpixel.eu', 'tidalwm@rustysec.github.io', 'pixel-saver@deadalnix.me']
+disabled-extensions=['']
 enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'sound-output-device-chooser@kgshank.net', 'wireguard-indicator@atareao.es', 'nightthemeswitcher@romainvigier.fr', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'com.spotify.Client.desktop', 'brave-browser.desktop']
 had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='42.0'
+
+[org/gnome/shell/extensions/dash-to-dock]
+extend-height=false
+manualhide=true
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover=false

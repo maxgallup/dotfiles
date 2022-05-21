@@ -1,10 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/extensions/pop-shell/focus-down'
-saved-view='/org/gnome/shell/extensions/pop-shell/focus-down'
+saved-pathbar-path='/org/gnome/desktop/background/picture-uri-dark'
+saved-view='/org/gnome/desktop/background/picture-uri-dark'
 show-warning=false
-window-height=1011
+window-height=972
 window-is-maximized=false
-window-width=1920
+window-width=1680
 
 [com/github/donadigo/eddy]
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
@@ -18,6 +18,7 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
+cached-drivers=@as []
 last-refresh-time=int64 1653114478
 window-maximized=false
 window-position=(846, 34)
@@ -60,7 +61,7 @@ video-x-resolution=960
 video-y-resolution=540
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='keyboard'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -82,6 +83,7 @@ color-shading-type='solid'
 draw-background=false
 picture-options='zoom'
 picture-uri='file:///home/max/dotfiles/pics/monterey-orange.jpg'
+picture-uri-dark='file:///home/max/dotfiles/pics/monterey-orange.jpg'
 primary-color='#000000'
 secondary-color='#000000'
 
@@ -98,8 +100,11 @@ xkb-options=@as []
 [org/gnome/desktop/interface]
 clock-show-seconds=false
 clock-show-weekday=false
+color-scheme='prefer-dark'
 enable-animations=false
 enable-hot-corners=false
+font-antialiasing='grayscale'
+font-hinting='slight'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Pop-dark'
 icon-theme='Pop'
@@ -320,7 +325,7 @@ sort-order=0
 
 [org/gnome/mutter]
 edge-tiling=false
-experimental-features=@as []
+experimental-features=['x11-randr-fractional-scaling']
 overlay-key='Super_R'
 
 [org/gnome/mutter/keybindings]
@@ -342,7 +347,7 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(942, 987)
+initial-size=(834, 1019)
 maximized=false
 sidebar-width=189
 
@@ -394,6 +399,11 @@ window-screenshot=@as []
 window-screenshot-clip=@as []
 www=['<Primary>2']
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
+binding='Launch1'
+command='gnome-control-center wifi'
+name='WiFi'
+
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Primary>3'
 command='nautilus'
@@ -402,17 +412,19 @@ name='Launch File Manager'
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
 
-[org/gnome/settings-daemon/plugins/xsettings]
-antialiasing='grayscale'
-hinting='slight'
-
 [org/gnome/shell]
+app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'Pop-Office': <{'position': <4>}>, 'Pop-System': <{'position': <5>}>, 'Pop-Utility': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.gedit.desktop': <{'position': <9>}>, 'gimp.desktop': <{'position': <10>}>, 'htop.desktop': <{'position': <11>}>, 'display-im6.q16.desktop': <{'position': <12>}>, 'remote-viewer.desktop': <{'position': <13>}>, 'org.gnome.tweaks.desktop': <{'position': <14>}>, 'virt-manager.desktop': <{'position': <15>}>, 'virtualbox.desktop': <{'position': <16>}>, 'vim.desktop': <{'position': <17>}>, 'albert.desktop': <{'position': <18>}>, 'input-remapper.desktop': <{'position': <19>}>, 'com.brave.Browser.desktop': <{'position': <20>}>, 'com.visualstudio.code.desktop': <{'position': <21>}>, 'org.signal.Signal.desktop': <{'position': <22>}>}, {'com.obsproject.Studio.desktop': <{'position': <0>}>, 'com.jgraph.drawio.desktop.desktop': <{'position': <1>}>, 'org.gimp.GIMP.desktop': <{'position': <2>}>, 'com.discordapp.Discord.desktop': <{'position': <3>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <4>}>, 'org.audacityteam.Audacity.desktop': <{'position': <5>}>, 'org.DolphinEmu.dolphin-emu.desktop': <{'position': <6>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <7>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <8>}>, 'com.mojang.Minecraft.desktop': <{'position': <9>}>, 'us.zoom.Zoom.desktop': <{'position': <10>}>, 'firefox.desktop': <{'position': <11>}>, 'io.elementary.appcenter.desktop': <{'position': <12>}>, 'gnome-control-center.desktop': <{'position': <13>}>, 'pop-cosmic-applications.desktop': <{'position': <14>}>, 'pop-cosmic-launcher.desktop': <{'position': <15>}>, 'pop-cosmic-workspaces.desktop': <{'position': <16>}>}]
 command-history=['restart']
 disable-user-extensions=false
-disabled-extensions=[]
+disabled-extensions=['']
 enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'sound-output-device-chooser@kgshank.net', 'wireguard-indicator@atareao.es', 'nightthemeswitcher@romainvigier.fr', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'com.spotify.Client.desktop', 'brave-browser.desktop']
 had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='42.0'
+
+[org/gnome/shell/extensions/dash-to-dock]
+extend-height=false
+manualhide=true
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover=false

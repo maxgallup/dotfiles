@@ -42,7 +42,7 @@
 
     state: latest
   tags: essential
-  
+
 - name: Install Flathub Remote
   flatpak_remote:
     name: flathub
