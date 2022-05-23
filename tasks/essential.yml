@@ -36,6 +36,7 @@
       - libssl-dev
       # IPHONE PHOTOS MOUNT
       - ifuse
+      - tlp
       # PROTON VPN SYS TRAY
       - gnome-shell-extension-appindicator
       - gir1.2-appindicator3-0.1

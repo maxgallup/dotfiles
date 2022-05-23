@@ -87,7 +87,7 @@
 
 - name: Install espanso
   apt:
-    deb: https://github.com/federico-terzi/espanso/releases/download/v2.1.5-beta/espanso-debian-wayland-amd64.deb
+    deb: https://github.com/federico-terzi/espanso/releases/download/v2.1.5-beta/espanso-debian-x11-amd64.deb
   tags: apps
 
 - name: Install Micro
