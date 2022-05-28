@@ -131,9 +131,19 @@
     state: absent
   tags: apps
 
+- name: Install Inkscape (flatpak)
+  flatpak:
+    name: org.inkscape.Inkscape
+  tags: apps
+
 - name: Install drawio (flatpak)
   flatpak:
     name: com.jgraph.drawio.desktop
+  tags: apps
+
+- name: Install Insomnia (flatpak)
+  flatpak:
+    name: rest.insomnia.Insomnia
   tags: apps
 
 - name: Install onlyoffice (flatpak)
