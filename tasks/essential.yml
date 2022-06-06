@@ -40,6 +40,8 @@
       # PROTON VPN SYS TRAY
       - gnome-shell-extension-appindicator
       - gir1.2-appindicator3-0.1
+      # Latex
+      - textlive-latex-base
 
     state: latest
   tags: essential
