@@ -37,23 +37,23 @@
 # --------------------------------------
 # TAILSCALE
 # --------------------------------------
-- name: Tailscale Signing Key
-  shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
-  tags: tailscale
+# - name: Tailscale Signing Key
+#   shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
+#   tags: tailscale
 
-- name: Tailscale Repo
-  shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-  tags: tailscale
+# - name: Tailscale Repo
+#   shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+#   tags: tailscale
 
-- name: Apt Update
-  apt:
-    update_cache: yes
-  tags: tailscale
+# - name: Apt Update
+#   apt:
+#     update_cache: yes
+#   tags: tailscale
 
-- name: Install Tailscale
-  apt:
-    name: tailscale
-  tags: tailscale
+# - name: Install Tailscale
+#   apt:
+#     name: tailscale
+#   tags: tailscale
 
 
 # --------------------------------------
@@ -156,10 +156,10 @@
     name: com.discordapp.Discord
   tags: apps
 
-- name: Install Zoom (flatpak)
-  flatpak:
-    name: us.zoom.Zoom
-  tags: apps
+# - name: Install Zoom (flatpak)
+#   flatpak:
+#     name: us.zoom.Zoom
+#   tags: apps
 
 - name: Install Raspberry Pi Imager (flatpak)
   flatpak:
@@ -196,47 +196,47 @@
 # --------------------------------------
 # DOCKER
 # --------------------------------------
-- name: Add Docker apt-key
-  apt_key:
-    url: https://download.docker.com/linux/ubuntu/gpg
-  tags: 
-    - apps
-    - docker
+# - name: Add Docker apt-key
+#   apt_key:
+#     url: https://download.docker.com/linux/ubuntu/gpg
+#   tags: 
+#     - apps
+#     - docker
 
-- name: Add Docker repo
-  apt_repository:
-    repo: deb https://download.docker.com/linux/ubuntu focal stable
-  tags: 
-    - apps
-    - docker
+# - name: Add Docker repo
+#   apt_repository:
+#     repo: deb https://download.docker.com/linux/ubuntu focal stable
+#   tags: 
+#     - apps
+#     - docker
 
-- name: Install Docker
-  apt:
-    name: 
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-    update_cache: yes
-  tags: 
-    - apps
-    - docker
+# - name: Install Docker
+#   apt:
+#     name: 
+#       - docker-ce
+#       - docker-ce-cli
+#       - containerd.io
+#     update_cache: yes
+#   tags: 
+#     - apps
+#     - docker
 
-- name: Add docker User Permissions
-  shell: "usermod -aG docker {{ user }}"
-  tags: 
-    - apps
-    - docker
+# - name: Add docker User Permissions
+#   shell: "usermod -aG docker {{ user }}"
+#   tags: 
+#     - apps
+#     - docker
 
-- name: Create Bindings Directory
-  file:
-    path: "{{ container_dir }}"
-    state: directory
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0755
-  tags: 
-    - apps
-    - docker
+# - name: Create Bindings Directory
+#   file:
+#     path: "{{ container_dir }}"
+#     state: directory
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0755
+#   tags: 
+#     - apps
+#     - docker
 
 
 

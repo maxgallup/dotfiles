@@ -45,3 +45,6 @@ alias ap='ansible-playbook main.yml'
 
 # rust
 alias cr='cargo run'
+
+# Ghidra
+alias ghidraRun='$HOME/sec/ghidra_10.1.4_PUBLIC_20220519/ghidra_10.1.4_PUBLIC/ghidraRun'

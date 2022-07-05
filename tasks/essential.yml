@@ -42,6 +42,12 @@
       - gir1.2-appindicator3-0.1
       # Latex
       - textlive-latex-base
+      - libxcb-shape0-dev
+      - libxcb-xfixes0-dev
+      - libxcb1-dev
+      - libxkbcommon-dev
+      - libasound2-dev
+      - libudev-dev
 
     state: latest
   tags: essential
