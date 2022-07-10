@@ -189,7 +189,6 @@
 - name: Install Bottles (flatpak)
   flatpak:
     name: com.usebottles.bottles
-    state: absent
   tags: apps
 
 
