@@ -41,13 +41,19 @@
       - gnome-shell-extension-appindicator
       - gir1.2-appindicator3-0.1
       # Latex
+      - pandoc
       - textlive-latex-base
+      - texlive-fonts-recommended
+      - texlive-latex-extra
+      - texlive-extra-utils
       - libxcb-shape0-dev
       - libxcb-xfixes0-dev
       - libxcb1-dev
       - libxkbcommon-dev
       - libasound2-dev
       - libudev-dev
+
+      
 
     state: latest
   tags: essential
