@@ -9,3 +9,8 @@ With this playbook and a clean install of [PopOS 20.04](https://pop.system76.com
 - [ ] remote wget commands replace with ansible alternative
 - [ ] move `~/bin` to `~/.local/bin`
 
+
+# How it works
+When editing the configuration files on your system, Ansible will copy them into the `~/dotfiles` directory when "Updating".
+When you want to update / install your configuration, Ansible will copy everything form `~/dotfiles` into the correct place and create backups.
+
