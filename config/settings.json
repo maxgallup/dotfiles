@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "United Ubuntu",
+    "workbench.colorTheme": "United GNOME",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -20,9 +20,11 @@
     "editor.detectIndentation": false,
     "workbench.preferredDarkColorTheme": "United Ubuntu",
     "workbench.preferredHighContrastLightColorTheme": "Default Light+",
-    "window.autoDetectColorScheme": true,
-    "rust-analyzer.inlayHints.typeHints": false,
-    "rust-analyzer.inlayHints.parameterHints": false,
     "rust-analyzer.inlayHints.enable": false,
-    "window.zoomLevel": 1
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "window.autoDetectColorScheme": true,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false
 }
