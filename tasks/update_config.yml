@@ -1,0 +1,19 @@
+---
+
+- name: Copy ~/.* files into .home
+  copy:
+    src: "{{home}}/{{item}}"
+    dest: "{{home}}/dotfiles/homefiles/"
+    owner: "{{user}}" 
+    group: "{{user}}"
+    mode: 0775
+  loop: "{{ home_files }}"
+
+- name: Copy ~/.config/* files into .config
+  debug:
+    msg: "{{item}}"
+  loop: "{{config_dirs}}" 
+
+
+  # debug:
+  #   msg: "{{home}}/{{item}}"

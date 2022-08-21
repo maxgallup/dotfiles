@@ -1,0 +1,7 @@
+[user]
+	name = maxgallup
+	email = m.gallup@student.vu.nl
+	signingkey = 4E36804CD5B29664
+
+[commit]
+	gpgsign = true

@@ -1,6 +1,29 @@
 ---
 
 user: max
-home: /home/max
+home: "{{ansible_env.HOME}}"
 
 container_dir: /opt/docker
+
+home_files:
+  - ".bashrc"
+  - ".bash_aliases"
+  - ".bash_logout"
+  - ".profile"
+  - ".gitconfig"
+
+config_dirs:
+ - "alacritty"  
+ - "autostart" 
+ - "espanso"  
+ - "input-remapper" 
+ - "nvim"  
+ - "albert" 
+ - "Code"  
+ - "gtk-2.0"  
+ - "gtk-3.0"  
+ - "gtk-4.0" 
+ - "lvim"  
+ - "tmux" 
+ 
+ 

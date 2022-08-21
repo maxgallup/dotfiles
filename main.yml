@@ -1,13 +1,13 @@
 ---
 
 - hosts: all
-  become: yes
 
   tasks:
-    - import_tasks: tasks/uninstall.yml
-    - import_tasks: tasks/essential.yml
-    - import_tasks: tasks/copy_config.yml
-    - import_tasks: tasks/dconf_settings.yml
-    - import_tasks: tasks/applications.yml
+    - import_tasks: tasks/update_config.yml
+    # - import_tasks: tasks/uninstall.yml
+    # - import_tasks: tasks/essential.yml
+    # - import_tasks: tasks/copy_config.yml
+    # - import_tasks: tasks/dconf_settings.yml
+    # - import_tasks: tasks/applications.yml
 
 
