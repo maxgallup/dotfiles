@@ -8,6 +8,8 @@
     group: "{{user}}"
     mode: 0775
   loop: "{{ home_files }}"
+  tags:
+    - update
 
 - name: "Copy {{config_dirs}} files into config"
   copy:
@@ -17,6 +19,8 @@
     group: "{{user}}"
     mode: 0775
   loop: "{{config_dirs}}"
+  tags:
+    - update
 
 
 

@@ -13,7 +13,7 @@ home_files:
   - ".gitconfig"
 
 config_dirs:
- - "alacritty"
+ - "alacritty/"
  - "autostart"
  - "espanso"
  - "input-remapper"

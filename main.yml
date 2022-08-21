@@ -3,7 +3,8 @@
 - hosts: all
 
   tasks:
-    - import_tasks: tasks/update_config.yml
+    - import_tasks: tasks/config_update.yml
+    - import_tasks: tasks/config_install.yml
     # - import_tasks: tasks/uninstall.yml
     # - import_tasks: tasks/essential.yml
     # - import_tasks: tasks/copy_config.yml

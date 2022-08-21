@@ -1,6 +1,6 @@
 ---
   
-- name: "Copy homesfiles/* files into ~/"
+- name: "Install homefiles into {{home}}"
   copy:
     src: "{{home}}/dotfiles/homefiles/{{item}}"
     dest: "{{home}}/"
@@ -8,14 +8,19 @@
     group: "{{user}}"
     mode: 0775
   loop: "{{ home_files }}"
+  tags:
+    - install
 
-- name: "Copy {{config_dirs}} files into config"
+- name: "Install config files into {{home}}/.config"
   copy:
     src: "{{home}}/dotfiles/config/{{item}}"
-    dest: "{{home}}/.config/"
+    dest: "{{home}}/.config/{{item}}"
     owner: "{{user}}" 
     group: "{{user}}"
     mode: 0775
   loop: "{{config_dirs}}"
+  tags:
+    - install
+
 
 
