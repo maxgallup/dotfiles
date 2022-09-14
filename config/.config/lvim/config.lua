@@ -39,7 +39,16 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+vim.keymap.set("i", "jk", "<esc> :w <cr>")
+
+
+
 -- vim.keymap.set("n", "<C-n>", ":vsplit<cr>")
+
+
+lvim.builtin.which_key.mappings["u"] = {
+  "<cmd>ASToggle<cr>", "Toggle AutoSave"
+}
 
 lvim.builtin.which_key.mappings["j"] = {
   "<cmd>NvimTreeToggle<cr><cmd>NvimTreeRefresh<cr>", "Explorer"
@@ -47,6 +56,10 @@ lvim.builtin.which_key.mappings["j"] = {
 
 lvim.builtin.which_key.mappings[" "] = {
   "<cmd>:b#<cr>", "Previously Used Buffer"
+}
+
+lvim.builtin.which_key.mappings["i"] = {
+  "<cmd>:set wrap!<cr>", "Toggle Line-wrap"
 }
 
 -- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle <cr> <bar> :NvimTreeRefresh <cr>")
@@ -89,8 +102,10 @@ lvim.builtin.notify.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
+-- lvim.builtin.terminal.direction = "float"
 lvim.builtin.terminal.direction = "vertical"
-lvim.builtin.terminal.size = 70
+lvim.builtin.terminal.open_mapping = "<c-j>"
+lvim.builtin.terminal.size = 80
 lvim.builtin.terminal.active = true
 
 
@@ -210,7 +225,9 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-  { "Pocco81/auto-save.nvim" },
+  {
+    "Pocco81/auto-save.nvim",
+  },
   { "mg979/vim-visual-multi" },
   -- { "vladdoster/remember.nvim" }
   -- {"folke/tokyonight.nvim"},
@@ -218,7 +235,6 @@ lvim.plugins = {
   --   "folke/trouble.nvim",
   --   cmd = "TroubleToggle",
   -- },
-
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
