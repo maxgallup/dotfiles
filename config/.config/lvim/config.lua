@@ -62,6 +62,9 @@ lvim.builtin.which_key.mappings["i"] = {
   "<cmd>:set wrap!<cr>", "Toggle Line-wrap"
 }
 
+
+
+
 -- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle <cr> <bar> :NvimTreeRefresh <cr>")
 -- lvim.keys.normal_mode["<leader>"]
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
@@ -109,6 +112,14 @@ lvim.builtin.terminal.size = 80
 lvim.builtin.terminal.active = true
 
 
+-- function toggle_terminal_position()
+--   if lvim.builtin.terminal.direction == "float"
+--   then
+--     lvim.builtin.terminal.direction = "vertical"
+--   else
+--     lvim.builtin.terminal.direction = "float"
+--   end
+-- end
 
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
