@@ -23,6 +23,7 @@ filetypes=(
 "text/x-tcl"
 "text/x-tex"
 "text/xml"
+"text/markdown"
 "application/javascript"
 "application/x-cgi"
 "application/x-javascript"

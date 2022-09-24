@@ -41,7 +41,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 vim.keymap.set("i", "jk", "<esc> :w <cr>")
 
-
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.showtabline = 4
 
 -- vim.keymap.set("n", "<C-n>", ":vsplit<cr>")
 
@@ -105,8 +107,8 @@ lvim.builtin.notify.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
--- lvim.builtin.terminal.direction = "float"
-lvim.builtin.terminal.direction = "vertical"
+lvim.builtin.terminal.direction = "float"
+-- lvim.builtin.terminal.direction = "vertical"
 lvim.builtin.terminal.open_mapping = "<c-j>"
 lvim.builtin.terminal.size = 80
 lvim.builtin.terminal.active = true
