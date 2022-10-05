@@ -3,7 +3,7 @@ Name=LunarVim
 GenericName=Text Editor
 Comment=Edit text files
 TryExec=lvim
-Exec=alacritty -e lvim %F
+Exec=x-terminal-emulator -e lvim %F
 Terminal=false
 Type=Application
 Keywords=Text;editor;
@@ -14,4 +14,4 @@ MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;tex
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
-Exec=alacritty -e lvim %F
+Exec=x-terminal-emulator -e lvim %F

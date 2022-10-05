@@ -49,19 +49,19 @@ vim.opt.showtabline = 4
 
 
 lvim.builtin.which_key.mappings["u"] = {
-  "<cmd>ASToggle<cr>", "Toggle AutoSave"
+    "<cmd>ASToggle<cr>", "Toggle AutoSave"
 }
 
 lvim.builtin.which_key.mappings["j"] = {
-  "<cmd>NvimTreeToggle<cr><cmd>NvimTreeRefresh<cr>", "Explorer"
+    "<cmd>NvimTreeToggle<cr><cmd>NvimTreeRefresh<cr>", "Explorer"
 }
 
 lvim.builtin.which_key.mappings[" "] = {
-  "<cmd>:b#<cr>", "Previously Used Buffer"
+    "<cmd>:b#<cr>", "Previously Used Buffer"
 }
 
 lvim.builtin.which_key.mappings["i"] = {
-  "<cmd>:set wrap!<cr>", "Toggle Line-wrap"
+    "<cmd>:set wrap!<cr>", "Toggle Line-wrap"
 }
 
 
@@ -103,7 +103,6 @@ lvim.builtin.which_key.mappings["i"] = {
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.notify.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
@@ -124,13 +123,13 @@ lvim.builtin.terminal.active = true
 -- end
 
 function _G.set_terminal_keymaps()
-  local opts = { buffer = 0 }
-  -- vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
-  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
-  vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-  vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-  vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
-  vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+    local opts = { buffer = 0 }
+    -- vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+    vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+    vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+    vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+    vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+    vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
@@ -140,25 +139,24 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
+    "bash",
+    "c",
+    "javascript",
+    "json",
+    "lua",
+    "python",
+    "typescript",
+    "tsx",
+    "css",
+    "rust",
+    "java",
+    "yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
-
-
+lvim.builtin.notify.active = false
 
 
 -- generic LSP settings
@@ -238,16 +236,16 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-  {
-    "Pocco81/auto-save.nvim",
-  },
-  { "mg979/vim-visual-multi" },
-  -- { "vladdoster/remember.nvim" }
-  -- {"folke/tokyonight.nvim"},
-  -- {
-  --   "folke/trouble.nvim",
-  --   cmd = "TroubleToggle",
-  -- },
+    {
+        "Pocco81/auto-save.nvim",
+    },
+    { "mg979/vim-visual-multi" },
+    -- { "vladdoster/remember.nvim" }
+    -- {"folke/tokyonight.nvim"},
+    -- {
+    --   "folke/trouble.nvim",
+    --   cmd = "TroubleToggle",
+    -- },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
