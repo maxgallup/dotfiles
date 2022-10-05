@@ -1,60 +1,60 @@
 ---
 
-- name: Copying ~/bin
-  copy:
-    src: "{{ item }}"
-    dest: "{{ home }}/bin/"
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0775
-  loop: "{{ lookup('fileglob', '../bin/*', wantlist=True) }}"
-  tags: 
-    - copy
-    - bin
+# - name: Copying ~/bin
+#   copy:
+#     src: "{{ item }}"
+#     dest: "{{ home }}/bin/"
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0775
+#   loop: "{{ lookup('fileglob', '../bin/*', wantlist=True) }}"
+#   tags: 
+#     - copy
+#     - bin
 
-- name: Copying ~/.config
-  shell: ls .config
-  register: config_dirs
-  tags: 
-    - copy 
-    - config 
-  
+# - name: Copying ~/.config
+#   shell: ls .config
+#   register: config_dirs
+#   tags: 
+#     - copy 
+#     - config 
+#   
 
-- name: Copying ~/.config
-  copy:
-    src: "../.config/{{ item }}"
-    dest: "{{ home }}/.config/"
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0775
-  loop: "{{ config_dirs.stdout_lines }}"
-  tags: 
-    - copy
-    - config
+# - name: Copying ~/.config
+#   copy:
+#     src: "../.config/{{ item }}"
+#     dest: "{{ home }}/.config/"
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0775
+#   loop: "{{ config_dirs.stdout_lines }}"
+#   tags: 
+#     - copy
+#     - config
 
-- name: Copying .bash files
-  copy:
-    src: "{{ item }}"
-    dest: "{{ home }}"
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0775
-  loop: "{{ lookup('fileglob', '../.bashfiles/.*', wantlist=True) }}"
-  tags: 
-    - copy
-    - bash
+# - name: Copying .bash files
+#   copy:
+#     src: "{{ item }}"
+#     dest: "{{ home }}"
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0775
+#   loop: "{{ lookup('fileglob', '../.bashfiles/.*', wantlist=True) }}"
+#   tags: 
+#     - copy
+#     - bash
 
-- name: Copying defaults.list
-  copy:
-    src: "../misc/defaults.list"
-    dest: "/etc/gnome/applications/"
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0644
-  tags: copy
+# - name: Copying defaults.list
+#   copy:
+#     src: "../misc/defaults.list"
+#     dest: "/etc/gnome/applications/"
+#     owner: "{{ user }}"
+#     group: "{{ user }}"
+#     mode: 0644
+#   tags: copy
 
 
-- name: Make sure VSCode opens directories
-  shell: xdg-mime default code.desktop inode/desktop
-  tags: copy
+# - name: Make sure VSCode opens directories
+#   shell: xdg-mime default code.desktop inode/desktop
+#   tags: copy
 

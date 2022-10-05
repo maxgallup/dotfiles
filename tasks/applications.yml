@@ -1,80 +1,29 @@
 ---
 
-# --------------------------------------
-# BRAVE
-# --------------------------------------
-- name: "brave-browser dependencies"
-  apt:
-    name:
-      - apt-transport-https
-      - curl
-  tags: apps
-
-- name: "brave-browser gpg key"
-  shell: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-  tags: apps
-
-- name: "brave-browser add apt repo"
-  copy:
-    src: "../misc/brave-browser-release.list"
-    dest: "/etc/apt/sources.list.d/"
-    owner: root
-    group: root
-    mode: 0644
-  tags: apps
-
-- name: "brave-browser apt update"
-  apt:
-    update_cache: yes
-  tags: apps
-
-- name: "brave-browser install"
-  apt:
-    name: "brave-browser"
-  tags: apps
 
 
-# --------------------------------------
-# TAILSCALE
-# --------------------------------------
-# - name: Tailscale Signing Key
-#   shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key add -
-#   tags: tailscale
 
-# - name: Tailscale Repo
-#   shell: curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-#   tags: tailscale
+# ----------------------
+# deb-get installs
+# ----------------------
 
-# - name: Apt Update
-#   apt:
-#     update_cache: yes
-#   tags: tailscale
-
-# - name: Install Tailscale
-#   apt:
-#     name: tailscale
-#   tags: tailscale
-
-
-# --------------------------------------
-# VSCODE
-# --------------------------------------
-- name: Download VSCode key
-  shell: wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-  tags: apps
-
-- name: Install VSCode key
-  shell: install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-  tags: apps
-
-- name: Install VSCode .list file
-  shell: sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list' && rm -f packages.microsoft.gpg
-  tags: apps
-
-- name: Install VSCode
-  apt:
-    name: code
-  tags: apps
+- name: Install Apps available through deb-get
+  shell: "deb-get install {{item}}"
+  with_items:
+    - "brave-browser"
+    - "code"
+    - "discord"
+    - "docker-ce"
+    - "franz"
+    - "neovim"
+    - "obs-studio"
+    - "pandoc"
+    - "protonvpn"
+    - "rpi-imager"
+    - "signal-desktop"
+    - "spotify-client"
+    - "tailscale"
+    - "virtualbox-6.1" 
 
 
 # --------------------------------------
@@ -90,16 +39,6 @@
     deb: https://github.com/federico-terzi/espanso/releases/download/v2.1.5-beta/espanso-debian-x11-amd64.deb
   tags: apps
 
-- name: Install Micro
-  apt:
-    deb: https://github.com/zyedidia/micro/releases/download/v2.0.10/micro-2.0.10-amd64.deb
-  tags: apps
-
-- name: Install Protonvpn
-  apt:
-    deb: https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
-  tags: apps
-
 - name: Install input-remapper
   apt:
     deb: https://github.com/sezanzeb/input-remapper/releases/download/1.4.2/input-remapper-1.4.2.deb
@@ -109,28 +48,6 @@
 # --------------------------------------
 # FLATPAK INSTALLS
 # --------------------------------------
-
-- name: Install Signal (flatpak)
-  flatpak:
-    name: org.signal.Signal
-  tags: apps
-
-- name: Install Spotify (flatpak)
-  flatpak:
-    name: com.spotify.Client
-  tags: apps
-
-- name: Install OBS (flatpak)
-  flatpak:
-    name: com.obsproject.Studio
-  tags: apps
-
-- name: Install GIMP (flatpak)
-  flatpak:
-    name: org.gimp.GIMP
-    state: absent
-  tags: apps
-
 - name: Install Inkscape (flatpak)
   flatpak:
     name: org.inkscape.Inkscape
@@ -149,21 +66,6 @@
 - name: Install onlyoffice (flatpak)
   flatpak:
     name: org.onlyoffice.desktopeditors
-  tags: apps
-
-- name: Install Discord (flatpak)
-  flatpak:
-    name: com.discordapp.Discord
-  tags: apps
-
-# - name: Install Zoom (flatpak)
-#   flatpak:
-#     name: us.zoom.Zoom
-#   tags: apps
-
-- name: Install Raspberry Pi Imager (flatpak)
-  flatpak:
-    name: org.raspberrypi.rpi-imager
   tags: apps
 
 - name: Install Gnome Extension Manager (flatpak)
@@ -190,52 +92,6 @@
   flatpak:
     name: com.usebottles.bottles
   tags: apps
-
-
-# --------------------------------------
-# DOCKER
-# --------------------------------------
-# - name: Add Docker apt-key
-#   apt_key:
-#     url: https://download.docker.com/linux/ubuntu/gpg
-#   tags: 
-#     - apps
-#     - docker
-
-# - name: Add Docker repo
-#   apt_repository:
-#     repo: deb https://download.docker.com/linux/ubuntu focal stable
-#   tags: 
-#     - apps
-#     - docker
-
-# - name: Install Docker
-#   apt:
-#     name: 
-#       - docker-ce
-#       - docker-ce-cli
-#       - containerd.io
-#     update_cache: yes
-#   tags: 
-#     - apps
-#     - docker
-
-# - name: Add docker User Permissions
-#   shell: "usermod -aG docker {{ user }}"
-#   tags: 
-#     - apps
-#     - docker
-
-# - name: Create Bindings Directory
-#   file:
-#     path: "{{ container_dir }}"
-#     state: directory
-#     owner: "{{ user }}"
-#     group: "{{ user }}"
-#     mode: 0755
-#   tags: 
-#     - apps
-#     - docker
 
 
 
