@@ -20,6 +20,7 @@
       - gnome-tweaks
       - dconf-editor
       - curl
+      - stow
       # VIRTUALIZATION
       # - virt-manager
       # - virtualbox
