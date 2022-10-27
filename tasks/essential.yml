@@ -1,64 +1,14 @@
 ---
 
 - name: Update and Upgrade
+  become: yes
   apt:
     update_cache: yes
     upgrade: yes
   tags: essential
 
-- name: Installing Essential Packages
-  apt:
-    name:
-      # BASICS
-      - vim
-      - htop
-      - neofetch
-      - tmux
-      - gimp
-      - whois
-      - flatpak
-      - pandoc
-      - android-sdk-platform-tools-common
-      # GNOME
-      - gnome-tweaks
-      - dconf-editor
-      - gnome-tweaks
-      # VIRTUALIZATION
-      - virt-manager
-      - virtualbox
-      - qemu-kvm
-      # LINUX UTILS
-      - libvirt-daemon-system
-      - libvirt-clients
-      - bridge-utils
-      - x11-utils
-      - build-essential
-      - libssl-dev
-      # IPHONE PHOTOS MOUNT
-      - ifuse
-      - tlp
-      # PROTON VPN SYS TRAY
-      - gnome-shell-extension-appindicator
-      - gir1.2-appindicator3-0.1
-      # Latex
-      - pandoc
-      - textlive-latex-base
-      - texlive-fonts-recommended
-      - texlive-latex-extra
-      - texlive-extra-utils
-      - libxcb-shape0-dev
-      - libxcb-xfixes0-dev
-      - libxcb1-dev
-      - libxkbcommon-dev
-      - libasound2-dev
-      - libudev-dev
-
-      
-
-    state: latest
-  tags: essential
-
 - name: Install Flathub Remote
+  become: yes
   flatpak_remote:
     name: flathub
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo

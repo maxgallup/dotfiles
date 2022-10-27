@@ -1,12 +1,65 @@
 ---
 
+# ----------------------
+# apt-get installs
+# ----------------------
+- name: Installing software through apt
+  become: yes
+  apt:
+    name:
+      # Apps
+      - vim
+      - htop
+      - neofetch
+      - tmux
+      - gimp
+      - whois
+      - vlc
+      - flatpak
+      # - android-sdk-platform-tools-common
+      - gnome-tweaks
+      - dconf-editor
+      - curl
+      # VIRTUALIZATION
+      # - virt-manager
+      # - virtualbox
+      # - qemu-kvm
+      # - libvirt-daemon-system
+      # - libvirt-clients
+      # - bridge-utils
+      - x11-utils
+      - build-essential
+      - libssl-dev
+      # IPHONE MEDIA
+      # - ifuse
+      # - tlp
+      # PROTON VPN SYS TRAY
+      # - gnome-shell-extension-appindicator
+      # - gir1.2-appindicator3-0.1
+      # LATEX
+      - pandoc
+      - texlive-fonts-recommended
+      - texlive-latex-extra
+      - texlive-extra-utils
+      - libxcb-shape0-dev
+      - libxcb-xfixes0-dev
+      - libxcb1-dev
+      - libxkbcommon-dev
+      - libasound2-dev
+      - libudev-dev
+    state: latest
+  tags: apps
 
-
+# ----------------------
+# install deb-get
+# ----------------------
+- name: Install deb-get
+  shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
+  tags: apps
 
 # ----------------------
 # deb-get installs
 # ----------------------
-
 - name: Install Apps available through deb-get
   shell: "deb-get install {{item}}"
   with_items:
@@ -14,7 +67,8 @@
     - "code"
     - "discord"
     - "docker-ce"
-    - "franz"
+    - "draw.io"
+    - "insomnia"
     - "neovim"
     - "obs-studio"
     - "pandoc"
@@ -23,77 +77,37 @@
     - "signal-desktop"
     - "spotify-client"
     - "tailscale"
-    - "virtualbox-6.1" 
+    - "virtualbox-6.1"
+  tags: apps
 
 
 # --------------------------------------
 # Downloaded .deb installs
 # --------------------------------------
-- name: Install albert
+- name: Install .debs
   apt:
-    deb: https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.2-0_amd64.deb
-  tags: apps
-
-- name: Install espanso
-  apt:
-    deb: https://github.com/federico-terzi/espanso/releases/download/v2.1.5-beta/espanso-debian-x11-amd64.deb
-  tags: apps
-
-- name: Install input-remapper
-  apt:
-    deb: https://github.com/sezanzeb/input-remapper/releases/download/1.4.2/input-remapper-1.4.2.deb
+    deb: "{{item}}"
+  with_items:
+    - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
+    - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
+    - "https://github.com/sezanzeb/input-remapper/releases/download/1.5.0/input-remapper-1.5.0_all.deb"
   tags: apps
 
 
 # --------------------------------------
 # FLATPAK INSTALLS
 # --------------------------------------
-- name: Install Inkscape (flatpak)
+- name: Flatpak Installs
   flatpak:
-    name: org.inkscape.Inkscape
+    name: "{{item}}"
+  with_items:
+    - "org.inkscape.Inkscape"
+    - "com.mattjakeman.ExtensionManager"
+    - "org.DolphinEmu.dolphin-emu"
+    - "com.mojang.Minecraft"
+    - "org.audacityteam.Audacity"
+    - "com.usebottles.bottles"
   tags: apps
-
-- name: Install drawio (flatpak)
-  flatpak:
-    name: com.jgraph.drawio.desktop
-  tags: apps
-
-- name: Install Insomnia (flatpak)
-  flatpak:
-    name: rest.insomnia.Insomnia
-  tags: apps
-
-- name: Install onlyoffice (flatpak)
-  flatpak:
-    name: org.onlyoffice.desktopeditors
-  tags: apps
-
-- name: Install Gnome Extension Manager (flatpak)
-  flatpak:
-    name: com.mattjakeman.ExtensionManager
-  tags: apps
-
-- name: Install Dolphin Emulator (flatpak)
-  flatpak:
-    name: org.DolphinEmu.dolphin-emu
-  tags: apps
-
-- name: Install Minecraft (flatpak)
-  flatpak:
-    name: com.mojang.Minecraft
-  tags: apps
-
-- name: Install Audacity (flatpak)
-  flatpak:
-    name: org.audacityteam.Audacity
-  tags: apps
-
-- name: Install Bottles (flatpak)
-  flatpak:
-    name: com.usebottles.bottles
-  tags: apps
-
-
 
 # --------------------------------------
 # Clean Up
