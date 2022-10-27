@@ -4,3 +4,9 @@
   shell: dconf load / < misc/dconf-settings
   tags:
     - configure
+
+- name: Add config files using GNU Stow
+  shell: ./scripts/stow-update.sh
+  tags:
+    - configure
+

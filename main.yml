@@ -4,8 +4,8 @@
   become: yes
   tasks:
     - import_tasks: tasks/uninstall.yml
+    - import_tasks: tasks/configure.yml
     - import_tasks: tasks/essential.yml
     - import_tasks: tasks/applications.yml
-    - import_tasks: tasks/configure.yml
 
 
