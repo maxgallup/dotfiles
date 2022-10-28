@@ -11,6 +11,12 @@
     state: directory
     mode: '0755'
 
+- name: Create bin directory
+  file:
+    path: "{{home}}/.config/Code/User/"
+    state: directory
+    mode: '0755'
+      
 - name: Add config files using GNU Stow
   shell: ./scripts/stow-update.sh
   tags:
