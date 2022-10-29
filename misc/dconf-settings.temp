@@ -39,12 +39,12 @@ height=987
 width=942
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/background/picture-uri-dark'
-saved-view='/org/gnome/desktop/background/'
+saved-pathbar-path='/org/gnome/shell/extensions/pop-shell/'
+saved-view='/org/gnome/shell/extensions/pop-shell/'
 show-warning=false
 window-height=987
 window-is-maximized=false
-window-width=1896
+window-width=942
 
 [com/github/donadigo/eddy]
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
@@ -61,8 +61,8 @@ mode='hidpi'
 cached-drivers=@as []
 last-refresh-time=int64 1666864642
 window-maximized=false
-window-position=(12, 34)
-window-size=(1896, 1034)
+window-position=(966, 34)
+window-size=(942, 1034)
 
 [org/gnome/Geary]
 folder-list-pane-position-horizontal=100
@@ -101,7 +101,7 @@ video-x-resolution=960
 video-y-resolution=540
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='upgrade'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -155,7 +155,7 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-nautilus', 'io-elementary-appcenter', 'ulauncher', 'gnome-printers-panel', 'gnome-control-center', 'com-github-donadigo-eddy', 'signal-desktop', 'spotify', 'gnome-network-panel', 'discord', 'org-gnome-baobab', 'element-desktop', 'gnome-power-panel', 'org-pop-os-transition', 'org-signal-signal', 'org-gnome-evolution-alarm-notify', 'org-gnome-extensions-desktop', 'org-gnome-chromegnomeshell', 'org-gnome-gedit', 'libreoffice-writer', 'org-gnome-eog', 'org-gnome-terminal', 'org-gnome-fileroller', 'xdg-desktop-portal-gnome', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-totem', 'us-zoom-zoom', 'org-gnome-shell-extensions-gsconnect-preferences', 'albert', 'org-gnome-geary', 'brave-browser', 'gimp', 'com-spotify-client', 'com-alacritty-alacritty', 'org-shotcut-shotcut', 'rstudio', 'vlc']
+application-children=['org-gnome-nautilus', 'io-elementary-appcenter', 'ulauncher', 'gnome-printers-panel', 'gnome-control-center', 'com-github-donadigo-eddy', 'signal-desktop', 'spotify', 'gnome-network-panel', 'discord', 'org-gnome-baobab', 'element-desktop', 'gnome-power-panel', 'org-pop-os-transition', 'org-signal-signal', 'org-gnome-evolution-alarm-notify', 'org-gnome-extensions-desktop', 'org-gnome-chromegnomeshell', 'org-gnome-gedit', 'libreoffice-writer', 'org-gnome-eog', 'org-gnome-terminal', 'org-gnome-fileroller', 'xdg-desktop-portal-gnome', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-totem', 'us-zoom-zoom', 'org-gnome-shell-extensions-gsconnect-preferences', 'albert', 'org-gnome-geary', 'brave-browser', 'gimp', 'com-spotify-client', 'com-alacritty-alacritty', 'org-shotcut-shotcut', 'rstudio', 'vlc', 'firefox']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -184,6 +184,9 @@ application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/element-desktop]
 application-id='element-desktop.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gimp]
 application-id='gimp.desktop'
@@ -468,7 +471,7 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1896, 1034)
+initial-size=(1262, 1554)
 maximized=false
 sidebar-width=189
 
@@ -667,19 +670,18 @@ workspace-active-tile-toggle=@as []
 
 [org/gnome/shell/extensions/gsconnect]
 debug=false
-devices=['e8a9e2857f47c1c4', 'DDF9E159E19C426399025EB5BFFC660F']
-enabled=true
+devices=@as []
+enabled=false
 id='11ac8bca-b4e0-4d37-a100-d690a752c0f3'
 name='pop'
 show-indicators=false
 
 [org/gnome/shell/extensions/gsconnect/device/DDF9E159E19C426399025EB5BFFC660F]
-certificate-pem='-----BEGIN CERTIFICATE-----\nMIIDEjCCAfoCAQowDQYJKoZIhvcNAQEEBQAwTzEUMBIGA1UECwwLS2RlIGNvbm5l\nY3QxDDAKBgNVBAoMA0tERTEpMCcGA1UEAwwgRERGOUUxNTlFMTlDNDI2Mzk5MDI1\nRUI1QkZGQzY2MEYwHhcNMjIwNTEwMTgwNzA3WhcNMjMwNTEwMTgwNzA3WjBPMRQw\nEgYDVQQLDAtLZGUgY29ubmVjdDEMMAoGA1UECgwDS0RFMSkwJwYDVQQDDCBEREY5\nRTE1OUUxOUM0MjYzOTkwMjVFQjVCRkZDNjYwRjCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBAKc+xuI8cLINW2rUZOQTDdQPDvMM54uhkiJmkJGZ1oC1Lqke\nIUHD5jzEahKjYlNNzd1z9U+GT77UQwDSMD9FkyustcRMmGrleKDpMQ/tu30OSWe8\n19Yx4TBiCQWX9LULgsuK3zlqkzjU5frCr/L1YWCUe3u+mXZPzgvi6r2R2tRy83HC\nJmKfJ2zLGT7t1D5AX0RvORLUkgsNXXpTpjh/iXpjxWEY274TyfZPr5AcNyYZLvkl\nONqHlPu8Zhq5Eg8DMcaixhVkBxP+HnODq2CtnSqYZ8R+PooxkonGfZsSYw2S2S5I\ngiQmp9I7R8Ihn2jaBs3w5tvx24A8Tzd9X75JBdcCAwEAATANBgkqhkiG9w0BAQQF\nAAOCAQEAkvYd2v8a4aQyu7Si5IJ7vZVsaEbP+dyeY3KvqbwrXusGqD7VcEZWVK/L\n/p0IrULuEY0f449BLpLZw2et7RLlsh/kze7bp/zJoBiTKxsI2485GYIGrPokX+Mx\nsiK1ZmLbpGtEszFR2vuQsowGzhXVCQ4+aFjngRAQ6uX8UnJetDjuQiVry20i7BIz\nEtrsHEpZfrHA2keZnmFLuT/R1Cu0hAN33qu0YWFCtHfBW/tI87a+JaxyOWfzsNgy\ntAOEfGWSO3dkcBcHMT9ybq3yiMtI7hhirdq72QsPjyVBG2IIYgiNNkNRdDTqNpF0\nBWiOEpeXfq+KIE4fsYPiLpDt6bge7A==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.share.request']
 last-connection='lan://192.168.1.65:1716'
 name='🌝'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.share.request']
-paired=true
+paired=false
 supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'ping', 'presenter', 'runcommand', 'share']
 type='phone'
 
@@ -697,12 +699,11 @@ applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm
 receive-directory='/home/max/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/e8a9e2857f47c1c4]
-certificate-pem='-----BEGIN CERTIFICATE-----\nMIIC9zCCAd+gAwIBAgIBATANBgkqhkiG9w0BAQsFADA/MRkwFwYDVQQDDBBlOGE5\nZTI4NTdmNDdjMWM0MRQwEgYDVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RF\nMB4XDTIxMDYwNDIyMDAwMFoXDTMxMDYwNDIyMDAwMFowPzEZMBcGA1UEAwwQZThh\nOWUyODU3ZjQ3YzFjNDEUMBIGA1UECwwLS0RFIENvbm5lY3QxDDAKBgNVBAoMA0tE\nRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANk3LNCCqCGh+WpHtZON\ns1yAsvFWVuc08PROCcNBaOqepu22Gb998OQ9w7MHZfXy3i7yc5xd8tBL8R51fiq/\n3JUWHyTB8O7i4mKN4H164P3nKG44wceePOines0lF07Wws4M+P8QjM1LerK6COnB\nFPSgm6mmDLQaGCwxDylC/GYnZn1VbiR2WhPKDvj1MW9qTEFQLA3CDJHxifjLONQ4\nae11H4KJIo34kYWzY476gQt/G3mlB6W7BEeVdZsyO7FrY8LqxWUOm3ojlBy5kHY4\nP27jyduPbNqL4KD+UWWJKZapGDLNrhjHUFvjjZ+7hFmh8FlTa0807W+EWmZw1cxT\nl+8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAmr2bmm8ubyU+S4rOx27DMA8OkU7O\n9P2pk24lbr9D/zlpbQbYd7VDyDCgdlbEGU+sAtcW4JxTOJrcPl1ZMiS9rynSUKiQ\n05W172nfPwW15oENEoHbsmnlPu5mJjBD91evMrLng5BvflMqZf534B0TT3Pr6PIZ\nOnB2QpJNFb4VC/uftKGFQGtzARP1L8hYGAAyUOrzVfQy03Bs0PU0TykmqAChK+XH\n/PM22eg1K5tDBxJsdxbGlTQ0atjm7JAiNPTToeRdE4RfF1Cckfow2/V3X9uZu2RC\nRk1XrAwHXEsNgjzL3MGAGDywdVD8BvN73qW7ARfmxnwlon8j0ts69NgyjA==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report.request', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.photo.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
 last-connection='lan://192.168.1.175:1716'
 name='Pixel 3a'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.photo', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
-paired=true
+paired=false
 supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'photo', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
 type='phone'
 
@@ -731,7 +732,7 @@ share-sinks=false
 
 [org/gnome/shell/extensions/gsconnect/preferences]
 window-maximized=false
-window-size=(942, 464)
+window-size=(1896, 987)
 
 [org/gnome/shell/extensions/materialshell/layouts]
 default-layout='half-vertical'
@@ -921,7 +922,7 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=162
-sort-column='modified'
+sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
@@ -942,7 +943,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(798, 164)
+window-position=(412, 164)
 window-size=(1096, 726)
 
 [org/virt-manager/virt-manager]

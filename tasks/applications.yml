@@ -18,6 +18,7 @@
       - flatpak
       # - android-sdk-platform-tools-common
       - gnome-tweaks
+      - gnome-sushi
       - dconf-editor
       - curl
       - stow
@@ -75,6 +76,7 @@
     - "obs-studio"
     - "pandoc"
     - "protonvpn"
+    - "portmaster"
     - "rpi-imager"
     - "signal-desktop"
     - "spotify-client"
