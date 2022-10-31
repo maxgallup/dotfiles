@@ -4,4 +4,5 @@
 
 code --install-extension rust-lang.rust
 code --install-extension rdnlsmith.linux-themes
+code --install-extension tomoki1207.pdf
 
