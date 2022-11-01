@@ -22,6 +22,13 @@
       - dconf-editor
       - curl
       - stow
+      # Linux Dev
+      - build-essential
+      - cmake
+      - libcap-dev
+      - arping
+      - net-tools
+      - tcpdump
       # VIRTUALIZATION
       # - virt-manager
       # - virtualbox
