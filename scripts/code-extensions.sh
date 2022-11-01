@@ -2,7 +2,15 @@
 
 # code --list-extensions | xargs -L 1 echo code --install-extension
 
-code --install-extension rust-lang.rust
-code --install-extension rdnlsmith.linux-themes
-code --install-extension tomoki1207.pdf
+extensions=(
+"rust-lang.rust"
+"rdnlsmith.linux-themes"
+"tomoki1207.pdf"
+"ms-vscode-remote.remote-ssh"
+"ms-vscode-remote.remote-ssh-edit"
+"ms-vsliveshare.vsliveshare"
+)
 
+for e in "${extensions[@]}"; do
+    code --install-extension $e
+done
