@@ -17,7 +17,6 @@
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "editor.detectIndentation": false,
     "workbench.preferredDarkColorTheme": "United Ubuntu",
     "workbench.preferredHighContrastLightColorTheme": "Default Light+",
     "rust-analyzer.inlayHints.enable": false,

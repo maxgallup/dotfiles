@@ -16,6 +16,7 @@
       - whois
       - vlc
       - flatpak
+      - ffmpeg
       # - android-sdk-platform-tools-common
       - gnome-tweaks
       - gnome-sushi
