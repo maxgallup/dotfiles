@@ -119,6 +119,7 @@
     - "com.mojang.Minecraft"
     - "org.audacityteam.Audacity"
     - "com.usebottles.bottles"
+    - "com.valvesoftware.Steam"
   tags: apps
 
 # --------------------------------------
