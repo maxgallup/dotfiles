@@ -17,7 +17,6 @@
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "editor.detectIndentation": false,
     "workbench.preferredDarkColorTheme": "United Ubuntu",
     "workbench.preferredHighContrastLightColorTheme": "Default Light+",
     "rust-analyzer.inlayHints.enable": false,
@@ -26,5 +25,7 @@
     },
     "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "rust-analyzer.inlayHints.typeHints.enable": false
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": -1
 }

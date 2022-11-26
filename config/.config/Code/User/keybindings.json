@@ -1587,5 +1587,17 @@
     {
         "key": "ctrl+0",
         "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
     }
 ]
