@@ -1,0 +1,7 @@
+#!/bin/python3
+
+from playsound import playsound
+
+playsound(f"/home/max/dotfiles/misc/says_no_1.mp3")
+
+

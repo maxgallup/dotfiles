@@ -1649,5 +1649,23 @@
     {
         "key": "ctrl+`",
         "command": "editor.action.revealDefinition"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "editor.foldAll"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "editor.unfoldAll"
     }
 ]

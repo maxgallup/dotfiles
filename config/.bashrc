@@ -1,6 +1,6 @@
 # personalized PS1 prompt
 
-PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m "'
+PROMPT_COMMAND='(( $? )) && computersaysno; __git_ps1 "\W" " \e[01;36m$\e[m "'
 
 # If not running interactively, don't do anything
 case $- in
@@ -42,8 +42,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
