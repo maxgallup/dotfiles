@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "United GNOME",
+    "workbench.colorTheme": "United Ubuntu",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -26,5 +26,6 @@
     "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "extensions.ignoreRecommendations": true
 }
