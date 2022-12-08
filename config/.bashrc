@@ -1,6 +1,6 @@
 # personalized PS1 prompt
 
-PROMPT_COMMAND='(( $? )) && computersaysno; __git_ps1 "\W" " \e[01;36m$\e[m "'
+PROMPT_COMMAND='((( $? )) && computersaysno & ); __git_ps1 "\W" " \e[01;36m$\e[m "'
 
 # If not running interactively, don't do anything
 case $- in
