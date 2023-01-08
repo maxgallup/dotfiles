@@ -37,6 +37,9 @@ alias gl="git log --pretty=oneline"
 
 # tmux
 alias tmux='tmux -f $HOME/.config/tmux/.tmux.conf'
+alias tm='tmux -f $HOME/.config/tmux/.tmux.conf'
+alias ta="tmux attach"
+alias tl="tmux ls"
 
 # get public ip address
 alias myip='curl ifconfig.me'

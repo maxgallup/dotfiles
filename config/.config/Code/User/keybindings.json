@@ -1667,5 +1667,13 @@
     {
         "key": "ctrl+shift+]",
         "command": "editor.unfoldAll"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+k z",
+        "command": "-workbench.action.toggleZenMode"
     }
 ]
