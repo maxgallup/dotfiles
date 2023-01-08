@@ -40,6 +40,7 @@ alias tmux='tmux -f $HOME/.config/tmux/.tmux.conf'
 alias tm='tmux -f $HOME/.config/tmux/.tmux.conf'
 alias ta="tmux attach"
 alias tl="tmux ls"
+alias tk="tmux kill-server"
 
 # get public ip address
 alias myip='curl ifconfig.me'
