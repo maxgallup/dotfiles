@@ -120,7 +120,10 @@
     - "org.audacityteam.Audacity"
     - "com.usebottles.bottles"
     - "com.valvesoftware.Steam"
-  tags: apps
+    - "org.kicad.KiCad"
+  tags:
+    - apps
+    - flatpak
 
 # --------------------------------------
 # Clean Up
