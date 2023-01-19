@@ -26,6 +26,5 @@
     "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": -1
+    "extensions.ignoreRecommendations": true
 }

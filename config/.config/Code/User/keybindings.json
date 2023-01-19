@@ -1675,5 +1675,9 @@
     {
         "key": "ctrl+k z",
         "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.quickOpenWithModes"
     }
 ]

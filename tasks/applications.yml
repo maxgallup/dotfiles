@@ -121,6 +121,7 @@
     - "com.usebottles.bottles"
     - "com.valvesoftware.Steam"
     - "org.kicad.KiCad"
+    - "cc.arduino.IDE2"
   tags:
     - apps
     - flatpak
