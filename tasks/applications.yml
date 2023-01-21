@@ -87,7 +87,6 @@
     - "portmaster"
     - "rpi-imager"
     - "signal-desktop"
-    - "spotify-client"
     - "tailscale"
     - "virtualbox-6.1"
   tags: apps
@@ -122,6 +121,7 @@
     - "com.valvesoftware.Steam"
     - "org.kicad.KiCad"
     - "cc.arduino.IDE2"
+    - "dev.alextren.Spot"
   tags:
     - apps
     - flatpak

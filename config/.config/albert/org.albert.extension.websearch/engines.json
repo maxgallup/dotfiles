@@ -6,6 +6,18 @@
         "url": "https://duckduckgo.com/?q=%s"
     },
     {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{724f07ee-e5f2-43af-b0e1-82cca646d717}.",
+        "name": "Synonyms",
+        "trigger": "syn ",
+        "url": "https://www.thesaurus.com/browse/%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{744a2985-153e-41f2-aafe-19d1d497f249}.",
+        "name": "Definitions",
+        "trigger": "def ",
+        "url": "https://www.dictionary.com/browse/%s"
+    },
+    {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{6e4d3a11-dead-41e4-8914-a9a14d998b37}.",
         "name": "Invidios Search",
         "trigger": "in ",
