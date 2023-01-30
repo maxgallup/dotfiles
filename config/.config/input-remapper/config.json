@@ -1,8 +1,9 @@
 {
     "autoload": {
-        "AT Translated Set 2 keyboard": "main",
+        "AT Translated Set 2 keyboard": "main copy",
         "Lenovo ThinkPad Compact USB Keyboard with TrackPoint": "main",
-        "SEMITEK USB-HID Gaming Keyboard": "new preset"
+        "SEMITEK USB-HID Gaming Keyboard": "new preset",
+        "HP USB Slim Keyboard": "main"
     },
     "macros": {
         "keystroke_sleep_ms": 10
