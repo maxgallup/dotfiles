@@ -35,4 +35,8 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/loc
 
 export DOCKER_ID_USER="maxgallup"
 
+export EDITOR="code"
+
+export XDG_DATA_DIRS="$HOME.nix-profile/share:$XDG_DATA_DIRS"
+
 
