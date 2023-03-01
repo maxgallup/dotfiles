@@ -23,6 +23,11 @@ error() {
 }
 
 
+if [ -z $USBIFACE ]; then
+    error "no usb interface dected that starts with 'enx'"
+fi
+
+
 sudo ip a add $INET dev $USBIFACE || sudo ip a replace $INET dev $USBIFACE || error "adding subnet '$INET' failed"
 sudo ip link set dev $USBIFACE up || error "unable to enable $USBIFACE"
 
