@@ -1,0 +1,35 @@
+#!/bin/bash
+
+USBIFACE=$(ifconfig | grep enx | awk '{print $1}' | sed 's/://')
+WLANIFACE=$(ifconfig | grep wlo | awk '{print $1}' | sed 's/://')
+SUBNET="10.42.0.0/24"
+INET="10.42.0.1/24"
+
+echo "Using interface: $USBIFACE"
+echo "Using interface: $WLANIFACE"
+echo "Using subnet: $SUBNET"
+echo "Using inet: $INET"
+echo "Make sure PI is setup with a static IP address of 10.42.0.42 (for example)"
+echo "To enable gadget mode on the PI:"
+echo "    append 'dtoverlay=dwc2' to /boot/config.txt"
+echo "    append 'modprobe g_ether' to /etc/rc.local but before the call to exit"
+
+
+error() {
+    echo "(check if interface is up with 'ip a' and 'ifconfig [iface] up')"
+    echo "🔴  Error: $1"
+    echo ""
+    exit 1
+}
+
+
+sudo ip a add $INET dev $USBIFACE || sudo ip a replace $INET dev $USBIFACE || error "adding subnet '$INET' failed"
+sudo ip link set dev $USBIFACE up || error "unable to enable $USBIFACE"
+
+
+sudo iptables -I INPUT --source $SUBNET -j ACCEPT || error "iptables"
+sudo iptables -t nat -I POSTROUTING --out-interface $WLANIFACE -j MASQUERADE || error "iptables"
+sudo iptables -I FORWARD --in-interface $WLANIFACE --out-interface $USBIFACE -j ACCEPT || error "iptables"
+sudo iptables -I FORWARD --in-interface $USBIFACE --out-interface $WLANIFACE -j ACCEPT || error "iptables"
+
+echo "🟢 Success, ready to ssh into pi @ 10.42.0.42"
