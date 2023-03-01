@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "United Ubuntu",
+    "workbench.colorTheme": "United GNOME",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -18,16 +18,28 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
     "workbench.preferredDarkColorTheme": "United Ubuntu",
-    "workbench.preferredHighContrastLightColorTheme": "Default Light+",
+    "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
     "rust-analyzer.inlayHints.enable": false,
     "workbench.editorAssociations": {
         "*.html": "default"
     },
-    "window.autoDetectColorScheme": true,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "window.zoomLevel": -1
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "window.autoDetectHighContrast": false,
+    "window.autoDetectColorScheme": true,
+    "svelte.enable-ts-plugin": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.linting.banditEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=220",
+        "--ignore=E402,F841,F401,E302,E305,E722",
+    ],
+    "python.analysis.typeCheckingMode": "strict",
 }

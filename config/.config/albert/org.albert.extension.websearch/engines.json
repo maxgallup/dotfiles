@@ -54,6 +54,12 @@
         "url": "https://crates.io/search?q=%s"
     },
     {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{b4a87626-118a-4f42-b089-9ba14b92c656}.",
+        "name": "Nix Search",
+        "trigger": "ns ",
+        "url": "https://search.nixos.org/packages?channel=22.11&from=0&size=50&sort=relevance&type=packages&query=%s"
+    },
+    {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{4460cae0-7579-4cfd-babd-c223438dd2c5}.",
         "name": "DockerHub",
         "trigger": "dh ",

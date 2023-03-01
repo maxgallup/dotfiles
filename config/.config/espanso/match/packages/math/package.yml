@@ -22,7 +22,7 @@ matches:
     replace: "∃"
   - trigger: ":inset"
     replace: "∈"
-  - trigger: ":notin"
+  - trigger: ":ninset"
     replace: "∉"
   - trigger: ":niset"
     replace: "∋"

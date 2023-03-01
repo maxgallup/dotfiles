@@ -1679,5 +1679,13 @@
     {
         "key": "ctrl+shift+p",
         "command": "workbench.action.quickOpenWithModes"
+    },
+    {
+        "key": "ctrl+alt+=",
+        "command": "untabify"
+    },
+    {
+        "key": "ctrl+t ctrl+u",
+        "command": "-untabify"
     }
 ]
