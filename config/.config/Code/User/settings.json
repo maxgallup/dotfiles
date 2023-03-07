@@ -10,7 +10,7 @@
     ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
@@ -42,4 +42,6 @@
         "--ignore=E402,F841,F401,E302,E305,E722",
     ],
     "python.analysis.typeCheckingMode": "strict",
+    "workbench.editorLargeFileConfirmation": 1048576,
+    "files.maxMemoryForLargeFilesMB": 8192,
 }
