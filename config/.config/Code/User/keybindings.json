@@ -1687,5 +1687,18 @@
     {
         "key": "ctrl+t ctrl+u",
         "command": "-untabify"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.transformToLowercase"
     }
 ]

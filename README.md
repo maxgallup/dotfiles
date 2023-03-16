@@ -10,5 +10,22 @@ With this playbook and a clean install of [PopOS 20.04](https://pop.system76.com
 - [ ] move `~/bin` to `~/.local/bin`
 
 
-# Using GNU Stow 
+# NIX Migration:
+### Applications:
+- [ ] Espanso - `nix-env -iA nixpkgs.espanso`
+- [ ] VSCode - `nix-env -iA nixpkgs.vscode-fhs`
+- [ ] Brave - `nix-env -iA nixpkgs.brave`
+- [ ] Discord - `nix-env -iA nixpkgs.discord`
+- [ ] Input-remapper - `nix-env -iA nixpkgs.input-remapper`
+- [ ] Albert - `nix-env -iA nixpkgs.albert`
+
+
+### CLI-Tools:
+- [ ] exa - `nix-env -iA nixpkgs.exa`
+
+### Languages:
+- [ ] Rust - `nix-env -iA nixpkgs.rustup`
+- [ ] Go - `nix-env -iA nixpkgs.go`
+
+
 

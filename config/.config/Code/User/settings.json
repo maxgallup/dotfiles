@@ -10,7 +10,7 @@
     ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
@@ -44,4 +44,8 @@
     "python.analysis.typeCheckingMode": "strict",
     "workbench.editorLargeFileConfirmation": 1048576,
     "files.maxMemoryForLargeFilesMB": 8192,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
 }
