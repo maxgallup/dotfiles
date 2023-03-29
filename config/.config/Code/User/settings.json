@@ -4,13 +4,15 @@
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
     "explorer.confirmDragAndDrop": false,
     "editor.rulers": [
         100
     ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
@@ -48,4 +50,5 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "terminal.integrated.tabStopWidth": 4,
 }
