@@ -18,6 +18,30 @@
         "url": "https://www.dictionary.com/browse/%s"
     },
     {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{ad6fff18-f135-4e15-be1e-c1542d23892a}.",
+        "name": "CargoBook",
+        "trigger": "cb ",
+        "url": "https://doc.rust-lang.org/stable/cargo/?search=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{276af558-5505-4410-9f6a-ed188f26a4d3}.",
+        "name": "RustBook",
+        "trigger": "rb ",
+        "url": "https://doc.rust-lang.org/stable/rustc/index.html?search=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{f3770b1d-42fc-4f2c-bdc3-ae80c256e852}.",
+        "name": "Creates.io",
+        "trigger": "cr ",
+        "url": "https://crates.io/search?q=%s"
+    },
+    {
+        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{eb78bba1-a707-4af1-bca3-38517074270c}.",
+        "name": "Docs.rs",
+        "trigger": "doc ",
+        "url": "https://docs.rs/%s"
+    },
+    {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{6e4d3a11-dead-41e4-8914-a9a14d998b37}.",
         "name": "Invidios Search",
         "trigger": "in ",
@@ -40,18 +64,6 @@
         "name": "Translate English -> Czech",
         "trigger": "cz ",
         "url": "https://www.deepl.com/translator#en/cs/%s"
-    },
-    {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{eb78bba1-a707-4af1-bca3-38517074270c}.",
-        "name": "Docs.rs",
-        "trigger": "doc ",
-        "url": "https://docs.rs/%s"
-    },
-    {
-        "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{f3770b1d-42fc-4f2c-bdc3-ae80c256e852}.",
-        "name": "Creates.io",
-        "trigger": "cr ",
-        "url": "https://crates.io/search?q=%s"
     },
     {
         "iconPath": "/home/max/.config/albert/org.albert.extension.websearch/{b4a87626-118a-4f42-b089-9ba14b92c656}.",
