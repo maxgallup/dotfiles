@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "United GNOME",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
@@ -7,13 +6,9 @@
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
     "explorer.confirmDragAndDrop": false,
-    "editor.rulers": [
-        100
-    ],
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
     "cmake.configureOnOpen": false,
@@ -25,6 +20,12 @@
     "workbench.editorAssociations": {
         "*.html": "default"
     },
+    "workbench.colorCustomizations": {
+        // "activityBar.background": "#a8d8e322"
+        "tab.activeBackground": "#76ffaf23",
+        "tab.activeBorder": "#00ff6abc",
+        // "tab.activeBorderTop": "#00ff6abc",
+    },
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "extensions.ignoreRecommendations": true,
@@ -34,21 +35,12 @@
     "window.autoDetectHighContrast": false,
     "window.autoDetectColorScheme": true,
     "svelte.enable-ts-plugin": true,
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
-    "python.linting.banditEnabled": false,
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=220",
-        "--ignore=E402,F841,F401,E302,E305,E722",
-    ],
-    "python.analysis.typeCheckingMode": "strict",
     "workbench.editorLargeFileConfirmation": 1048576,
     "files.maxMemoryForLargeFilesMB": 8192,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
     "terminal.integrated.tabStopWidth": 4,
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "United GNOME",
+    "window.titleBarStyle": "custom",
+    "workbench.statusBar.visible": false,
 }

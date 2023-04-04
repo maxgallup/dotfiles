@@ -8,28 +8,24 @@
   apt:
     name:
       # Apps
-      - vim
-      - htop
-      - neofetch
-      - tmux
-      - gimp
-      - whois
-      - vlc
-      - flatpak
-      - ffmpeg
       # - android-sdk-platform-tools-common
+      - tcpdump
+      - tmux
+      - ffmpeg
+      - htop
+      - stow
+      - neofetch
+      - vim
+      - whois
       - gnome-tweaks
       - gnome-sushi
       - dconf-editor
-      - curl
-      - stow
       # Linux Dev
       - build-essential
       - cmake
       - libcap-dev
       - arping
       - net-tools
-      - tcpdump
       # VIRTUALIZATION
       # - virt-manager
       # - virtualbox
@@ -40,23 +36,7 @@
       - x11-utils
       - build-essential
       - libssl-dev
-      # IPHONE MEDIA
-      # - ifuse
-      # - tlp
-      # PROTON VPN SYS TRAY
-      # - gnome-shell-extension-appindicator
-      # - gir1.2-appindicator3-0.1
-      # LATEX
-      - pandoc
-      - texlive-fonts-recommended
-      - texlive-latex-extra
-      - texlive-extra-utils
-      - libxcb-shape0-dev
-      - libxcb-xfixes0-dev
-      - libxcb1-dev
-      - libxkbcommon-dev
-      - libasound2-dev
-      - libudev-dev
+
     state: latest
   tags: apps
 
@@ -79,11 +59,8 @@
     - "docker-ce"
     - "draw.io"
     - "insomnia"
-    - "neovim"
-    - "obsidian"
     - "obs-studio"
     - "pandoc"
-    - "protonvpn"
     - "portmaster"
     - "rpi-imager"
     - "signal-desktop"
@@ -115,13 +92,11 @@
     - "org.inkscape.Inkscape"
     - "com.mattjakeman.ExtensionManager"
     - "org.DolphinEmu.dolphin-emu"
-    - "com.mojang.Minecraft"
     - "org.audacityteam.Audacity"
-    - "com.usebottles.bottles"
-    - "com.valvesoftware.Steam"
     - "org.kicad.KiCad"
     - "cc.arduino.IDE2"
-    - "dev.alextren.Spot"
+    - "org.gimp.GIMP"
+    - "org.videolan.VLC"
   tags:
     - apps
     - flatpak
