@@ -11,6 +11,7 @@
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
@@ -42,5 +43,9 @@
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "United GNOME",
     "window.titleBarStyle": "custom",
-    "workbench.statusBar.visible": false,
+    "cSpell.enableFiletypes": [
+        "typst"
+    ],
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": false,
 }

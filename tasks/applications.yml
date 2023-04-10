@@ -97,6 +97,7 @@
     - "cc.arduino.IDE2"
     - "org.gimp.GIMP"
     - "org.videolan.VLC"
+    - "com.slack.Slack"
   tags:
     - apps
     - flatpak
