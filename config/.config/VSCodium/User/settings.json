@@ -48,4 +48,8 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
     "workbench.colorTheme": "Monokai",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.explorer",
+        "workbench.action.toggleSidebarVisibility"
+    ],
 }
