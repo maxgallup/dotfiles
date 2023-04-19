@@ -66,6 +66,7 @@
     - "signal-desktop"
     - "tailscale"
     - "virtualbox-6.1"
+    - "codium"
   tags: apps
 
 

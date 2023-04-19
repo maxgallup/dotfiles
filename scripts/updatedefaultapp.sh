@@ -5,7 +5,7 @@ video_mimes=( "video/1d-interleaved-parityfec" "video/3gpp" "video/3gpp-tt" "vid
 
 
 for type in "${text_mimes[@]}"; do
-    xdg-mime default "code.desktop" $type
+    xdg-mime default "codium.desktop" $type
     xdg-mime query default $type
 done
 
