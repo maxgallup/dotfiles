@@ -39,8 +39,8 @@ height=987
 width=942
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/background/picture-uri-dark'
-saved-view='/org/gnome/desktop/background/'
+saved-pathbar-path='/org/gnome/terminal/legacy/keybindings/next-tab'
+saved-view='/org/gnome/terminal/legacy/keybindings/next-tab'
 show-warning=false
 window-height=987
 window-is-maximized=false
@@ -50,19 +50,22 @@ window-width=1896
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
 window-height=981
 window-width=937
-window-x=767
-window-y=37
+window-x=983
+window-y=36
 
 [com/system76/hidpi]
 enable=false
-mode='hidpi'
+mode='lodpi'
 
 [io/elementary/appcenter/settings]
 cached-drivers=@as []
-last-refresh-time=int64 1666864642
+last-refresh-time=int64 1666955462
 window-maximized=false
-window-position=(12, 34)
-window-size=(1896, 1034)
+window-position=(858, 34)
+window-size=(834, 1019)
+
+[org/gnome/GWeather]
+temperature-unit='centigrade'
 
 [org/gnome/Geary]
 folder-list-pane-position-horizontal=100
@@ -74,6 +77,9 @@ window-width=1896
 [org/gnome/Totem]
 active-plugins=['screensaver', 'mpris', 'recent', 'screenshot', 'vimeo', 'autoload-subtitles', 'open-directory', 'apple-trailers', 'rotation', 'movie-properties', 'variable-rate', 'skipto', 'save-file']
 subtitle-encoding='UTF-8'
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Amsterdam', 'EHAM', true, [(0.91280719879303418, 0.083194033496160544)], [(0.91367986341903151, 0.085812027374152042)])>)>]
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -87,21 +93,22 @@ window-position=[2643, 554]
 window-size=[949, 471]
 
 [org/gnome/calendar]
-active-view='week'
+active-view='month'
 window-maximized=false
 window-position=(12, 34)
-window-size=(1896, 987)
+window-size=(1896, 1034)
 
 [org/gnome/cheese]
+brightness=-0.12970711297071125
 burst-delay=1000
-camera='Integrated Camera: Integrated C'
-photo-x-resolution=960
-photo-y-resolution=540
-video-x-resolution=960
-video-y-resolution=540
+camera='Trust Webcam (V4L2)'
+photo-x-resolution=640
+photo-y-resolution=480
+video-x-resolution=640
+video-y-resolution=480
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='wifi'
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -141,6 +148,7 @@ sources=[('xkb', 'us'), ('xkb', 'de')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
+clock-format='24h'
 clock-show-seconds=false
 clock-show-weekday=false
 color-scheme='prefer-dark'
@@ -155,7 +163,7 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-nautilus', 'io-elementary-appcenter', 'ulauncher', 'gnome-printers-panel', 'gnome-control-center', 'com-github-donadigo-eddy', 'signal-desktop', 'spotify', 'gnome-network-panel', 'discord', 'org-gnome-baobab', 'element-desktop', 'gnome-power-panel', 'org-pop-os-transition', 'org-signal-signal', 'org-gnome-evolution-alarm-notify', 'org-gnome-extensions-desktop', 'org-gnome-chromegnomeshell', 'org-gnome-gedit', 'libreoffice-writer', 'org-gnome-eog', 'org-gnome-terminal', 'org-gnome-fileroller', 'xdg-desktop-portal-gnome', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-totem', 'us-zoom-zoom', 'org-gnome-shell-extensions-gsconnect-preferences', 'albert', 'org-gnome-geary', 'brave-browser', 'gimp', 'com-spotify-client', 'com-alacritty-alacritty', 'org-shotcut-shotcut', 'rstudio', 'vlc']
+application-children=['org-gnome-nautilus', 'io-elementary-appcenter', 'ulauncher', 'gnome-printers-panel', 'gnome-control-center', 'com-github-donadigo-eddy', 'signal-desktop', 'spotify', 'gnome-network-panel', 'discord', 'org-gnome-baobab', 'element-desktop', 'gnome-power-panel', 'org-pop-os-transition', 'org-signal-signal', 'org-gnome-evolution-alarm-notify', 'org-gnome-extensions-desktop', 'org-gnome-chromegnomeshell', 'org-gnome-gedit', 'libreoffice-writer', 'org-gnome-eog', 'org-gnome-terminal', 'org-gnome-fileroller', 'xdg-desktop-portal-gnome', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-totem', 'us-zoom-zoom', 'org-gnome-shell-extensions-gsconnect-preferences', 'albert', 'org-gnome-geary', 'brave-browser', 'gimp', 'com-spotify-client', 'com-alacritty-alacritty', 'org-shotcut-shotcut', 'rstudio', 'vlc', 'firefox', 'org-gnome-font-viewer', 'virtualbox', 'org-dolphinemu-dolphin-emu', 'org-gnome-cheese', 'com-valvesoftware-steam', 'org-gnome-evince', 'org-kicad-kicad', 'code', 'org-kicad-kicad-eeschema', 'org-kicad-kicad-pcbnew', 'org-gnome-calendar', 'org-gnome-shell-extensions']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -179,11 +187,17 @@ application-id='com.github.donadigo.eddy.desktop'
 [org/gnome/desktop/notifications/application/com-spotify-client]
 application-id='com.spotify.Client.desktop'
 
+[org/gnome/desktop/notifications/application/com-valvesoftware-steam]
+application-id='com.valvesoftware.Steam.desktop'
+
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/element-desktop]
 application-id='element-desktop.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gimp]
 application-id='gimp.desktop'
@@ -206,14 +220,26 @@ application-id='io.elementary.appcenter.desktop'
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[org/gnome/desktop/notifications/application/org-dolphinemu-dolphin-emu]
+application-id='org.DolphinEmu.dolphin-emu.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-calendar]
+application-id='org.gnome.Calendar.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-cheese]
+application-id='org.gnome.Cheese.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
 application-id='org.gnome.ChromeGnomeShell.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evince]
+application-id='org.gnome.Evince.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
 application-id='org.gnome.Evolution-alarm-notify.desktop'
@@ -223,6 +249,9 @@ application-id='org.gnome.Extensions.desktop.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-fileroller]
 application-id='org.gnome.FileRoller.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-font-viewer]
+application-id='org.gnome.font-viewer.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-geary]
 application-id='org.gnome.Geary.desktop'
@@ -247,6 +276,15 @@ application-id='org.gnome.Terminal.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-totem]
 application-id='org.gnome.Totem.desktop'
+
+[org/gnome/desktop/notifications/application/org-kicad-kicad-eeschema]
+application-id='org.kicad.KiCad.eeschema.desktop'
+
+[org/gnome/desktop/notifications/application/org-kicad-kicad-pcbnew]
+application-id='org.kicad.KiCad.pcbnew.desktop'
+
+[org/gnome/desktop/notifications/application/org-kicad-kicad]
+application-id='org.kicad.KiCad.desktop'
 
 [org/gnome/desktop/notifications/application/org-pop-os-transition]
 application-id='org.pop_os.transition.desktop'
@@ -274,6 +312,9 @@ application-id='ulauncher.desktop'
 [org/gnome/desktop/notifications/application/us-zoom-zoom]
 application-id='us.zoom.Zoom.desktop'
 
+[org/gnome/desktop/notifications/application/virtualbox]
+application-id='virtualbox.desktop'
+
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
 
@@ -281,10 +322,10 @@ application-id='vlc.desktop'
 application-id='xdg-desktop-portal-gnome.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-delay=uint32 212
-numlock-state=true
+delay=uint32 189
+numlock-state=false
 repeat=true
-repeat-interval=uint32 15
+repeat-interval=uint32 12
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
@@ -292,7 +333,7 @@ speed=1.0
 
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
-speed=0.11764705882352944
+speed=0.058823529411764719
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -356,6 +397,11 @@ toggle-maximized=['<Super>Space']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:close'
 
+[org/gnome/dictionary]
+database='!'
+source-name='Default'
+strategy='exact'
+
 [org/gnome/eog/ui]
 sidebar=false
 
@@ -363,15 +409,18 @@ sidebar=false
 background-color='rgb(0,0,0)'
 use-background-color=true
 
+[org/gnome/evince]
+document-directory=@ms 'file:///home/max/Desktop/vroomvroom'
+
 [org/gnome/evince/default]
-window-ratio=(1.5392156862745099, 0.64520202020202022)
+window-ratio=(3.5222222222222221, 3.4419753086419753)
 
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution-data-server/calendar]
-reminders-past=['']
+reminders-past=[]
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -408,6 +457,9 @@ root='file:///'
 tree-view=true
 virtual-root='file:///home/max/dotfiles/scripts'
 
+[org/gnome/gedit/preferences/editor]
+scheme='pop-dark'
+
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
 
@@ -424,7 +476,7 @@ maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1896, 1034, 12, 34)
+window-state=(1680, 1019, 12, 34)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -468,15 +520,35 @@ search-view='list-view'
 show-hidden-files=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1896, 1034)
+initial-size=(1680, 1019)
 maximized=false
-sidebar-width=189
+sidebar-width=207
 
 [org/gnome/nm-applet/eap/08de2191-82e8-429b-95dc-37bbd58e21e7]
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/0ac52704-d883-3e14-a2f9-e18afcb18170]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/0fa9dc9f-d9b3-4768-a817-7b7bb2b9a2f2]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/11a52fc5-4f7a-3546-83ea-fa68c5b158d8]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/143b62d0-66b5-4e79-a1e2-ba380a8e3bdc]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/1aa2461d-75af-43f9-a028-d22fd8909b26]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/2b881b54-ac08-4889-b2f4-a05c1640a14c]
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
@@ -500,6 +572,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/64073b57-4a8e-49e7-874a-d3ee3455a0ef]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/65b9030d-0388-409e-9591-64baed9b0092]
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
@@ -508,21 +584,33 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=true
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/b6f092bc-de95-4348-b64d-746191c73c75]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ba8f268d-65b1-4731-9549-71798b2b333f]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c8d47e02-a15e-3a1c-8952-5e52ca96f8ef]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/power-manager]
 info-history-graph-points=true
 info-history-graph-smooth=true
 info-history-time=86400
 info-history-type='charge'
 info-last-device='/org/freedesktop/UPower/devices/battery_BAT0'
-info-page-number=1
+info-page-number=0
 info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=false
-night-light-schedule-from=15.500000000000025
+night-light-schedule-from=17.500000000000025
 night-light-schedule-to=7.0
-night-light-temperature=uint32 3211
+night-light-temperature=uint32 3191
 
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Primary>4']
@@ -561,8 +649,8 @@ idle-dim=false
 app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'Pop-Office': <{'position': <4>}>, 'Pop-System': <{'position': <5>}>, 'Pop-Utility': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.gedit.desktop': <{'position': <9>}>, 'gimp.desktop': <{'position': <10>}>, 'htop.desktop': <{'position': <11>}>, 'display-im6.q16.desktop': <{'position': <12>}>, 'remote-viewer.desktop': <{'position': <13>}>, 'org.gnome.tweaks.desktop': <{'position': <14>}>, 'virt-manager.desktop': <{'position': <15>}>, 'virtualbox.desktop': <{'position': <16>}>, 'vim.desktop': <{'position': <17>}>, 'albert.desktop': <{'position': <18>}>, 'input-remapper.desktop': <{'position': <19>}>, 'com.brave.Browser.desktop': <{'position': <20>}>, 'com.visualstudio.code.desktop': <{'position': <21>}>, 'org.signal.Signal.desktop': <{'position': <22>}>}, {'com.obsproject.Studio.desktop': <{'position': <0>}>, 'com.jgraph.drawio.desktop.desktop': <{'position': <1>}>, 'org.gimp.GIMP.desktop': <{'position': <2>}>, 'com.discordapp.Discord.desktop': <{'position': <3>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <4>}>, 'org.audacityteam.Audacity.desktop': <{'position': <5>}>, 'org.DolphinEmu.dolphin-emu.desktop': <{'position': <6>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <7>}>, 'org.raspberrypi.rpi-imager.desktop': <{'position': <8>}>, 'com.mojang.Minecraft.desktop': <{'position': <9>}>, 'us.zoom.Zoom.desktop': <{'position': <10>}>, 'firefox.desktop': <{'position': <11>}>, 'io.elementary.appcenter.desktop': <{'position': <12>}>, 'gnome-control-center.desktop': <{'position': <13>}>, 'pop-cosmic-applications.desktop': <{'position': <14>}>, 'pop-cosmic-launcher.desktop': <{'position': <15>}>, 'pop-cosmic-workspaces.desktop': <{'position': <16>}>}]
 command-history=['restart', 'lg', 'r']
 disable-user-extensions=false
-disabled-extensions=['', 'example@example.com']
-enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'wireguard-indicator@atareao.es', 'dash-to-panel@jderose9.github.com', 'Vitals@CoreCoding.com', 'tailscale@maxgallup.github.com', 'gsconnect@andyholmes.github.io', 'x11gestures@joseexposito.github.io', 'tailscale-test@maxgallup.github.com', 'tailscale-status@maxgallup.github.com', 'nightthemeswitcher@romainvigier.fr', 'sound-output-device-chooser@kgshank.net']
+disabled-extensions=['', 'example@example.com', 'nightthemeswitcher@romainvigier.fr']
+enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'ding@rastersoft.com', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'paperwm@hedning:matrix.org', 'wireguard-indicator@atareao.es', 'dash-to-panel@jderose9.github.com', 'Vitals@CoreCoding.com', 'tailscale@maxgallup.github.com', 'gsconnect@andyholmes.github.io', 'x11gestures@joseexposito.github.io', 'tailscale-test@maxgallup.github.com', 'sound-output-device-chooser@kgshank.net', 'tailscale-status@maxgallup.github.com']
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'com.spotify.Client.desktop', 'brave-browser.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['log("asDF")', 'print("ASDF")']
@@ -576,7 +664,7 @@ manualhide=true
 animate-appicon-hover=false
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 animate-show-apps=false
-appicon-margin=4
+appicon-margin=3
 appicon-padding=2
 available-monitors=[0]
 dot-color-1='#5294e2'
@@ -592,8 +680,9 @@ dot-color-unfocused-4='#5294e2'
 dot-position='LEFT'
 dot-size=0
 dot-style-focused='METRO'
+dot-style-unfocused='METRO'
 focus-highlight=true
-focus-highlight-color='#f57900'
+focus-highlight-color='#9a9996'
 focus-highlight-dominant=false
 focus-highlight-opacity=40
 group-apps=true
@@ -604,7 +693,7 @@ leftbox-padding=-1
 leftbox-size=0
 overview-click-to-exit=false
 panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":false,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":false,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":false,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100,"1":100}'
 panel-positions='{"0":"TOP","1":"TOP"}'
@@ -624,7 +713,7 @@ trans-panel-opacity=0.55000000000000004
 trans-use-custom-bg=true
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
-trans-use-dynamic-opacity=false
+trans-use-dynamic-opacity=true
 tray-padding=-1
 tray-size=0
 window-preview-title-font-color='#dddddd'
@@ -667,19 +756,18 @@ workspace-active-tile-toggle=@as []
 
 [org/gnome/shell/extensions/gsconnect]
 debug=false
-devices=['e8a9e2857f47c1c4', 'DDF9E159E19C426399025EB5BFFC660F']
-enabled=true
+devices=@as []
+enabled=false
 id='11ac8bca-b4e0-4d37-a100-d690a752c0f3'
 name='pop'
 show-indicators=false
 
 [org/gnome/shell/extensions/gsconnect/device/DDF9E159E19C426399025EB5BFFC660F]
-certificate-pem='-----BEGIN CERTIFICATE-----\nMIIDEjCCAfoCAQowDQYJKoZIhvcNAQEEBQAwTzEUMBIGA1UECwwLS2RlIGNvbm5l\nY3QxDDAKBgNVBAoMA0tERTEpMCcGA1UEAwwgRERGOUUxNTlFMTlDNDI2Mzk5MDI1\nRUI1QkZGQzY2MEYwHhcNMjIwNTEwMTgwNzA3WhcNMjMwNTEwMTgwNzA3WjBPMRQw\nEgYDVQQLDAtLZGUgY29ubmVjdDEMMAoGA1UECgwDS0RFMSkwJwYDVQQDDCBEREY5\nRTE1OUUxOUM0MjYzOTkwMjVFQjVCRkZDNjYwRjCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBAKc+xuI8cLINW2rUZOQTDdQPDvMM54uhkiJmkJGZ1oC1Lqke\nIUHD5jzEahKjYlNNzd1z9U+GT77UQwDSMD9FkyustcRMmGrleKDpMQ/tu30OSWe8\n19Yx4TBiCQWX9LULgsuK3zlqkzjU5frCr/L1YWCUe3u+mXZPzgvi6r2R2tRy83HC\nJmKfJ2zLGT7t1D5AX0RvORLUkgsNXXpTpjh/iXpjxWEY274TyfZPr5AcNyYZLvkl\nONqHlPu8Zhq5Eg8DMcaixhVkBxP+HnODq2CtnSqYZ8R+PooxkonGfZsSYw2S2S5I\ngiQmp9I7R8Ihn2jaBs3w5tvx24A8Tzd9X75JBdcCAwEAATANBgkqhkiG9w0BAQQF\nAAOCAQEAkvYd2v8a4aQyu7Si5IJ7vZVsaEbP+dyeY3KvqbwrXusGqD7VcEZWVK/L\n/p0IrULuEY0f449BLpLZw2et7RLlsh/kze7bp/zJoBiTKxsI2485GYIGrPokX+Mx\nsiK1ZmLbpGtEszFR2vuQsowGzhXVCQ4+aFjngRAQ6uX8UnJetDjuQiVry20i7BIz\nEtrsHEpZfrHA2keZnmFLuT/R1Cu0hAN33qu0YWFCtHfBW/tI87a+JaxyOWfzsNgy\ntAOEfGWSO3dkcBcHMT9ybq3yiMtI7hhirdq72QsPjyVBG2IIYgiNNkNRdDTqNpF0\nBWiOEpeXfq+KIE4fsYPiLpDt6bge7A==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.share.request']
 last-connection='lan://192.168.1.65:1716'
 name='🌝'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.share.request']
-paired=true
+paired=false
 supported-plugins=['battery', 'clipboard', 'findmyphone', 'mousepad', 'ping', 'presenter', 'runcommand', 'share']
 type='phone'
 
@@ -697,12 +785,11 @@ applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm
 receive-directory='/home/max/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/e8a9e2857f47c1c4]
-certificate-pem='-----BEGIN CERTIFICATE-----\nMIIC9zCCAd+gAwIBAgIBATANBgkqhkiG9w0BAQsFADA/MRkwFwYDVQQDDBBlOGE5\nZTI4NTdmNDdjMWM0MRQwEgYDVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RF\nMB4XDTIxMDYwNDIyMDAwMFoXDTMxMDYwNDIyMDAwMFowPzEZMBcGA1UEAwwQZThh\nOWUyODU3ZjQ3YzFjNDEUMBIGA1UECwwLS0RFIENvbm5lY3QxDDAKBgNVBAoMA0tE\nRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANk3LNCCqCGh+WpHtZON\ns1yAsvFWVuc08PROCcNBaOqepu22Gb998OQ9w7MHZfXy3i7yc5xd8tBL8R51fiq/\n3JUWHyTB8O7i4mKN4H164P3nKG44wceePOines0lF07Wws4M+P8QjM1LerK6COnB\nFPSgm6mmDLQaGCwxDylC/GYnZn1VbiR2WhPKDvj1MW9qTEFQLA3CDJHxifjLONQ4\nae11H4KJIo34kYWzY476gQt/G3mlB6W7BEeVdZsyO7FrY8LqxWUOm3ojlBy5kHY4\nP27jyduPbNqL4KD+UWWJKZapGDLNrhjHUFvjjZ+7hFmh8FlTa0807W+EWmZw1cxT\nl+8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAmr2bmm8ubyU+S4rOx27DMA8OkU7O\n9P2pk24lbr9D/zlpbQbYd7VDyDCgdlbEGU+sAtcW4JxTOJrcPl1ZMiS9rynSUKiQ\n05W172nfPwW15oENEoHbsmnlPu5mJjBD91evMrLng5BvflMqZf534B0TT3Pr6PIZ\nOnB2QpJNFb4VC/uftKGFQGtzARP1L8hYGAAyUOrzVfQy03Bs0PU0TykmqAChK+XH\n/PM22eg1K5tDBxJsdxbGlTQ0atjm7JAiNPTToeRdE4RfF1Cckfow2/V3X9uZu2RC\nRk1XrAwHXEsNgjzL3MGAGDywdVD8BvN73qW7ARfmxnwlon8j0ts69NgyjA==\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report.request', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.photo.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
 last-connection='lan://192.168.1.175:1716'
 name='Pixel 3a'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.photo', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
-paired=true
+paired=false
 supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'photo', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
 type='phone'
 
@@ -731,7 +818,7 @@ share-sinks=false
 
 [org/gnome/shell/extensions/gsconnect/preferences]
 window-maximized=false
-window-size=(942, 464)
+window-size=(942, 987)
 
 [org/gnome/shell/extensions/materialshell/layouts]
 default-layout='half-vertical'
@@ -856,6 +943,10 @@ toggle-application-view=['<Super>a']
 toggle-message-tray=@as []
 toggle-overview=['<Super>q']
 
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Amsterdam', 'EHAM', true, [(0.91280719879303418, 0.083194033496160544)], [(0.91367986341903151, 0.085812027374152042)])>)>]
+
 [org/gnome/simple-scan]
 document-type='photo'
 jpeg-quality=75
@@ -914,6 +1005,10 @@ use-theme-colors=true
 use-theme-transparency=false
 use-transparent-background=false
 
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.96078431606292725, 0.47450980544090271, 0.0, 1.0), (0.0, 0.18333333730697632, 0.0073333266191184521, 1.0)]
+selected-color=(true, 0.60392159223556519, 0.60000002384185791, 0.58823531866073608, 1.0)
+
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -921,17 +1016,18 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=162
-sort-column='modified'
+sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-size=(803, 503)
+window-size=(828, 776)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.47040000000000004, 0.96000000000000008, 0.71189189189189184, 0.92567600000000005), (0.39215686274509803, 0.90196078431372551, 0.96078431372549022, 0.92567600000000005), (0.39040000000000008, 0.90107586206896539, 0.96000000000000008, 0.92567600000000005), (0.58039215686274515, 0.93333333333333335, 0.83529411764705885, 0.92567600000000005), (0.58177777777777784, 0.93333333333333335, 0.83356756756756767, 0.92567567567567566), (0.050980392156862744, 0.23529411764705882, 0.88627450980392153, 0.86486499999999999), (0.050980392156862821, 0.23474509803921548, 0.88627450980392153, 0.86486499999999999), (0.88627450980392153, 0.050980392156862744, 0.65098039215686276, 0.86486499999999999)]
 selected-color=(true, 0.47040000000000004, 0.96000000000000008, 0.71189189189189184, 0.92567600000000005)
 
 [org/gtk/settings/file-chooser]
+clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
 show-hidden=true
@@ -942,7 +1038,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(798, 164)
+window-position=(412, 164)
 window-size=(1096, 726)
 
 [org/virt-manager/virt-manager]

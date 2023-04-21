@@ -52,4 +52,5 @@
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility"
     ],
+    "zenMode.hideStatusBar": false,
 }
