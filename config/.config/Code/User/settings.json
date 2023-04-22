@@ -15,7 +15,7 @@
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "workbench.preferredDarkColorTheme": "United Ubuntu",
+    "workbench.preferredDarkColorTheme": "United GNOME",
     "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
     "rust-analyzer.inlayHints.enable": false,
     "workbench.editorAssociations": {
@@ -41,11 +41,16 @@
     "terminal.integrated.tabStopWidth": 4,
     "workbench.editor.enablePreview": false,
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "United GNOME",
     "window.titleBarStyle": "custom",
     "cSpell.enableFiletypes": [
         "typst"
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
+    "workbench.colorTheme": "United GNOME",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.explorer",
+        "workbench.action.toggleSidebarVisibility"
+    ],
+    "zenMode.hideStatusBar": false,
 }
