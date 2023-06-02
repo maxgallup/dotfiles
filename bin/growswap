@@ -4,6 +4,8 @@ echo "Usage: growswap [Number of gigabytes to extend swap]"
 
 sudo swapoff /swapfile
 sudo fallocate -l ${1}G /swapfile
+sudo touch /swapfile
+sudo chmod 0600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 

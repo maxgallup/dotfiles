@@ -1814,5 +1814,9 @@
     {
         "key": "ctrl+shift+n",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.navigateBack"
     }
 ]
