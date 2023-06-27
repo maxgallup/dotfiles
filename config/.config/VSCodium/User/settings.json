@@ -39,7 +39,6 @@
     "workbench.editorLargeFileConfirmation": 1048576,
     "files.maxMemoryForLargeFilesMB": 8192,
     "terminal.integrated.tabStopWidth": 4,
-    "workbench.editor.enablePreview": false,
     "editor.minimap.enabled": false,
     "window.titleBarStyle": "custom",
     "cSpell.enableFiletypes": [
@@ -53,4 +52,6 @@
         "workbench.action.toggleSidebarVisibility"
     ],
     "zenMode.hideStatusBar": false,
+    "terminal.integrated.scrollback": 50000,
+
 }

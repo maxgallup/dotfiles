@@ -46,10 +46,12 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "United GNOME",
+    "workbench.colorTheme": "Default Light Modern",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility"
     ],
     "zenMode.hideStatusBar": false,
+    "terminal.integrated.scrollback": 50000,
+    "window.zoomLevel": -1,
 }
