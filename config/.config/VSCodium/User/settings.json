@@ -46,12 +46,13 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Rusty One Dark",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility"
     ],
     "zenMode.hideStatusBar": false,
     "terminal.integrated.scrollback": 50000,
+    "window.zoomLevel": -1,
 
 }
