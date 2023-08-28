@@ -10,7 +10,7 @@
 
 - name: Copy background file
   copy:
-    src: "config_files/gnome-background"
+    src: "config_misc/gnome-background"
     dest: "{{ background_file_path }}"
     owner: "{{ user }}"
     group: "{{ user }}"
@@ -19,7 +19,7 @@
 
 - name: Copy shell file
   copy:
-    src: "config_files/shell.conf"
+    src: "config_misc/shell.conf"
     dest: "{{ shell_file_path }}"
     owner: "{{ user }}"
     group: "{{ user }}"

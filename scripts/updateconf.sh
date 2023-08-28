@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $HOME/dotfiles/misc/
+cd $HOME/dotfiles/config_misc/
 dconf dump / > dconf-settings.temp
 echo "DIFF:"
 diff dconf-settings.temp dconf-settings
