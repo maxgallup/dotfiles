@@ -29,10 +29,11 @@ check_exit_status
 
 
 echo "🟡 Installing pip"
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 check_exit_status
 
 echo "🟡 Installing ansible"
 python3 -m pip install --user ansible
+check_exit_status
 
 
