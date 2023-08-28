@@ -110,12 +110,14 @@
 # Clean Up
 # --------------------------------------
 
-- name: Install autoclean
+- name: Autoclean
+  become: yes
   apt:
     autoclean: yes
   tags: apps
 
-- name: Install autoremove
+- name: Autoremove
+  become: yes
   apt:
     autoremove: yes
   tags: apps
