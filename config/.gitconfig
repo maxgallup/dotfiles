@@ -1,11 +1,13 @@
 [user]
 	name = maxgallup
 	email = m.gallup@student.vu.nl
-	signingkey = 4E36804CD5B29664
-	signingkey = D2986E382723807E
+	# signingkey = 4E36804CD5B29664
+	# signingkey = D2986E382723807E
 
-[commit]
-	gpgsign = true
+# [commit]
+# 	gpgsign = true
+
+
 # [filter "lfs"]
 # 	clean = git-lfs clean -- %f
 # 	smudge = git-lfs smudge -- %f
