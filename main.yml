@@ -1,6 +1,17 @@
 ---
 
 - hosts: all
+  roles:
+    - role: jaredhocutt.gnome_extensions
+      vars:
+        gnome_extension_ids:
+          - 5112 # Tailscale Status
+          - 1160 # Dash To Panel
+          - 906  # Sound Input & Output Device Chooser
+          - 7    # Removable Drive Menu
+          - 1319 # GS Connect
+
+
   tasks:
     - import_tasks: tasks/basic.yml
     - import_tasks: tasks/essential.yml
