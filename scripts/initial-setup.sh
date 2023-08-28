@@ -28,12 +28,12 @@ sudo apt upgrade -y
 check_exit_status
 
 
-echo "🟡 Installing pip"
-sudo apt install python3-pip -y
-check_exit_status
+# echo "🟡 Installing pip"
+# sudo apt install python3-pip -y
+# check_exit_status
 
 echo "🟡 Installing ansible"
-pip install ansible
+sudo apt install ansible-core
 check_exit_status
 
 
