@@ -34,5 +34,7 @@ check_exit_status
 ansible --version
 check_exit_status
 
-
+echo "🟡 Running Playbook"
+ansible-playbook main.yml -K --ask-vault-pass
+check_exit_status
 
