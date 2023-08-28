@@ -53,6 +53,5 @@
     ],
     "zenMode.hideStatusBar": false,
     "terminal.integrated.scrollback": 50000,
-    "window.zoomLevel": -1,
 
 }

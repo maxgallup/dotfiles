@@ -1,24 +1,25 @@
 ---
 
-- name: Updating dconf-settings
-  shell: dconf load / < misc/dconf-settings
-  tags:
-    - configure
+# - name: Updating dconf-settings
+#   shell: dconf load / < misc/dconf-settings
+#   tags:
+#     - configure
 
-- name: Create bin directory
-  file:
-    path: "{{home}}/bin"
-    state: directory
-    mode: '0755'
+# - name: Create bin directory
+#   file:
+#     path: "{{home}}/bin"
+#     state: directory
+#     mode: '0755'
 
-- name: Create bin directory
-  file:
-    path: "{{home}}/.config/Code/User/"
-    state: directory
-    mode: '0755'
+# - name: Create bin directory
+#   file:
+#     path: "{{home}}/.config/Code/User/"
+#     state: directory
+#     mode: '0755'
       
-- name: Add config files using GNU Stow
-  shell: ./scripts/stow-update.sh
-  tags:
-    - configure
+# - name: Add config files using GNU Stow
+#   shell: ./scripts/stow-update.sh
+#   tags:
+#     - configure
+
 

@@ -53,20 +53,20 @@
 - name: Install Apps available through deb-get
   shell: "deb-get install {{item}}"
   with_items:
+    # - "discord"
+    # - "insomnia"
+    # - "obs-studio"
+    # - "portmaster"
+    # - "virtualbox-6.1"
     - "brave-browser"
     - "code"
-    - "discord"
+    - "codium"
     - "docker-ce"
     - "draw.io"
-    - "insomnia"
-    - "obs-studio"
     - "pandoc"
-    - "portmaster"
     - "rpi-imager"
     - "signal-desktop"
     - "tailscale"
-    - "virtualbox-6.1"
-    - "codium"
   tags: apps
 
 
@@ -77,8 +77,10 @@
   apt:
     deb: "{{item}}"
   with_items:
-    - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
-    - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
+    # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
+    - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.22.0-0+553.1_amd64.deb"
+
+    # - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
     - "https://github.com/sezanzeb/input-remapper/releases/download/1.5.0/input-remapper-1.5.0_all.deb"
   tags: apps
 
@@ -90,15 +92,16 @@
   flatpak:
     name: "{{item}}"
   with_items:
-    - "org.inkscape.Inkscape"
     - "com.mattjakeman.ExtensionManager"
-    - "org.DolphinEmu.dolphin-emu"
-    - "org.audacityteam.Audacity"
-    - "org.kicad.KiCad"
-    - "cc.arduino.IDE2"
     - "org.gimp.GIMP"
     - "org.videolan.VLC"
-    - "com.slack.Slack"
+    # - "org.DolphinEmu.dolphin-emu"
+    # - "org.inkscape.Inkscape"
+    # - "org.audacityteam.Audacity"
+    # - "org.kicad.KiCad"
+    # - "cc.arduino.IDE2"
+    # - "com.slack.Slack"
+    # - "com.brave.Browser"
   tags:
     - apps
     - flatpak

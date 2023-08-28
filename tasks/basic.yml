@@ -1,0 +1,21 @@
+---
+
+- name: Make sure .ssh directory exists
+  file:
+    path: "/home/max/.ssh"
+    state: directory
+  tags: basic
+
+- name: Copy background file
+  become: true
+  copy:
+    src: "config_files/gnome-background"
+    dest: "{{ background_file_path }}"
+  tags: basic
+
+- name: Copy shell file
+  become: true
+  copy:
+    src: "config_files/shell.conf"
+    dest: "{{ shell_file_path }}"
+  tags: basic
