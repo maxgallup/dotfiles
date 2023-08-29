@@ -8,16 +8,9 @@ rm /home/max/.ssh/config
 rm /home/max/.config/gtk-3.0/bookmarks
 rm /home/max/.gitconfig
 
-rm -r /home/max/.ansible/roles/jaredhocutt.gnome_extensions
-
-rm /home/max/.config/VSCodium/product.json
-
-
 stow config/ --target=/home/max
 
 mkdir /home/max/bin
-shopt -s dotglob
-rm /home/max/bin/*
 stow bin/ --target=/home/max/bin
 
 
