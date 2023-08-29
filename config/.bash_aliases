@@ -51,13 +51,8 @@ alias ap='ansible-playbook main.yml'
 # rust
 alias cr='cargo run'
 
-alias hm='home-manager'
-
 # docker
 alias dp='docker ps -a'
-
-# Ghidra
-alias ghidraRun='$HOME/sec/ghidra_10.1.4_PUBLIC_20220519/ghidra_10.1.4_PUBLIC/ghidraRun'
 
 alias idea='cd $HOME && nohup /opt/ideaIC-2022.2.2/idea-IC-222.4167.29/bin/idea.sh'
 

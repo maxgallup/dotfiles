@@ -7,8 +7,6 @@
   become: yes
   apt:
     name:
-      # Apps
-      # - android-sdk-platform-tools-common
       - tcpdump
       - tmux
       - ffmpeg
@@ -20,23 +18,14 @@
       - gnome-tweaks
       - gnome-sushi
       - dconf-editor
-      # Linux Dev
       - build-essential
       - cmake
       - libcap-dev
       - arping
       - net-tools
-      # VIRTUALIZATION
-      # - virt-manager
-      # - virtualbox
-      # - qemu-kvm
-      # - libvirt-daemon-system
-      # - libvirt-clients
-      # - bridge-utils
       - x11-utils
       - build-essential
       - libssl-dev
-
     state: latest
   tags: apps
 
