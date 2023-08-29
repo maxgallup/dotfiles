@@ -15,6 +15,7 @@ rm /home/max/.config/VSCodium/product.json
 
 stow config/ --target=/home/max
 
+mkdir /home/max/bin
 shopt -s dotglob
 rm /home/max/bin/*
 stow bin/ --target=/home/max/bin
