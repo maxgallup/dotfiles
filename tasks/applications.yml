@@ -63,6 +63,7 @@
 # Downloaded .deb installs
 # --------------------------------------
 - name: Install .debs
+  become: true
   apt:
     deb: "{{item}}"
   with_items:
