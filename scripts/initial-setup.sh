@@ -34,19 +34,9 @@ check_exit_status
 ansible --version
 check_exit_status
 
-echo "🟡 Stowing config files"
-./scripts/stow-update.sh
-check_exit_status
-
 echo "🟡 Running Playbook"
 ansible-playbook main.yml -K --ask-vault-pass
 check_exit_status
 
-echo "🟡 Updating dconf settings"
-dconf load / < config_misc/dconf-settings
-check_exit_status
 
-echo "🟡 Updating default apps"
-./scripts/updatedefaultapp.sh
-check_exit_status
 
