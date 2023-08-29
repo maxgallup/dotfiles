@@ -12,3 +12,6 @@
   shell: ./scripts/updatedefaultapp.sh
   tags: configure
 
+- name: Install Codium/Code extensions
+  shell: ./scripts/code-extensions.sh
+  tags: configure
