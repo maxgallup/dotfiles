@@ -22,5 +22,9 @@
   tags: directories
 
 
-
+- name: Copy gnupg directory
+  copy:
+    src: config_misc/.gnupg
+    dest: "{{home}}"
+  tags: directories
 
