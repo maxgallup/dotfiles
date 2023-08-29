@@ -35,7 +35,7 @@ ansible --version
 check_exit_status
 
 echo "🟡 Stowing Files"
-./script/stow-update.sh
+./scripts/stow-update.sh
 check_exit_status
 
 echo "🟡 Running Playbook"
