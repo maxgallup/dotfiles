@@ -32,31 +32,31 @@
 # ----------------------
 # install deb-get
 # ----------------------
-# - name: Install deb-get
-#   shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
-#   tags: apps
+- name: Install deb-get
+  shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
+  tags: apps
 
 # ----------------------
 # deb-get installs
 # ----------------------
-# - name: Install Apps available through deb-get
-#   shell: "deb-get install {{item}}"
-#   with_items:
-#     # - "discord"
-#     # - "insomnia"
-#     # - "obs-studio"
-#     # - "portmaster"
-#     # - "virtualbox-6.1"
-#     - "brave-browser"
-#     - "code"
-#     - "codium"
-#     - "docker-ce"
-#     - "draw.io"
-#     - "pandoc"
-#     - "rpi-imager"
-#     - "signal-desktop"
-#     - "tailscale"
-#   tags: apps
+- name: Install Apps available through deb-get
+  shell: "deb-get install {{item}}"
+  with_items:
+    - "discord"
+    - "brave-browser"
+    - "code"
+    - "codium"
+    - "docker-ce"
+    - "draw.io"
+    - "pandoc"
+    - "rpi-imager"
+    - "signal-desktop"
+    - "tailscale"
+    # - "insomnia"
+    # - "obs-studio"
+    # - "portmaster"
+    # - "virtualbox-6.1"
+  tags: apps
 
 
 # --------------------------------------
