@@ -27,8 +27,8 @@ check_exit_status
 sudo apt upgrade -y
 check_exit_status
 
-echo "🟡 Installing ansible"
-sudo apt install ansible -y
+echo "🟡 Installing ansible and stow"
+sudo apt install ansible stow -y
 check_exit_status
 
 ansible --version
