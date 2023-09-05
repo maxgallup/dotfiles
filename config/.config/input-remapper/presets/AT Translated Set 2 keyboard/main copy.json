@@ -56,12 +56,12 @@
             "Home",
             "keyboard"
         ],
-        "1,58,1+1,22,1": [
-            "Prior",
-            "keyboard"
-        ],
         "1,58,1": [
             "KEY_UNKNOWN",
+            "keyboard"
+        ],
+        "1,58,1+1,22,1": [
+            "Prior",
             "keyboard"
         ]
     }

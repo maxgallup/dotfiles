@@ -26,6 +26,7 @@
       - x11-utils
       - build-essential
       - libssl-dev
+      - virtualbox
     state: latest
   tags: apps
 
