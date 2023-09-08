@@ -27,6 +27,7 @@
       - build-essential
       - libssl-dev
       - virtualbox
+      - valgrind
     state: latest
   tags: apps
 
