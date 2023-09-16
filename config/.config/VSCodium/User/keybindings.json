@@ -1635,11 +1635,11 @@
         "when": "interactivePlaygroundFocus && !editorTextFocus"
     },
     {
-        "key": "pageup",
+        "key": "pagedown",
         "command": "workbench.action.terminal.resizePaneLeft"
     },
     {
-        "key": "pagedown",
+        "key": "pageup",
         "command": "workbench.action.terminal.resizePaneRight"
     },
     {
@@ -1845,5 +1845,48 @@
         "key": "ctrl+e",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
-    }
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.terminal.focusNextPane"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.focusPreviousPane"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.debug.prevConsole",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-selectPrevPageSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.debug.nextConsole",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-selectNextPageSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
 ]
