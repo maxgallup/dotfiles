@@ -132,8 +132,10 @@ exec-arg=''
 color-shading-type='solid'
 draw-background=false
 picture-options='zoom'
-picture-uri='file:///home/max/dotfiles/pics/monterey-dark-green.jpg'
-picture-uri-dark='file:///home/max/dotfiles/pics/monterey-dark-green.jpg'
+picture-uri='file:///home/max/dotfiles/pics/monterey-dark-orange.jpg'
+picture-uri-dark='file:///home/max/dotfiles/pics/monterey-dark-orange.jpg'
+; picture-uri='file:///home/max/dotfiles/pics/monterey-dark-green.jpg'
+; picture-uri-dark='file:///home/max/dotfiles/pics/monterey-dark-green.jpg'
 primary-color='#000000'
 secondary-color='#000000'
 

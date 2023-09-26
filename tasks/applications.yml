@@ -28,6 +28,7 @@
       - libssl-dev
       - virtualbox
       - valgrind
+      - gdbserver
     state: latest
   tags: apps
 
