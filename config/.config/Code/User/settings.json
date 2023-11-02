@@ -46,12 +46,16 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "Nathan's Gruvbox",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
-        "workbench.action.toggleSidebarVisibility"
+        "workbench.action.toggleSidebarVisibility",
+        "language-julia.interrupt"
     ],
     "zenMode.hideStatusBar": false,
     "terminal.integrated.scrollback": 50000,
     "window.commandCenter": false,
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
+    "julia.enableTelemetry": false,
 }

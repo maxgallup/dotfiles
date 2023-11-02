@@ -88,6 +88,7 @@
     - "com.mattjakeman.ExtensionManager"
     - "org.gimp.GIMP"
     - "org.videolan.VLC"
+    - "org.gnome.Boxes"
     # - "org.DolphinEmu.dolphin-emu"
     # - "org.inkscape.Inkscape"
     # - "org.audacityteam.Audacity"

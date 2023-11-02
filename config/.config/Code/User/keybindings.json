@@ -1635,11 +1635,11 @@
         "when": "interactivePlaygroundFocus && !editorTextFocus"
     },
     {
-        "key": "pagedown",
+        "key": "pageup",
         "command": "workbench.action.terminal.resizePaneLeft"
     },
     {
-        "key": "pageup",
+        "key": "pagedown",
         "command": "workbench.action.terminal.resizePaneRight"
     },
     {
@@ -1888,5 +1888,15 @@
         "key": "ctrl+shift+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-language-julia.executeCodeBlockOrSelection",
+        "when": "editorTextFocus && activeEditor != 'workbench.editor.notebook' && editorLangId in 'julia.supportedLanguageIds'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-jupyter.runByLineStop",
+        "when": "notebookCellResource in 'jupyter.notebookeditor.runByLineCells'"
     },
 ]
