@@ -9,7 +9,7 @@ extensions=(
 "rdnlsmith.linux-themes"
 "Jeraldson.vscode-rusty-onedark"
 "NathanBarry.rust-gruvbox"
-"bungcip.better-toml"
+"tamasfe.even-better-toml"
 "nvarner.typst-lsp"
 "rust-lang.rust-analyzer"
 "golang.go"
@@ -26,7 +26,7 @@ done
 extensions=(
 "Jeraldson.vscode-rusty-onedark"
 "NathanBarry.rust-gruvbox"
-"bungcip.better-toml"
+"tamasfe.even-better-toml"
 "nvarner.typst-lsp"
 "rust-lang.rust-analyzer"
 "golang.go"
