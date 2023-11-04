@@ -20,15 +20,20 @@ check_exit_status() {
 	fi
 }
 
-echo "🟡 Updating and Upgrading"
-sudo apt update
+echo "🟡 Installing nala"
+sudo apt install nala
 check_exit_status
 
-sudo apt upgrade -y
+echo "🟡 Updating"
+sudo nala update
+check_exit_status
+
+echo "🟡 Upgrading"
+sudo nala upgrade -y
 check_exit_status
 
 echo "🟡 Installing ansible and stow"
-sudo apt install ansible stow -y
+sudo nala install ansible stow -y
 check_exit_status
 
 ansible --version

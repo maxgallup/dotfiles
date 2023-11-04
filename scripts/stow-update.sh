@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir /home/max/.ssh
+
 rm /home/max/.bash_logout
 rm /home/max/.bashrc
 rm /home/max/.bash_aliases

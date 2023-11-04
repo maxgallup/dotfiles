@@ -14,8 +14,8 @@
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "workbench.preferredDarkColorTheme": "United GNOME",
-    "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Nathan's Gruvbox",
+    "workbench.preferredHighContrastLightColorTheme": "monokai-charcoal (gray)",
     "rust-analyzer.inlayHints.enable": false,
     "workbench.editorAssociations": {
         "*.html": "default"
@@ -31,7 +31,7 @@
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
     "window.autoDetectHighContrast": false,
     "window.autoDetectColorScheme": true,
     "svelte.enable-ts-plugin": true,

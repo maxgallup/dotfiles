@@ -1,12 +1,12 @@
 ---
 
 # ----------------------
-# apt-get installs
+# nala installs
 # ----------------------
-- name: Installing software through apt
+- name: Install debian apps through nala
   become: yes
-  apt:
-    name:
+  shell: "nala install {{item}}"
+  with_items:
       - tcpdump
       - tmux
       - ffmpeg
@@ -29,7 +29,6 @@
       - virtualbox
       - valgrind
       - gdbserver
-    state: latest
   tags: apps
 
 # ----------------------
@@ -70,7 +69,7 @@
   apt:
     deb: "{{item}}"
   with_items:
-  - "https://github.com/sezanzeb/input-remapper/releases/download/2.0.0/input-remapper-2.0.0.deb"
+  - "https://github.com/snnezanzeb/input-remapper/releases/download/2.0.0/input-remapper-2.0.0.deb"
     # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
     # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.22.0-0+553.1_amd64.deb"
     # - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
@@ -88,7 +87,7 @@
     - "com.mattjakeman.ExtensionManager"
     - "org.gimp.GIMP"
     - "org.videolan.VLC"
-    - "org.gnome.Boxes"
+    - "org.gnome.Bxoxes"
     # - "org.DolphinEmu.dolphin-emu"
     # - "org.inkscape.Inkscape"
     # - "org.audacityteam.Audacity"
