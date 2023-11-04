@@ -99,18 +99,4 @@
     - apps
     - flatpak
 
-# --------------------------------------
-# Clean Up
-# --------------------------------------
 
-- name: Autoclean
-  become: yes
-  apt:
-    autoclean: yes
-  tags: apps
-
-- name: Autoremove
-  become: yes
-  apt:
-    autoremove: yes
-  tags: apps

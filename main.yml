@@ -4,7 +4,6 @@
 
   tasks:
     - import_tasks: tasks/basic.yml
-    - import_tasks: tasks/essential.yml
     - import_tasks: tasks/directories.yml
     - import_tasks: tasks/applications.yml
     - import_tasks: tasks/configure.yml
