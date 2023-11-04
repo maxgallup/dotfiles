@@ -3,33 +3,35 @@
 # ----------------------
 # nala installs
 # ----------------------
-# - name: Install debian apps through nala
-#   become: yes
-#   shell: "nala install {{item}}"
-#   with_items:
-#       - tcpdump
-#       - tmux
-#       - ffmpeg
-#       - htop
-#       - stow
-#       - neofetch
-#       - vim
-#       - whois
-#       - gnome-tweaks
-#       - gnome-sushi
-#       - dconf-editor
-#       - build-essential
-#       - cmake
-#       - libcap-dev
-#       - arping
-#       - net-tools
-#       - x11-utils
-#       - build-essential
-#       - libssl-dev
-#       - virtualbox
-#       - valgrind
-#       - gdbserver
-#   tags: apps
+- name: Install debian apps through nala
+  become: yes
+  shell: "nala install {{item}} --assume-yes"
+  with_items:
+      - gimp
+      - vlc
+      - tcpdump
+      - tmux
+      - ffmpeg
+      - htop
+      - stow
+      - neofetch
+      - vim
+      - whois
+      - gnome-tweaks
+      - gnome-sushi
+      - dconf-editor
+      - build-essential
+      - cmake
+      - libcap-dev
+      - arping
+      - net-tools
+      - x11-utils
+      - build-essential
+      - libssl-dev
+      - virtualbox
+      - valgrind
+      - gdbserver
+  tags: apps
 
 # ----------------------
 # install deb-get
@@ -85,16 +87,13 @@
     name: "{{item}}"
   with_items:
     - "com.mattjakeman.ExtensionManager"
-    - "org.gimp.GIMP"
-    - "org.videolan.VLC"
-    - "org.gnome.Bxoxes"
+    - "org.gnome.Boxes"
     # - "org.DolphinEmu.dolphin-emu"
     # - "org.inkscape.Inkscape"
     # - "org.audacityteam.Audacity"
     # - "org.kicad.KiCad"
     # - "cc.arduino.IDE2"
     # - "com.slack.Slack"
-    # - "com.brave.Browser"
   tags:
     - apps
     - flatpak
