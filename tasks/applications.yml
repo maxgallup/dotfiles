@@ -3,33 +3,33 @@
 # ----------------------
 # nala installs
 # ----------------------
-- name: Install debian apps through nala
-  become: yes
-  shell: "nala install {{item}}"
-  with_items:
-      - tcpdump
-      - tmux
-      - ffmpeg
-      - htop
-      - stow
-      - neofetch
-      - vim
-      - whois
-      - gnome-tweaks
-      - gnome-sushi
-      - dconf-editor
-      - build-essential
-      - cmake
-      - libcap-dev
-      - arping
-      - net-tools
-      - x11-utils
-      - build-essential
-      - libssl-dev
-      - virtualbox
-      - valgrind
-      - gdbserver
-  tags: apps
+# - name: Install debian apps through nala
+#   become: yes
+#   shell: "nala install {{item}}"
+#   with_items:
+#       - tcpdump
+#       - tmux
+#       - ffmpeg
+#       - htop
+#       - stow
+#       - neofetch
+#       - vim
+#       - whois
+#       - gnome-tweaks
+#       - gnome-sushi
+#       - dconf-editor
+#       - build-essential
+#       - cmake
+#       - libcap-dev
+#       - arping
+#       - net-tools
+#       - x11-utils
+#       - build-essential
+#       - libssl-dev
+#       - virtualbox
+#       - valgrind
+#       - gdbserver
+#   tags: apps
 
 # ----------------------
 # install deb-get
