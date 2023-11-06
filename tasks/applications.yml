@@ -53,6 +53,7 @@
     - "brave-browser"
     - "code"
     - "codium"
+    - "docker-ce"
     - "draw.io"
     - "pandoc"
     - "rpi-imager"
@@ -90,6 +91,7 @@
   with_items:
     - "com.mattjakeman.ExtensionManager"
     - "org.gnome.Boxes"
+    - "com.usebottles.bottles"
     # - "org.DolphinEmu.dolphin-emu"
     # - "org.inkscape.Inkscape"
     # - "org.audacityteam.Audacity"
