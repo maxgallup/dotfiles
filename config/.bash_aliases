@@ -42,6 +42,8 @@ alias ta="tmux attach"
 alias tl="tmux ls"
 alias tk="tmux kill-server"
 
+alias docker="podman"
+
 # get public ip address
 alias myip='curl ifconfig.me'
 

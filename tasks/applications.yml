@@ -31,6 +31,9 @@
       - virtualbox
       - valgrind
       - gdbserver
+      # --- PlatformIO ----
+      - stlink-tools
+      - python3-venv
   tags: apps
 
 # ----------------------
@@ -50,7 +53,6 @@
     - "brave-browser"
     - "code"
     - "codium"
-    - "docker-ce"
     - "draw.io"
     - "pandoc"
     - "rpi-imager"

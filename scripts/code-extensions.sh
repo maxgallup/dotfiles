@@ -5,6 +5,7 @@
 extensions=(
 "ms-vscode-remote.remote-ssh"
 "ms-vscode-remote.remote-ssh-edit"
+"ms-vscode-remote.remote-containers"
 "ms-vsliveshare.vsliveshare"
 "rdnlsmith.linux-themes"
 "Jeraldson.vscode-rusty-onedark"

@@ -35,7 +35,8 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/loc
 
 export DOCKER_ID_USER="maxgallup"
 
-export EDITOR="code"
+export EDITOR="vim"
 
 
 
+. "$HOME/.cargo/env"
