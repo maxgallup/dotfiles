@@ -42,6 +42,8 @@ alias ta="tmux attach"
 alias tl="tmux ls"
 alias tk="tmux kill-server"
 
+alias simplefocstudio="python3 /opt/SimpleFOCStudio-main/simpleFOCStudio.py"
+
 # get public ip address
 alias myip='curl ifconfig.me'
 
