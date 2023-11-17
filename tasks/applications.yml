@@ -34,6 +34,8 @@
       # --- PlatformIO ----
       - stlink-tools
       - python3-venv
+      - python3-pip
+      - wireshark
   tags: apps
 
 # ----------------------

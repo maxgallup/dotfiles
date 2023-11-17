@@ -53,5 +53,4 @@ fi
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# export PATH="$PATH:/opt/julia-1.9.3/bin"
 . "$HOME/.cargo/env"

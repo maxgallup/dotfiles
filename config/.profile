@@ -37,6 +37,3 @@ export DOCKER_ID_USER="maxgallup"
 
 export EDITOR="vim"
 
-
-
-. "$HOME/.cargo/env"

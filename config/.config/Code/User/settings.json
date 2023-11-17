@@ -58,4 +58,5 @@
     "julia.symbolCacheDownload": true,
     "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
     "julia.enableTelemetry": false,
+    "window.confirmBeforeClose": "keyboardOnly",
 }
