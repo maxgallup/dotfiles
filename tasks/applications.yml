@@ -36,7 +36,12 @@
       - python3-venv
       - python3-pip
       - wireshark
+      # --- ProtonVPN ---
+      - libayatana-appindicator3-1
+      - gir1.2-ayatanaappindicator3-0.1
+      - gnome-shell-extension-appindicator
   tags: apps
+
 
 # ----------------------
 # install deb-get
@@ -61,7 +66,7 @@
     - "rpi-imager"
     - "signal-desktop"
     - "tailscale"
-    - "protonvpn"
+    # - "protonvpn"
     - "portmaster"
     # - "obs-studio"
     # - "virtualbox-6.1"
