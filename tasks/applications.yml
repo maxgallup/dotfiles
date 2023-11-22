@@ -61,9 +61,9 @@
     - "rpi-imager"
     - "signal-desktop"
     - "tailscale"
-    # - "insomnia"
+    - "protonvpn"
+    - "portmaster"
     # - "obs-studio"
-    # - "portmaster"
     # - "virtualbox-6.1"
   tags: apps
 
