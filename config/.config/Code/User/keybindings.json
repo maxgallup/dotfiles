@@ -1889,14 +1889,21 @@
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
+
     {
-        "key": "ctrl+enter",
-        "command": "-language-julia.executeCodeBlockOrSelection",
-        "when": "editorTextFocus && activeEditor != 'workbench.editor.notebook' && editorLangId in 'julia.supportedLanguageIds'"
+        "key": "ctrl+/",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
     },
     {
-        "key": "ctrl+enter",
-        "command": "-jupyter.runByLineStop",
-        "when": "notebookCellResource in 'jupyter.notebookeditor.runByLineCells'"
+        "key": "alt+down",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
     },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+
 ]

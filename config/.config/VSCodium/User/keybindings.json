@@ -1635,11 +1635,11 @@
         "when": "interactivePlaygroundFocus && !editorTextFocus"
     },
     {
-        "key": "pagedown",
+        "key": "pageup",
         "command": "workbench.action.terminal.resizePaneLeft"
     },
     {
-        "key": "pageup",
+        "key": "pagedown",
         "command": "workbench.action.terminal.resizePaneRight"
     },
     {
@@ -1889,4 +1889,21 @@
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
+
+    {
+        "key": "ctrl+/",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+
 ]
