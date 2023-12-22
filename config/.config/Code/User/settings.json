@@ -7,7 +7,7 @@
     "explorer.confirmDragAndDrop": false,
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
@@ -59,7 +59,6 @@
     "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
     "julia.enableTelemetry": false,
     "window.confirmBeforeClose": "keyboardOnly",
-    "window.zoomLevel": -1,
     "workbench.panel.defaultLocation": "left"
 
 }

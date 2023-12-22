@@ -1,7 +1,7 @@
 # personalized PS1 prompt
 
 # PROMPT_COMMAND='((( $? )) && computersaysno & ); __git_ps1 "\W" " \e[01;36m$\e[m "'
-PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m "'
+PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m\n"'
 
 # PS1='\u \e[01;31m$\e[m '
 
@@ -54,3 +54,6 @@ fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 . "$HOME/.cargo/env"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
