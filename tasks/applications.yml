@@ -57,7 +57,7 @@
   shell: "deb-get install {{item}}"
   with_items:
     - "discord"
-    - "brave-browser"
+    # - "brave-browser"
     - "code"
     - "codium"
     - "docker-ce"
@@ -67,7 +67,8 @@
     - "signal-desktop"
     - "tailscale"
     # - "protonvpn"
-    - "portmaster"
+    # - "portmaster"
+    - "libre-wolf"
     # - "obs-studio"
     # - "virtualbox-6.1"
   tags: apps
