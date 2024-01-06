@@ -7,7 +7,7 @@
     "explorer.confirmDragAndDrop": false,
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",

@@ -68,7 +68,7 @@
     - "tailscale"
     # - "protonvpn"
     # - "portmaster"
-    - "libre-wolf"
+    - "spotify-client"
     # - "obs-studio"
     # - "virtualbox-6.1"
   tags: apps

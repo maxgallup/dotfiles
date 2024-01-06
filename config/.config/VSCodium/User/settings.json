@@ -46,7 +46,6 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "Nathan's Gruvbox",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility"
