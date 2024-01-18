@@ -7,7 +7,7 @@
     "explorer.confirmDragAndDrop": false,
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
@@ -46,7 +46,7 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "Nathan's Gruvbox",
+    "workbench.colorTheme": "Default Light+",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility",
@@ -58,7 +58,9 @@
     "julia.symbolCacheDownload": true,
     "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
     "julia.enableTelemetry": false,
-    "window.confirmBeforeClose": "keyboardOnly",
-    "workbench.panel.defaultLocation": "left"
+    "workbench.panel.defaultLocation": "left",
+    "editor.rulers": [
+        80, 120
+    ]
 
 }
