@@ -46,7 +46,7 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Atom One Light",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
         "workbench.action.toggleSidebarVisibility",

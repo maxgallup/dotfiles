@@ -3,6 +3,7 @@
 # code --list-extensions | xargs -L 1 echo code --install-extension
 
 extensions=(
+"akamud.vscode-theme-onelight"
 "ms-vscode-remote.remote-ssh"
 "ms-vscode-remote.remote-ssh-edit"
 "ms-vscode-remote.remote-containers"
@@ -25,6 +26,7 @@ done
 
 
 extensions=(
+"akamud.vscode-theme-onelight"
 "Jeraldson.vscode-rusty-onedark"
 "NathanBarry.rust-gruvbox"
 "tamasfe.even-better-toml"
