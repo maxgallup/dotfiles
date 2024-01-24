@@ -53,6 +53,8 @@ alias ap='ansible-playbook main.yml'
 # rust
 alias cr='cargo run'
 
+# alias kubectl='kubectl'
+
 # docker
 alias dp='docker ps -a'
 
