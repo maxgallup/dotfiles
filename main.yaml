@@ -4,7 +4,7 @@
 
   tasks:
     - import_tasks: tasks/init.yaml
-    # - import_tasks: tasks/directories.yaml
+    - import_tasks: tasks/directories.yaml
     # - import_tasks: tasks/applications.yaml
     # - import_tasks: tasks/configure.yaml
 
