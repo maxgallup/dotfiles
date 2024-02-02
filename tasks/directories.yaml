@@ -5,26 +5,22 @@
     path: "{{home}}/bin"
     state: directory
     mode: '0755'
-  tags: directories
 
 - name: Create Code User directory
   file:
     path: "{{home}}/.config/Code/User/"
     state: directory
     mode: '0755'
-  tags: directories
 
 - name: Create Codium User directory
   file:
     path: "{{home}}/.config/VSCodium/User/"
     state: directory
     mode: '0755'
-  tags: directories
 
 
 - name: Copy gnupg directory
   copy:
     src: config_misc/.gnupg
     dest: "{{home}}"
-  tags: directories
 
