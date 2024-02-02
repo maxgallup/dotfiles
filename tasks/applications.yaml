@@ -3,6 +3,7 @@
 
 
 - name: Install common cross-distro packages
+  become: true
   package:
     name:
       - gimp
