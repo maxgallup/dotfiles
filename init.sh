@@ -33,6 +33,9 @@ sudo $PACKAGE_MANAGER upgrade -y
 debug "Install ansible"
 sudo $PACKAGE_MANAGER install ansible -y
 
+debug "Installing ansible collections"
+ansible-galaxy collection install community.general
+
 debug "Starting Playbook"
 ansible-playbook main.yaml --ask-vault-pass -K
 

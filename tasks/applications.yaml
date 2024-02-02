@@ -29,38 +29,81 @@
 # --------------------------
 # -- Fedora only installs --
 # --------------------------
-- name: Install dnf packages only
+
+- name: dnf - Add tailscale repo
+  when: ansible_distribution == 'Fedora'
+  become: true
+  community.general.dnf_config_manager:
+    name: tailscale
+    baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    enabled: yes
+
+- name: dnf - Install packages
   when: ansible_distribution == 'Fedora'
   become: true
   dnf:
     name:
+      - tailscale
       - stlink
       - ffmpeg-free
       - input-remapper
+      - dnf5
+
+
+
 
 
 
 # --------------------------
 # -- Debian only installs --
 # --------------------------
-- name: Install apt packages only
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+- name: apt - Install packages
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
   become: true
   apt:
     name:
       - stlink-tools
       - ffmpeg
 
-- name: Install Input Remapper .deb
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+- name: apt - Install Input Remapper 
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
   become: true
   apt:
     deb: "{{item}}"
   with_items:
     - "https://github.com/sezanzeb/input-remapper/releases/download/2.0.1/input-remapper-2.0.1.deb"
 
+- name: apt - Tailscale dependencies
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+  become: true
+  ansible.builtin.apt:
+    name:
+      - gnupg2
+      - gnupg-agent
+      - apt-transport-https
+      - python3-apt
+    cache_valid_time: 3600
 
+- name: apt - Add Tailscale Signing Key
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+  become: true
+  ansible.builtin.get_url:
+    url: https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg
+    dest: /usr/share/keyrings/tailscale-archive-keyring.gpg
+    mode: '0644'
 
+- name: apt - Add Tailscale Deb
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+  become: true
+  ansible.builtin.apt_repository:
+    repo:  deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/ubuntu jammy main
+
+- name: apt - Install Tailscale
+  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+  become: true
+  ansible.builtin.apt:
+    name: tailscale
+    cache_valid_time: 3600
 
 
 # - name: Install Debian only packages
