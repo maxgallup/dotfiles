@@ -61,7 +61,6 @@
     "workbench.panel.defaultLocation": "left",
     "editor.rulers": [
         80, 120
-    ],
-    "window.zoomLevel": 2
+    ]
 
 }

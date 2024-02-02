@@ -59,9 +59,12 @@ if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/max/Desktop/google-cloud-sdk/path.bash.inc' ]; then . '/home/max/Desktop/google-cloud-sdk/path.bash.inc'; fi
-
 # # The next line enables shell command completion for gcloud.
 if [ -f '/home/max/Desktop/google-cloud-sdk/completion.bash.inc' ]; then . '/home/max/Desktop/google-cloud-sdk/completion.bash.inc'; fi
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/max/Desktop/google-cloud-sdk/path.bash.inc' ]; then . '/home/max/Desktop/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/max/Desktop/google-cloud-sdk/completion.bash.inc' ]; then . '/home/max/Desktop/google-cloud-sdk/completion.bash.inc'; fi

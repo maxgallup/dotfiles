@@ -1,3 +1,3 @@
 all:
-	/usr/bin/bash ./scripts/initial-setup.sh
+	/usr/bin/bash ./scripts/init.sh
 
