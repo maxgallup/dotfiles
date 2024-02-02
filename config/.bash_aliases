@@ -48,7 +48,7 @@ alias simplefocstudio="python3 /opt/SimpleFOCStudio-main/simpleFOCStudio.py"
 alias myip='curl ifconfig.me'
 
 # ansible playbook
-alias ap='ansible-playbook main.yml'
+alias ap='ansible-playbook main.yaml'
 
 # rust
 alias cr='cargo run'

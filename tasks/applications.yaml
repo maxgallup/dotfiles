@@ -12,10 +12,29 @@
       - stow
       - neofetch
       - vim
-      - ffmpeg
       - net-tools
-    state: present
+      - gnome-tweaks
+      - dconf-editor
+      - cmake
+      - python3-pip
 
+
+
+- name: Install common pip packages
+  become: true
+  pip:
+    name:
+      - virtualenv
+
+
+
+
+# dnf only: 
+# - ffmpeg-free
+
+# dnf find:
+#       - build-essential
+#       - python3-venv
 
 
 # ----------------------
@@ -27,26 +46,11 @@
 #     update_cache: yes
 #     state: present
 #     name:
-#       - gimp
-#       - vlc
-#       - tcpdump
-#       - tmux
 #       - ffmpeg
-#       - htop
-#       - stow
-#       - neofetch
-#       - vim
-#       - whois
-#       - gnome-tweaks
-#       - gnome-sushi
-#       - dconf-editor
 #       - build-essential
-#       - cmake
 #       - libcap-dev
 #       - arping
-#       - net-tools
 #       - x11-utils
-#       - build-essential
 #       - libssl-dev
 #       # - virtualbox
 #       # - valgrind
