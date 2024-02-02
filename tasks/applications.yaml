@@ -1,72 +1,89 @@
 ---
 
-# ----------------------
-# apt installs
-# ----------------------
-- name: Install debian apps through apt
-  become: yes
-  apt:
-    update_cache: yes
-    state: present
+
+
+- name: Install common cross-distro packages
+  package:
     name:
       - gimp
       - vlc
       - tcpdump
-      - tmux
-      - ffmpeg
-      - htop
       - stow
       - neofetch
       - vim
-      - whois
-      - gnome-tweaks
-      - gnome-sushi
-      - dconf-editor
-      - build-essential
-      - cmake
-      - libcap-dev
-      - arping
+      - ffmpeg
       - net-tools
-      - x11-utils
-      - build-essential
-      - libssl-dev
-      # - virtualbox
-      # - valgrind
-      # - gdbserver
-      # --- PlatformIO ----
-      - stlink-tools
-      - python3-venv
-      - python3-pip
-      - wireshark
-      # --- ProtonVPN ---
-      - libayatana-appindicator3-1
-      - gir1.2-ayatanaappindicator3-0.1
-      - gnome-shell-extension-appindicator
-      - nala
-  tags: apps
+    state: present
+
+
+
+# ----------------------
+# apt installs
+# ----------------------
+# - name: Install debian apps through apt
+#   become: yes
+#   apt:
+#     update_cache: yes
+#     state: present
+#     name:
+#       - gimp
+#       - vlc
+#       - tcpdump
+#       - tmux
+#       - ffmpeg
+#       - htop
+#       - stow
+#       - neofetch
+#       - vim
+#       - whois
+#       - gnome-tweaks
+#       - gnome-sushi
+#       - dconf-editor
+#       - build-essential
+#       - cmake
+#       - libcap-dev
+#       - arping
+#       - net-tools
+#       - x11-utils
+#       - build-essential
+#       - libssl-dev
+#       # - virtualbox
+#       # - valgrind
+#       # - gdbserver
+#       # --- PlatformIO ----
+#       - stlink-tools
+#       - python3-venv
+#       - python3-pip
+#       - wireshark
+#       # --- ProtonVPN ---
+#       - libayatana-appindicator3-1
+#       - gir1.2-ayatanaappindicator3-0.1
+#       - gnome-shell-extension-appindicator
+#       - nala
+#   tags: apps
 
 
 # ----------------------
 # install deb-get
 # ----------------------
-- name: Install deb-get
-  shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
-  tags: apps
+# - name: Install deb-get
+#   shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
+#   tags: apps
 
 # ----------------------
 # deb-get installs
 # ----------------------
-- name: Install Apps available through deb-get
-  shell: "deb-get install {{item}}"
-  with_items:
-    - "discord"
-    - "code"
-    - "codium"
-    - "docker-ce"
-    - "draw.io"
-    - "signal-desktop"
-    - "tailscale"
-    - "protonvpn"
+# - name: Install Apps available through deb-get
+#   shell: "deb-get install {{item}}"
+#   with_items:
+#     - "discord"
+#     - "code"
+#     - "codium"
+#     - "docker-ce"
+#     - "draw.io"
+#     - "signal-desktop"
+#     - "tailscale"
+#     - "protonvpn"
     # - "pandoc"
     # - "brave-browser"
     # - "rpi-imager"
@@ -74,23 +91,23 @@
     # - "spotify-client"
     # - "obs-studio"
     # - "virtualbox-6.1"
-  tags: apps
+  # tags: apps
 
 
-# --------------------------------------
-# Downloaded .deb installs
-# --------------------------------------
-- name: Install .debs
-  become: true
-  apt:
-    deb: "{{item}}"
-  with_items:
-  - "https://github.com/sezanzeb/input-remapper/releases/download/2.0.0/input-remapper-2.0.0.deb"
-    # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
-    # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.22.0-0+553.1_amd64.deb"
-    # - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
-    # - "https://github.com/sezanzeb/input-remapper/releases/download/1.5.0/input-remapper-1.5.0_all.deb"
-  tags: apps
+# # --------------------------------------
+# # Downloaded .deb installs
+# # --------------------------------------
+# - name: Install .debs
+#   become: true
+#   apt:
+#     deb: "{{item}}"
+#   with_items:
+#   - "https://github.com/sezanzeb/input-remapper/releases/download/2.0.0/input-remapper-2.0.0.deb"
+#     # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.17.6-0_amd64.deb"
+#     # - "https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/amd64/albert_0.22.0-0+553.1_amd64.deb"
+#     # - "https://github.com/espanso/espanso/releases/download/v2.1.7-beta/espanso-debian-x11-amd64.deb"
+#     # - "https://github.com/sezanzeb/input-remapper/releases/download/1.5.0/input-remapper-1.5.0_all.deb"
+#   tags: apps
 
 
 # --------------------------------------
