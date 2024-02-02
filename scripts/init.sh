@@ -15,16 +15,23 @@ error() {
 
 if [ -n "$(command -v dnf)" ] ; then
 	debug "Detected a Redhat based system"
-
+	PACKAGE_MANAGER="dnf"
 elif [ -n "$(command -v apt-get)" ] ; then
 	debug "Detected a Debian based system"
-
+	PACKAGE_MANAGER="apt"
 else
 	error "Couldn't find dnf or apt package managers"
-
 fi
 
 
+debug "Updating"
+sudo $PACKAGE_MANAGER update -y
+
+debug "Upgrading"
+sudo $PACKAGE_MANAGER upgrade -y
+
+debug "Install ansible"
+sudo $PACKAGE_MANAGER install ansible -y
 
 success "Done"
 
