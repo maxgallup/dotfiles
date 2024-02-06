@@ -1,8 +1,8 @@
 ---
 
-# - name: Stow settings
-#   shell: ./scripts/stow-update.sh
-#   tags: configure
+- name: Stow settings
+  shell: ./scripts/stow-update.sh
+  tags: configure
 
 - name: Load dconf settings
   shell: dconf load / < config_misc/dconf-settings
