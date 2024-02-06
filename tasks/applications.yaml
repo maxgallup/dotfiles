@@ -43,7 +43,6 @@
   become: true
   dnf:
     name:
-      - tailscale
       - stlink
       - ffmpeg-free
       - input-remapper
