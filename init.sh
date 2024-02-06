@@ -34,7 +34,7 @@ debug "Install ansible"
 sudo $PACKAGE_MANAGER install ansible -y
 
 debug "Installing ansible collections"
-ansible-galaxy collection install community.general.dnf_config_manager
+ansible-galaxy collection install community.general
 
 debug "Starting Playbook"
 ansible-playbook main.yaml --ask-vault-pass -K
