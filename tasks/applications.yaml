@@ -30,13 +30,13 @@
 # -- Fedora only installs --
 # --------------------------
 
-- name: dnf - Add tailscale repo
-  when: ansible_distribution == 'Fedora'
-  become: true
-  community.general.dnf_config_manager:
-    name: tailscale
-    baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    enabled: yes
+# - name: dnf - Add tailscale repo
+#   when: ansible_distribution == 'Fedora'
+#   become: true
+#   community.general.dnf_config_manager:
+#     name: tailscale
+#     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+#     enabled: yes
 
 - name: dnf - Install packages
   when: ansible_distribution == 'Fedora'
