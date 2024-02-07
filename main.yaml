@@ -6,6 +6,7 @@
     - import_tasks: tasks/init.yaml
     - import_tasks: tasks/directories.yaml
     - import_tasks: tasks/applications.yaml
+    - import_tasks: tasks/dconf.yaml
     - import_tasks: tasks/configure.yaml
 
 
@@ -19,5 +20,14 @@
 #         - 906  # Sound Input & Output Device Chooser
 #         - 7    # Removable Drive Menu
 #         - 1319 # GS Connect
+
+
+# - hosts: all
+#   roles:
+#   - role: jaredhocutt.gnome_extensions
+      # when: ansible_distribution == 'Fedora'
+#     vars:
+#       gnome_extension_ids:
+#         - 5112 # Tailscale Status
 
 

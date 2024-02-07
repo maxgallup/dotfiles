@@ -1,0 +1,208 @@
+---
+
+- name: dconf settigs
+  community.general.dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+  loop:
+    - {key: "/org/gnome/desktop/sound/allow-volume-above-100-percent", value: "true"}
+    - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
+    - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
+    - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
+    - {key: "/org/gnome/desktop/interface/show-battery-percentage", value: "true"}
+    - {key: "/org/gnome/desktop/interface/clock-format", value: "'24h'"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-down", value: "['<Super>s']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-up", value: "['<Super>w']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-down", value: "['<Shift><Super>s']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-up", value: "['<Shift><Super>w']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/begin-move", value: "['<Super>e']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/begin-resize", value: "['<Super>r']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/close", value: "['<Primary>q']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/toggle-fullscreen", value: "['<Super>slash']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/toggle-maximized", value: "['<Super>Space']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-applications", value: "['<Super>Tab', '<Alt>Tab']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward", value: "['<Shift><Super>Tab', '<Shift><Alt>Tab']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/panel-run-dialog", value: "['<Alft>F2']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-group", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-group-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-panels", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-panels-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-windows", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/cycle-windows-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/maximize", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-monitor-left", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-monitor-right", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-1", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-last", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/panel-main-menu", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-group", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-group-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-input-source", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-input-source-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-panels", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-panels-backward", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-1", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-last", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/activate-launcher", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/focus-down", value: "['<Super>k', '<Super>Down', '<Alt>k']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/focus-left", value: "['<Super>j', '<Super>Left', '<Alt>j']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/focus-right", value: "['<Super>l', '<Super>Right', '<Alt>l']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/focus-up", value: "['<Super>Up', '<Super>i', '<Alt>i']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/gap-inner", value: "uint32 3"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/gap-outer", value: "uint32 3"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(120,245,182,0.925676)'"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/management-orientation", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-down", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-left", value: "['<Super>n']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-right", value: "['<Super>m']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-up", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-workspace-down", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/pop-workspace-up", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/show-title", value: "false"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/smart-gaps", value: "false"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/snap-to-grid", value: "true"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-by-default", value: "true"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-orientation", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-resize-down", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-resize-left", value: "['u']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-resize-right", value: "['o']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-resize-up", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-swap-down", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-swap-left", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-swap-right", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/tile-swap-up", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/toggle-floating", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/toggle-stacking", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/toggle-stacking-global", value: "@as []"}
+    - {key: "/org/gnome/shell/keybindings/focus-active-notification", value: "@as []"}
+    - {key: "/org/gnome/shell/keybindings/show-screenshot-ui", value: "['<Primary>4']"}
+    - {key: "/org/gnome/shell/keybindings/toggle-application-view", value: "['<Super>a']"}
+    - {key: "/org/gnome/shell/keybindings/toggle-message-tray", value: "@as []"}
+    - {key: "/org/gnome/shell/keybindings/toggle-overview", value: "['<Super>q']"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/close-tab", value: "'<Primary>w'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/close-window", value: "'<Primary>q'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/find", value: "'<Primary>f'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/find-clear", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/find-next", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/find-previous", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/full-screen", value: "'<Primary>question'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/move-tab-left", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/move-tab-right", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/new-tab", value: "'<Primary>t'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/new-window", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/next-tab", value: "'<Primary>Page_Down'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/preferences", value: "'<Primary>comma'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/prev-tab", value: "'<Primary>Page_Up'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-1", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-10", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-2", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-3", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-4", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-5", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-6", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-7", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-8", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/switch-to-tab-9", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/toggle-menubar", value: "'disabled'"}
+    - {key: "/org/gnome/terminal/legacy/keybindings/zoom-in", value: "'<Primary>equal'"}
+    - {key: "/org/gtk/gtk4/settings/file-chooser/show-hidden", value: "true"}
+    - {key: "/org/gtk/settings/file-chooser/show-hidden", value: "true"}
+    - {key: "/org/gnome/nautilus/preferences/show-hidden-files", value: "true"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding", value: "'<Primary>3'"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command", value: "'nautilus'"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name", value: "'Launch File Manager'"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/area-screenshot", value: "['<Primary>4']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/area-screenshot-clip", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings", value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/email", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/help", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/home", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/logout", value: "['<Super>Delete']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier-zoom-in", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier-zoom-out", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/screencast", value: "['<Primary>6']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/screenreader", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/screenshot", value: "['<Primary>5']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/screenshot-clip", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/terminal", value: "['<Primary>1']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/window-screenshot", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/window-screenshot-clip", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/www", value: "['<Primary>2']"}
+    - {key: "/org/gnome/shell/extensions/dash-to-dock/extend-height", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-dock/manualhide", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-appicon-hover", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-appicon-hover-animation-extent", value: "{'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-show-apps", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/appicon-margin", value: "3"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/appicon-padding", value: "2"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/available-monitors", value: "[0]"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-1", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-2", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-3", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-4", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-dominant", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-override", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-unfocused-1", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-unfocused-2", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-unfocused-3", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-unfocused-4", value: "'#5294e2'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-position", value: "'LEFT'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-size", value: "0"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-style-focused", value: "'METRO'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-style-unfocused", value: "'METRO'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/focus-highlight", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/focus-highlight-color", value: "'#9a9996'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/focus-highlight-dominant", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/focus-highlight-opacity", value: "40"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/group-apps", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/hotkeys-overlay-combo", value: "'TEMPORARILY'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/isolate-monitors", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/isolate-workspaces", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/leftbox-padding", value: "-1"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/leftbox-size", value: "0"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/overview-click-to-exit", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-element-positions-monitors-sync", value: "true"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-anchors", value: "'{"0":"MIDDLE","1":"MIDDLE"}'"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-element-positions", value: "'{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":false,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-lengths", value: "'{"0":100,"1":100}'"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-positions", value: "'{"0":"TOP","1":"TOP"}'"}
+    # - {key: "/org/gnome/shell/extensions/dash-to-panel/panel-sizes", value: "'{"0":22,"1":22}'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/primary-monitor", value: "0"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-appmenu", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-apps-icon-file", value: "''"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-apps-icon-side-padding", value: "4"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-favorites", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-favorites-all-monitors", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-running-apps", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-tooltip", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/show-window-previews", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/status-icon-padding", value: "-1"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-bg-color", value: "'#000000'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-panel-opacity", value: "0.55000000000000004"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-use-custom-bg", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-use-custom-gradient", value: "false"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-use-custom-opacity", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/trans-use-dynamic-opacity", value: "true"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/tray-padding", value: "-1"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/tray-size", value: "0"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/window-preview-title-font-color", value: "'#dddddd'"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/window-preview-title-position", value: "'TOP'"}
+    - {key: "/org/gnome/terminal/legacy/headerbar", value: "@mb false"}
+    - {key: "/org/gnome/terminal/legacy/default-show-menubar", value: "false"}
+    - {key: "/org/gnome/terminal/legacy/theme-variant", value: "'system'"}
+    - {key: "/org/gnome/desktop/peripherals/keyboard/delay", value: "uint32 166"}
+    - {key: "/org/gnome/desktop/peripherals/keyboard/numlock-state", value: "false"}
+    - {key: "/org/gnome/desktop/peripherals/keyboard/repeat", value: "true"}
+    - {key: "/org/gnome/desktop/peripherals/keyboard/repeat-interval", value: "uint32 6"}
+
+
+
+
+  tags: dconf
+
+
+
+
+
