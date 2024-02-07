@@ -43,7 +43,7 @@
     - {key: "/org/gnome/desktop/wm/keybindings/switch-panels-backward", value: "@as []"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-1", value: "@as []"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-last", value: "@as []"}
-    - {key: "/org/gnome/shell/extensions/pop-shell/activate-launcher", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/activate-launcher", value: "['<Ctrl>Space']"}
     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
     - {key: "/org/gnome/shell/extensions/pop-shell/focus-down", value: "['<Super>k', '<Super>Down', '<Alt>k']"}
     - {key: "/org/gnome/shell/extensions/pop-shell/focus-left", value: "['<Super>j', '<Super>Left', '<Alt>j']"}
