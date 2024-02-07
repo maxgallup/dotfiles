@@ -1,14 +1,6 @@
 ---
 
 
-- name: Make sure .ssh directory exists
-  file:
-    path: "/home/max/.ssh"
-    state: directory
-    owner: "{{ user }}"
-    group: "{{ user }}"
-
-
 - name: Copy background file
   copy:
     src: "config_misc/gnome-background"

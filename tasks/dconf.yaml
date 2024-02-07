@@ -1,6 +1,7 @@
 ---
 
 - name: dconf settigs
+  tags: dconf
   community.general.dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"

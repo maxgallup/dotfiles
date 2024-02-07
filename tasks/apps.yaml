@@ -1,24 +1,24 @@
 ---
 
-
 - name: Install common cross-distro packages
+  tags: apps
   become: true
   package:
     name:
-      - gimp
       - vlc
-      - tcpdump
       - stow
       - neofetch
       - vim
-      - net-tools
       - gnome-tweaks
       - dconf-editor
       - cmake
-      - python3-pip
+      - net-tools
+      # - gimp
+      # - tcpdump
 
 
 - name: Install common pip packages
+  tags: apps
   become: true
   pip:
     name:
@@ -26,86 +26,10 @@
 
 
 
-# --------------------------
-# -- Fedora only installs --
-# --------------------------
-
-# - name: dnf - Add tailscale repo
-#   when: ansible_distribution == 'Fedora'
-#   become: true
-#   community.general.dnf_config_manager:
-#     name: tailscale
-#     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-#     enabled: yes
-
-- name: dnf - Install packages
-  when: ansible_distribution == 'Fedora'
-  become: true
-  dnf:
-    name:
-      - stlink
-      - ffmpeg-free
-      - input-remapper
-      - dnf5
-
-
-
-
-
-
-# --------------------------
-# -- Debian only installs --
-# --------------------------
-- name: apt - Install packages
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  apt:
-    name:
-      - stlink-tools
-      - ffmpeg
-
-- name: apt - Install Input Remapper 
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  apt:
-    deb: "{{item}}"
-  with_items:
-    - "https://github.com/sezanzeb/input-remapper/releases/download/2.0.1/input-remapper-2.0.1.deb"
-
-- name: apt - Tailscale dependencies
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  ansible.builtin.apt:
-    name:
-      - gnupg2
-      - gnupg-agent
-      - apt-transport-https
-      - python3-apt
-    cache_valid_time: 3600
-
-- name: apt - Add Tailscale Signing Key
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  ansible.builtin.get_url:
-    url: https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg
-    dest: /usr/share/keyrings/tailscale-archive-keyring.gpg
-    mode: '0644'
-
-- name: apt - Add Tailscale Deb
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  ansible.builtin.apt_repository:
-    repo:  deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/ubuntu jammy main
-
-- name: apt - Install Tailscale
-  when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
-  become: true
-  ansible.builtin.apt:
-    name: tailscale
-    cache_valid_time: 3600
 
 
 # - name: Install Debian only packages
+  # tags: apps
 #   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
 #   become: true
 #   apt:
@@ -116,6 +40,7 @@
 
 
 # - name: Install Red Hat only packages
+  # tags: apps
 #   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
 #   become: true
 #   apt:
@@ -126,18 +51,14 @@
 
 
 
-# dnf only: 
-# - ffmpeg-free
-# - stlink
 
-# dnf find:
-#       - build-essential
 
 
 # ----------------------
 # apt installs
 # ----------------------
 # - name: Install debian apps through apt
+  # tags: apps
 #   become: yes
 #   apt:
 #     update_cache: yes
@@ -167,6 +88,7 @@
 # install deb-get
 # ----------------------
 # - name: Install deb-get
+  # tags: apps
 #   shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
 #   tags: apps
 
@@ -174,6 +96,7 @@
 # deb-get installs
 # ----------------------
 # - name: Install Apps available through deb-get
+  # tags: apps
 #   shell: "deb-get install {{item}}"
 #   with_items:
 #     - "discord"
@@ -202,6 +125,7 @@
 # FLATPAK INSTALLS
 # --------------------------------------
 # - name: Flatpak Installs
+  # tags: apps
 #   flatpak:
 #     name: "{{item}}"
 #   with_items:

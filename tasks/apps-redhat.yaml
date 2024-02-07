@@ -1,0 +1,39 @@
+---
+
+
+# --------------------------
+# -- Fedora only installs --
+# --------------------------
+
+# - name: dnf - Add tailscale repo
+  # tags: apps
+#   when: ansible_distribution == 'Fedora'
+#   become: true
+#   community.general.dnf_config_manager:
+#     name: tailscale
+#     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+#     enabled: yes
+
+
+
+
+# TODO POP-SHELL
+# TODO TRY ALBERT again
+# TODO COSMIC WORKSPACES
+
+
+
+- name: dnf - Install packages
+  tags: apps
+  when: ansible_distribution == 'Fedora'
+  become: true
+  dnf:
+    name:
+      - stlink
+      - ffmpeg-free
+      - input-remapper
+      - dnf5
+
+
+
+

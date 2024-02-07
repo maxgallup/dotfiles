@@ -3,11 +3,13 @@
 - hosts: all
 
   tasks:
-    - import_tasks: tasks/init.yaml
-    - import_tasks: tasks/directories.yaml
-    - import_tasks: tasks/applications.yaml
-    - import_tasks: tasks/dconf.yaml
-    - import_tasks: tasks/configure.yaml
+    - import_tasks: tasks/directories.yaml   # DONE
+    - import_tasks: tasks/copies.yaml        # DONE
+    - import_tasks: tasks/dconf.yaml         # TODO CHECK
+    - import_tasks: tasks/configure.yaml     # TODO CHECK  
+    - import_tasks: tasks/apps.yaml          # TODO CHECK
+    - import_tasks: tasks/apps-redhat.yaml   # TODO CHECK
+    - import_tasks: tasks/apps-debian.yaml   # TODO CHECK
 
 
 # - hosts: all

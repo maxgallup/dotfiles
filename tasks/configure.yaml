@@ -1,19 +1,13 @@
 ---
 
-
 - name: Stow settings
-  shell: ./scripts/stow-update.sh
+  shell: ./scripts/configure-stow.sh
   tags: configure
 
-
-# - name: Load dconf settings
-#   shell: dconf load / < config_misc/dconf-settings
-#   tags: configure
-
 - name: Update default apps
-  shell: ./scripts/updatedefaultapp.sh
+  shell: ./scripts/configure-default-apps.sh
   tags: configure
 
 - name: Install Codium/Code extensions
-  shell: ./scripts/code-extensions.sh
+  shell: ./scripts/configure-code-extensions.sh
   tags: configure
