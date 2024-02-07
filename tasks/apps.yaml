@@ -1,5 +1,6 @@
 ---
 
+
 - name: Install common cross-distro packages
   tags: apps
   become: true
@@ -13,8 +14,6 @@
       - dconf-editor
       - cmake
       - net-tools
-      # - gimp
-      # - tcpdump
 
 
 - name: Install common pip packages
@@ -25,63 +24,27 @@
       - virtualenv
 
 
-
-
-
-# - name: Install Debian only packages
-  # tags: apps
-#   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
-#   become: true
-#   apt:
-#     update_cache: true
-#     name:
-#       - stlink-tools
-#       - ffmpeg
-
-
-# - name: Install Red Hat only packages
-  # tags: apps
-#   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
-#   become: true
-#   apt:
-#     update_cache: true
-#     name:
-#       - stlink-tools
-#       - ffmpeg
+- name: Flatpak Installs
+  tags: apps
+  flatpak:
+    name: "{{item}}"
+  with_items:
+    - "com.discordapp.Discord"
+    # - "com.mattjakeman.ExtensionManager"
+    # - "org.gnome.Boxes"
+    # - "com.usebottles.bottles"
+    # - "org.DolphinEmu.dolphin-emu"
+    # - "org.inkscape.Inkscape"
+    # - "org.audacityteam.Audacity"
+    # - "org.kicad.KiCad"
+    # - "cc.arduino.IDE2"
+    # - "com.slack.Slack"
+  tags: apps
 
 
 
 
 
-
-# ----------------------
-# apt installs
-# ----------------------
-# - name: Install debian apps through apt
-  # tags: apps
-#   become: yes
-#   apt:
-#     update_cache: yes
-#     state: present
-#     name:
-#       - ffmpeg
-#       - build-essential
-#       - libcap-dev
-#       - arping
-#       - x11-utils
-#       - libssl-dev
-#       # - virtualbox
-#       # - valgrind
-#       # - gdbserver
-#       # --- PlatformIO ----
-#       - stlink-tools
-#       - wireshark
-#       # --- ProtonVPN ---
-#       - libayatana-appindicator3-1
-#       - gir1.2-ayatanaappindicator3-0.1
-#       - gnome-shell-extension-appindicator
-#       - nala
-#   tags: apps
 
 
 # ----------------------
@@ -106,13 +69,13 @@
 #     - "draw.io"
 #     - "signal-desktop"
 #     - "tailscale"
+    # - "obs-studio"
+    # - "spotify-client"
 #     - "protonvpn"
     # - "pandoc"
     # - "brave-browser"
     # - "rpi-imager"
     # - "portmaster"
-    # - "spotify-client"
-    # - "obs-studio"
     # - "virtualbox-6.1"
   # tags: apps
 
@@ -124,22 +87,6 @@
 # --------------------------------------
 # FLATPAK INSTALLS
 # --------------------------------------
-# - name: Flatpak Installs
-  # tags: apps
-#   flatpak:
-#     name: "{{item}}"
-#   with_items:
-#     # - "com.mattjakeman.ExtensionManager"
-#     # - "org.gnome.Boxes"
-#     # - "com.usebottles.bottles"
-#     # - "org.DolphinEmu.dolphin-emu"
-#     # - "org.inkscape.Inkscape"
-#     # - "org.audacityteam.Audacity"
-#     # - "org.kicad.KiCad"
-#     # - "cc.arduino.IDE2"
-#     # - "com.slack.Slack"
-#   tags:
-#     - apps
-#     - flatpak
+
 
 

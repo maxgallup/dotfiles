@@ -60,3 +60,16 @@
     cache_valid_time: 3600
 
 
+
+
+
+
+
+#     - "discord"
+#     - "code"
+#     - "codium"
+#     - "docker-ce"
+#     - "draw.io"
+#     - "signal-desktop"
+#     - "tailscale"
+    # - "obs-studio"
