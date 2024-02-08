@@ -1,9 +1,9 @@
 # personalized PS1 prompt
 
 # PROMPT_COMMAND='((( $? )) && computersaysno & ); __git_ps1 "\W" " \e[01;36m$\e[m "'
-PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m\n"'
+# PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m\n"'
 
-# PS1='\u \e[01;31m$\e[m '
+PS1='\u \e[01;31m$\e[m '
 
 
 
@@ -68,3 +68,6 @@ if [ -f '/home/max/Desktop/google-cloud-sdk/path.bash.inc' ]; then . '/home/max/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/max/Desktop/google-cloud-sdk/completion.bash.inc' ]; then . '/home/max/Desktop/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
+
