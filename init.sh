@@ -48,8 +48,8 @@ debug "Installing ansible collections..."
 ansible-galaxy collection install -f community.general
 
 
-debug "Installing ansible golang role"
-ansible-galaxy install fubarhouse.golang
+debug "Installing custom roles"
+ansible-galaxy install fubarhouse.golang jaredhocutt.gnome_extensions
 
 
 debug "Starting Playbook..."
