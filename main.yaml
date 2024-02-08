@@ -5,7 +5,7 @@
   tasks:
     - import_tasks: tasks/directories.yaml   # DONE
     - import_tasks: tasks/copies.yaml        # DONE
-    - import_tasks: tasks/dconf.yaml         # TODO CHECK
+    # - import_tasks: tasks/dconf.yaml         # TODO CHECK
     - import_tasks: tasks/configure.yaml     # TODO CHECK  
     - import_tasks: tasks/apps.yaml          # TODO CHECK
     - import_tasks: tasks/apps-redhat.yaml   # TODO CHECK

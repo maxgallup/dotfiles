@@ -28,12 +28,16 @@
 
 
 - name: Install VScode key
+  tags: apps
+  become: true
   rpm_key:
     key: https://packages.microsoft.com/keys/microsoft.asc
 
 
 
 - name: Install Repo File
+  tags: apps
+  become: true
   yum_repository:
     name: code
     description: Visual Studio Code
