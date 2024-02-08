@@ -12,6 +12,7 @@
       when: ansible_distribution == 'Fedora'
     - import_tasks: tasks/apps-debian.yaml   # TODO CHECK
       when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+    - import_tasks: tasks/final.yaml   # TODO CHECK
 
 
 - hosts: all

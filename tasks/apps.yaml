@@ -1,23 +1,18 @@
 ---
 
-- name: Install common cross-distro packages
-  tags: apps
-  become: true
-  package:
-    name:
-      - vlc
-      - stow
-      - neofetch
-      - vim
-      - gnome-tweaks
-      - dconf-editor
-      - cmake
-      - net-tools
-
-
-- name: Stow settings
-  shell: ./scripts/configure-stow.sh
-  tags: configure
+# - name: Install common cross-distro packages
+#   tags: apps
+#   become: true
+#   package:
+#     name:
+#       - vlc
+#       - stow
+#       - neofetch
+#       - vim
+#       - gnome-tweaks
+#       - dconf-editor
+#       - cmake
+#       - net-tools
 
 
 - name: Install common pip packages

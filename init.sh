@@ -32,8 +32,8 @@ debug "Upgrading..."
 sudo $PACKAGE_MANAGER upgrade -y
 
 
-debug "Installing pip..."
-sudo $PACKAGE_MANAGER install python3-pip -y
+debug "Installing common packages..."
+sudo $PACKAGE_MANAGER install python3-pip vlc stow neofetch vim gnome-tweaks dconf-editor cmake net-tools -y
 
 
 debug "Install ansible via pip..."

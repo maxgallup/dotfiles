@@ -1,11 +1,7 @@
 ---
 
-
-
-- name: Update default apps
-  shell: ./scripts/configure-default-apps.sh
+- name: Stow settings
+  shell: ./scripts/configure-stow.sh
   tags: configure
 
-- name: Install Codium/Code extensions
-  shell: ./scripts/configure-code-extensions.sh
-  tags: configure
+
