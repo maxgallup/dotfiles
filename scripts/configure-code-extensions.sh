@@ -25,19 +25,19 @@ for e in "${extensions[@]}"; do
 done
 
 
-extensions=(
-"akamud.vscode-theme-onelight"
-"Jeraldson.vscode-rusty-onedark"
-"NathanBarry.rust-gruvbox"
-"tamasfe.even-better-toml"
-"nvarner.typst-lsp"
-"rust-lang.rust-analyzer"
-"golang.go"
-"streetsidesoftware.code-spell-checker"
-"tomoki1207.pdf"
-"znck.grammarly"
-)
+# extensions=(
+# "akamud.vscode-theme-onelight"
+# "Jeraldson.vscode-rusty-onedark"
+# "NathanBarry.rust-gruvbox"
+# "tamasfe.even-better-toml"
+# "nvarner.typst-lsp"
+# "rust-lang.rust-analyzer"
+# "golang.go"
+# "streetsidesoftware.code-spell-checker"
+# "tomoki1207.pdf"
+# "znck.grammarly"
+# )
 
-for e in "${extensions[@]}"; do
-    codium --install-extension $e
-done
+# for e in "${extensions[@]}"; do
+#     codium --install-extension $e
+# done
