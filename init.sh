@@ -37,7 +37,7 @@ sudo $PACKAGE_MANAGER install python3-pip -y
 
 
 debug "Install ansible via pip..."
-python3 -m pip install --user ansible
+python3 -m pip install --user ansible psutil
 
 
 debug "Upgrading ansible via pip..."

@@ -1,8 +1,6 @@
 ---
 
-- name: Stow settings
-  shell: ./scripts/configure-stow.sh
-  tags: configure
+
 
 - name: Update default apps
   shell: ./scripts/configure-default-apps.sh
