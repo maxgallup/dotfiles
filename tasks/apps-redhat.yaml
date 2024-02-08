@@ -41,9 +41,10 @@
   yum_repository:
     name: code
     description: Visual Studio Code
-    baseurl: https://packages.microsoft.com/yumrepos/vscode\nenabled=1
+    baseurl: https://packages.microsoft.com/yumrepos/vscode
     gpgcheck: true
     gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+    file: vscode
 
 
 

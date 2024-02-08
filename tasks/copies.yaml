@@ -19,8 +19,8 @@
     mode: 0644
 
 
-- name: Install Flathub Remote
-  become: yes
-  flatpak_remote:
-    name: flathub
-    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+# - name: Install Flathub Remote
+#   become: yes
+#   flatpak_remote:
+#     name: flathub
+#     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
