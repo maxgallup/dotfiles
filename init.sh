@@ -33,7 +33,7 @@ sudo $PACKAGE_MANAGER upgrade -y
 
 
 debug "Installing pip..."
-sudo $PACKAGE_MANAGER install python3-pip
+sudo $PACKAGE_MANAGER install python3-pip -y
 
 
 debug "Install ansible via pip..."
@@ -45,7 +45,11 @@ python3 -m pip install --upgrade --user ansible
 
 
 debug "Installing ansible collections..."
-ansible-galaxy collection install -f community.general fubarhouse.golang
+ansible-galaxy collection install -f community.general
+
+
+debug "Installing ansible golang role"
+ansible-galaxy install fubarhouse.golang
 
 
 debug "Starting Playbook..."
