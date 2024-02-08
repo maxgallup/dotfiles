@@ -29,6 +29,13 @@
     state: directory
     mode: '0755'
 
+- name: Create oss directory
+  tags: directories
+  file:
+    path: "{{home}}/oss"
+    state: directory
+    mode: '0755'
+
 
 - name: Copy gnupg directory
   tags: directories

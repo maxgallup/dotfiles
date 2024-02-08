@@ -10,8 +10,8 @@
     - {key: "/org/gnome/desktop/interface/document-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
     - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
     - {key: "/org/gnome/desktop/sound/allow-volume-above-100-percent", value: "true"}
-    - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
-    - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
+    - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
+    - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
     - {key: "/org/gnome/desktop/interface/show-battery-percentage", value: "true"}
     - {key: "/org/gnome/desktop/interface/clock-format", value: "'24h'"}
@@ -55,7 +55,7 @@
     - {key: "/org/gnome/shell/extensions/pop-shell/focus-up", value: "['<Super>Up', '<Super>i', '<Alt>i']"}
     - {key: "/org/gnome/shell/extensions/pop-shell/gap-inner", value: "uint32 3"}
     - {key: "/org/gnome/shell/extensions/pop-shell/gap-outer", value: "uint32 3"}
-    - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(120,245,182,0.925676)'"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(120,245,245,1.0)'"}
     - {key: "/org/gnome/shell/extensions/pop-shell/management-orientation", value: "@as []"}
     - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-down", value: "@as []"}
     - {key: "/org/gnome/shell/extensions/pop-shell/pop-monitor-left", value: "['<Super>n']"}
@@ -118,7 +118,7 @@
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name", value: "'Launch File Manager'"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/area-screenshot", value: "['<Primary>4']"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/area-screenshot-clip", value: "@as []"}
-    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings", value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings", value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/email", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/help", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/home", value: "@as []"}
@@ -200,8 +200,9 @@
     - {key: "/org/gnome/desktop/peripherals/keyboard/numlock-state", value: "false"}
     - {key: "/org/gnome/desktop/peripherals/keyboard/repeat", value: "true"}
     - {key: "/org/gnome/desktop/peripherals/keyboard/repeat-interval", value: "uint32 6"}
-
-
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding", value: "'<Control>1'"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command", value: "'gnome-terminal'"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name", value: "'Launch Terminal'"}
 
 
 
