@@ -49,7 +49,7 @@ ansible-galaxy collection install -f community.general
 
 
 debug "Installing custom roles"
-ansible-galaxy install fubarhouse.golang jaredhocutt.gnome_extensions
+ansible-galaxy install fubarhouse.golang jaredhocutt.gnome_extensions --ignore-errors
 
 
 debug "Starting Playbook..."

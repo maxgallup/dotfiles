@@ -6,6 +6,9 @@
     key: "{{ item.key }}"
     value: "{{ item.value }}"
   loop:
+    - {key: "/org/gnome/desktop/interface/font-name", value: "'Helvetica Neue Medium 11'"}
+    - {key: "/org/gnome/desktop/interface/document-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
+    - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
     - {key: "/org/gnome/desktop/sound/allow-volume-above-100-percent", value: "true"}
     - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
     - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
@@ -44,7 +47,7 @@
     - {key: "/org/gnome/desktop/wm/keybindings/switch-panels-backward", value: "@as []"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-1", value: "@as []"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-last", value: "@as []"}
-    - {key: "/org/gnome/shell/extensions/pop-shell/activate-launcher", value: "['<Ctrl>Space']"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/activate-launcher", value: "@as []"}
     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
     - {key: "/org/gnome/shell/extensions/pop-shell/focus-down", value: "['<Super>k', '<Super>Down', '<Alt>k']"}
     - {key: "/org/gnome/shell/extensions/pop-shell/focus-left", value: "['<Super>j', '<Super>Left', '<Alt>j']"}
@@ -206,14 +209,20 @@
 
 
 
-- name: dconf settigs
+- name: dconf settings
   when: ansible_distribution == 'Fedora'
   tags: dconf
   community.general.dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
   loop:
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/search", value: "['<Ctrl>Space']"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-right", value: "['<Super>s']"}
     - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-left", value: "['<Super>w']"}
     - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-right", value: "['<Shift><Super>s']"}
     - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-left", value: "['<Shift><Super>w']"}
+    - {key: "/org/gnome/shell/keybindings/toggle-quick-settings", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-up", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-down", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-up", value: "@as []"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-down", value: "@as []"}
