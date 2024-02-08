@@ -1,6 +1,5 @@
 ---
 
-
 - name: Install common cross-distro packages
   tags: apps
   become: true
@@ -24,12 +23,13 @@
       - virtualenv
 
 
-- name: Flatpak Installs
-  tags: apps
-  flatpak:
-    name: "{{item}}"
-  with_items:
-    - "com.discordapp.Discord"
+# - name: Flatpak Installs
+#   tags: apps
+#   flatpak:
+#     name: "{{item}}"
+#   with_items:
+    # - "com.discordapp.Discord"
+    # - todo spotify
     # - "com.mattjakeman.ExtensionManager"
     # - "org.gnome.Boxes"
     # - "com.usebottles.bottles"
@@ -39,7 +39,7 @@
     # - "org.kicad.KiCad"
     # - "cc.arduino.IDE2"
     # - "com.slack.Slack"
-  tags: apps
+  # tags: apps
 
 
 

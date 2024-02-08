@@ -23,17 +23,44 @@
 
 
 
+
+
+
+
+- name: Install VScode key
+  rpm_key:
+    key: https://packages.microsoft.com/keys/microsoft.asc
+
+
+
+- name: Install Repo File
+  yum_repository:
+    name: code
+    description: Visual Studio Code
+    baseurl: https://packages.microsoft.com/yumrepos/vscode\nenabled=1
+    gpgcheck: true
+    gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+
+
+
 - name: dnf - Install packages
   tags: apps
-  when: ansible_distribution == 'Fedora'
   become: true
   dnf:
+    update_cache: true
     name:
       - stlink
       - ffmpeg-free
       - input-remapper
       - dnf5
+      - gnome-shell-extension-pop-shell
+      - code
 
+# [code]
+# name=Visual Studio Code
+# baseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1
+# gpgcheck=1
+# gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 
 
 

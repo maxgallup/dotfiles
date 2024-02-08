@@ -45,7 +45,7 @@ python3 -m pip install --upgrade --user ansible
 
 
 debug "Installing ansible collections..."
-ansible-galaxy collection install -f community.general
+ansible-galaxy collection install -f community.general fubarhouse.golang
 
 
 debug "Starting Playbook..."

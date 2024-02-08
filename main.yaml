@@ -9,27 +9,37 @@
     - import_tasks: tasks/configure.yaml     # TODO CHECK  
     - import_tasks: tasks/apps.yaml          # TODO CHECK
     - import_tasks: tasks/apps-redhat.yaml   # TODO CHECK
+      when: ansible_distribution == 'Fedora'
     - import_tasks: tasks/apps-debian.yaml   # TODO CHECK
+      when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
 
 
-# - hosts: all
-#   roles:
-#   - role: jaredhocutt.gnome_extensions
-#     vars:
-#       gnome_extension_ids:
-#         - 5112 # Tailscale Status
-#         - 1160 # Dash To Panel
-#         - 906  # Sound Input & Output Device Chooser
-#         - 7    # Removable Drive Menu
-#         - 1319 # GS Connect
+- hosts: all
+  roles:
+  - role: jaredhocutt.gnome_extensions
+    when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
+    vars:
+      gnome_extension_ids:
+        - 1160 # Dash To Panel
+        - 7    # Removable Drive Menu
+        - 5112 # Tailscale Status
+        - 906  # Sound Input & Output Device Chooser
 
 
-# - hosts: all
-#   roles:
-#   - role: jaredhocutt.gnome_extensions
-      # when: ansible_distribution == 'Fedora'
-#     vars:
-#       gnome_extension_ids:
-#         - 5112 # Tailscale Status
+- hosts: all
+  roles:
+  - role: jaredhocutt.gnome_extensions
+      when: ansible_distribution == 'Fedora'
+    vars:
+      gnome_extension_ids:
+        - 1160 # Dash To Panel
+        # - 5112 # Tailscale Status
 
+
+- hosts: all
+  roles:
+    - role: fubarhouse.golang
+      when: ansible_distribution == 'Fedora'
+      vars:
+        go_version: 1.22.0
 

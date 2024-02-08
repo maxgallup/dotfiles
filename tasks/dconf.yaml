@@ -201,9 +201,19 @@
 
 
 
+
+
+
+
+
+- name: dconf settigs
+  when: ansible_distribution == 'Fedora'
   tags: dconf
-
-
-
-
-
+  community.general.dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+  loop:
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-right", value: "['<Super>s']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/switch-to-workspace-left", value: "['<Super>w']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-right", value: "['<Shift><Super>s']"}
+    - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-left", value: "['<Shift><Super>w']"}
