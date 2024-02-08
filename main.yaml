@@ -29,7 +29,7 @@
 - hosts: all
   roles:
   - role: jaredhocutt.gnome_extensions
-      when: ansible_distribution == 'Fedora'
+    when: ansible_distribution == 'Fedora'
     vars:
       gnome_extension_ids:
         - 1160 # Dash To Panel
