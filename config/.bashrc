@@ -3,7 +3,8 @@
 # PROMPT_COMMAND='((( $? )) && computersaysno & ); __git_ps1 "\W" " \e[01;36m$\e[m "'
 # PROMPT_COMMAND='__git_ps1 "\W" " \e[01;36m$\e[m\n"'
 
-PS1='\u \e[01;31m$\e[m '
+PS1='\W \e[01;36m$\e[m '
+# PS1='\u \e[01;31m$\e[m '
 
 
 
