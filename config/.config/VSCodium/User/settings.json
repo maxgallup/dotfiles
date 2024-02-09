@@ -3,20 +3,18 @@
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.detectIndentation": true,
+	"editor.insertSpaces": false,
     "explorer.confirmDragAndDrop": false,
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
     "workbench.preferredDarkColorTheme": "Nathan's Gruvbox",
-    "workbench.preferredHighContrastLightColorTheme": "Default Light Modern",
+    "workbench.preferredHighContrastLightColorTheme": "monokai-charcoal (gray)",
     "rust-analyzer.inlayHints.enable": false,
     "workbench.editorAssociations": {
         "*.html": "default"
@@ -39,6 +37,7 @@
     "workbench.editorLargeFileConfirmation": 1048576,
     "files.maxMemoryForLargeFilesMB": 8192,
     "terminal.integrated.tabStopWidth": 4,
+    "workbench.editor.enablePreview": false,
     "editor.minimap.enabled": false,
     "window.titleBarStyle": "custom",
     "cSpell.enableFiletypes": [
@@ -46,14 +45,21 @@
     ],
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": false,
+    "workbench.colorTheme": "Nathan's Gruvbox",
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",
-        "workbench.action.toggleSidebarVisibility"
+        "workbench.action.toggleSidebarVisibility",
+        "language-julia.interrupt"
     ],
     "zenMode.hideStatusBar": false,
     "terminal.integrated.scrollback": 50000,
     "window.commandCenter": false,
-    "window.confirmBeforeClose": "keyboardOnly",
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
+    "julia.enableTelemetry": false,
     "workbench.panel.defaultLocation": "left",
-
+    "editor.rulers": [
+        80, 120
+    ],
+    "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace"
 }

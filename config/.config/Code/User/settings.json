@@ -10,7 +10,6 @@
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.wordWrap": "on",
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
     "cmake.configureOnOpen": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
@@ -61,6 +60,6 @@
     "workbench.panel.defaultLocation": "left",
     "editor.rulers": [
         80, 120
-    ]
-
+    ],
+    "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace"
 }
