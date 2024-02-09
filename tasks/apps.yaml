@@ -23,13 +23,16 @@
       - virtualenv
 
 
-# - name: Flatpak Installs
-#   tags: apps
-#   flatpak:
-#     name: "{{item}}"
-#   with_items:
-    # - "com.discordapp.Discord"
-    # - todo spotify
+- name: Flatpak Installs
+  become: true
+  tags: 
+    - apps
+    - flatpak
+  flatpak:
+    name: "{{item}}"
+  with_items:
+    - "com.discordapp.Discord"
+    - "com.spotify.Client"
     # - "com.mattjakeman.ExtensionManager"
     # - "org.gnome.Boxes"
     # - "com.usebottles.bottles"
@@ -39,7 +42,7 @@
     # - "org.kicad.KiCad"
     # - "cc.arduino.IDE2"
     # - "com.slack.Slack"
-  # tags: apps
+
 
 
 
