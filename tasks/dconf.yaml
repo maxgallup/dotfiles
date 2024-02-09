@@ -122,7 +122,8 @@
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/email", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/help", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/home", value: "@as []"}
-    - {key: "/org/gnome/settings-daemon/plugins/media-keys/logout", value: "['<Super>Delete']"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/logout", value: "@as []"}
+    - {key: "/org/gnome/settings-daemon/plugins/media-keys/suspend", value: "['<Primary>Delete']"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier-zoom-in", value: "@as []"}
     - {key: "/org/gnome/settings-daemon/plugins/media-keys/magnifier-zoom-out", value: "@as []"}
