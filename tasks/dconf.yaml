@@ -140,7 +140,7 @@
     - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-appicon-hover", value: "false"}
     - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-appicon-hover-animation-extent", value: "{'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}"}
     - {key: "/org/gnome/shell/extensions/dash-to-panel/animate-show-apps", value: "false"}
-    - {key: "/org/gnome/shell/extensions/dash-to-panel/appicon-margin", value: "3"}
+    - {key: "/org/gnome/shell/extensions/dash-to-panel/appicon-margin", value: "2"}
     - {key: "/org/gnome/shell/extensions/dash-to-panel/appicon-padding", value: "2"}
     # - {key: "/org/gnome/shell/extensions/dash-to-panel/available-monitors", value: "[0]"}
     - {key: "/org/gnome/shell/extensions/dash-to-panel/dot-color-1", value: "'#5294e2'"}
