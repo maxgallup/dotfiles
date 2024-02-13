@@ -8,12 +8,12 @@
     owner: "{{ user }}"
     group: "{{ user }}"
 
-- name: Create bin directory
-  tags: directories
-  file:
-    path: "{{home}}/bin"
-    state: directory
-    mode: '0755'
+# - name: Create bin directory
+#   tags: directories
+#   file:
+#     path: "{{home}}/bin"
+#     state: directory
+#     mode: '0755'
 
 - name: Create Code User directory
   tags: directories

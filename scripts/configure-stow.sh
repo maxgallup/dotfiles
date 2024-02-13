@@ -17,6 +17,4 @@ rm /home/max/.gitconfig
 
 
 stow config/ --target=/home/max
-stow bin/ --target=/home/max/bin
-
 

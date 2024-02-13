@@ -1,0 +1,37 @@
+#!/bin/bash
+
+
+function print_usage() {
+	echo -e "Usage: setcolor [COLOR] \n\t where [COLOR] is either blue, green, orange or purple"
+	exit 1
+}
+
+function set_background() {
+	dconf write "/org/gnome/desktop/background/picture-uri" "'file:///home/max/dotfiles/pics/monterey-dark-$1.jpg'"
+	dconf write "/org/gnome/desktop/background/picture-uri-dark" "'file:///home/max/dotfiles/pics/monterey-dark-$1.jpg'"
+}
+
+
+
+if [ -z $1 ]; then
+	print_usage
+fi
+
+
+if [ $1 = "green" ]; then
+	set_background $1
+	dconf write "/org/gnome/shell/extensions/pop-shell/hint-color-rgba" "'rgba(90,249,201,1.0)'"
+elif [ $1 = "blue" ]; then
+	set_background $1
+	dconf write "/org/gnome/shell/extensions/pop-shell/hint-color-rgba" "'rgba(120,245,245,1.0)'"
+elif [ $1 = "orange" ]; then
+	set_background $1
+	dconf write "/org/gnome/shell/extensions/pop-shell/hint-color-rgba" "'rgba(244,117,44,1.0)'"
+elif [ $1 = "purple" ]; then
+	set_background $1
+	dconf write "/org/gnome/shell/extensions/pop-shell/hint-color-rgba" "'rgba(214,108,252,1.0)'"
+else
+	print_usage
+fi
+
+
