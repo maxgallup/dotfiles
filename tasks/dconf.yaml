@@ -79,6 +79,7 @@
     - {key: "/org/gnome/shell/extensions/pop-shell/toggle-floating", value: "@as []"}
     - {key: "/org/gnome/shell/extensions/pop-shell/toggle-stacking", value: "@as []"}
     - {key: "/org/gnome/shell/extensions/pop-shell/toggle-stacking-global", value: "@as []"}
+    - {key: "/org/gnome/shell/extensions/pop-shell/stacking-with-mouse", value: "false"}
     - {key: "/org/gnome/shell/keybindings/focus-active-notification", value: "@as []"}
     - {key: "/org/gnome/shell/keybindings/show-screenshot-ui", value: "['<Primary>4']"}
     - {key: "/org/gnome/shell/keybindings/toggle-application-view", value: "['<Super>a']"}
