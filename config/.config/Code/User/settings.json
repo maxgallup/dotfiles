@@ -61,5 +61,6 @@
     "editor.rulers": [
         80, 120
     ],
-    "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace"
+    "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace",
+    "git.openRepositoryInParentFolders": "never"
 }
