@@ -61,3 +61,6 @@ alias dp='docker ps -a'
 alias idea='cd $HOME && nohup /opt/ideaIC-2022.2.2/idea-IC-222.4167.29/bin/idea.sh'
 
 alias sshconf='vim $HOME/.ssh/config'
+
+alias dnf='dnf5'
+

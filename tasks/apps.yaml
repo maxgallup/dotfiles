@@ -33,6 +33,8 @@
   with_items:
     - "com.discordapp.Discord"
     - "com.spotify.Client"
+    - "com.brave.Browser"
+    - "org.signal.Signal"
     # - "com.mattjakeman.ExtensionManager"
     # - "org.gnome.Boxes"
     # - "com.usebottles.bottles"
