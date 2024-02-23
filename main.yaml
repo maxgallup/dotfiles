@@ -16,24 +16,28 @@
 
 
 - hosts: all
+  tags: gnome-extensions
   roles:
   - role: jaredhocutt.gnome_extensions
     when: ansible_distribution == 'Pop!_OS' or ansible_distribution == 'Ubuntu'
     vars:
       gnome_extension_ids:
         - 1160 # Dash To Panel
+        # - 6051 # quick web search - doesn't work 
         - 7    # Removable Drive Menu
         - 5112 # Tailscale Status
         - 906  # Sound Input & Output Device Chooser
 
 
 - hosts: all
+  tags: gnome-extensions
   roles:
   - role: jaredhocutt.gnome_extensions
     when: ansible_distribution == 'Fedora'
     vars:
       gnome_extension_ids:
         - 1160 # Dash To Panel
+        # - 6051 # quick web search - doesn't work 
         # - 5112 # Tailscale Status
 
 
