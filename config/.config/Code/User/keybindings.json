@@ -1905,5 +1905,29 @@
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
     },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-platformio-ide.build",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "-platformio-ide.serialMonitor",
+        "when": "pioProjectReady"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "workbench.view.extension.vscode-serial-monitor-tools"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "platformio-ide.upload",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "-platformio-ide.upload",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
 
 ]

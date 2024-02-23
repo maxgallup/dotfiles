@@ -1,3 +1,6 @@
 core.db
 
+config/bin/balena
+config/bin/prusa
+
 .uuid
