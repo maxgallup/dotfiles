@@ -1929,5 +1929,14 @@
         "command": "-platformio-ide.upload",
         "when": "pioProjectReady && pioProjectTasksReady"
     },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.action.terminal.openDetectedLink",
+        "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.action.toggleCenteredLayout"
+    },
 
 ]

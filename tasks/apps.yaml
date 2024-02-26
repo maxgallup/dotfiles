@@ -35,6 +35,7 @@
     - "com.spotify.Client"
     - "com.brave.Browser"
     - "org.signal.Signal"
+    - "com.jgraph.drawio.desktop"
     # - "org.gnome.Epiphany"
     # - "com.mattjakeman.ExtensionManager"
     # - "org.gnome.Boxes"
