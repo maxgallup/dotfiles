@@ -62,5 +62,6 @@
         80, 120
     ],
     "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace",
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "window.confirmBeforeClose": "always"
 }

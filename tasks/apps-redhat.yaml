@@ -64,7 +64,7 @@
       - dnf5
       - gnome-shell-extension-pop-shell
       - code
-
+      - tlp
       - docker-ce
       - docker-ce-cli
       - containerd.io
