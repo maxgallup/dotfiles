@@ -3,7 +3,6 @@
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     "editor.tabSize": 4,
-	"editor.insertSpaces": false,
     "explorer.confirmDragAndDrop": false,
     "rst.preview.pythonPath": "python3",
     "editor.renderControlCharacters": true,

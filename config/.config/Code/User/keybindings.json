@@ -1635,14 +1635,6 @@
         "when": "interactivePlaygroundFocus && !editorTextFocus"
     },
     {
-        "key": "pageup",
-        "command": "workbench.action.terminal.resizePaneLeft"
-    },
-    {
-        "key": "pagedown",
-        "command": "workbench.action.terminal.resizePaneRight"
-    },
-    {
         "key": "ctrl+`",
         "command": "editor.action.revealDefinition"
     },
@@ -1939,4 +1931,16 @@
         "command": "workbench.action.toggleCenteredLayout"
     },
 
+    {
+        "key": "pagedown",
+        "command": "workbench.action.increaseViewSize",
+    },
+    {
+        "key": "pageup",
+        "command": "workbench.action.decreaseViewSize",
+    },
+    {
+        "key": "pageup",
+        "command": "workbench.action.terminal.resizePaneRight"
+    }
 ]
