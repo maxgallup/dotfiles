@@ -1840,14 +1840,6 @@
     },
     {
         "key": "ctrl+pageup",
-        "command": "workbench.action.terminal.focusNextPane"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "workbench.action.terminal.focusPreviousPane"
-    },
-    {
-        "key": "ctrl+pageup",
         "command": "-workbench.action.debug.prevConsole",
         "when": "inDebugRepl"
     },
@@ -1867,13 +1859,8 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     {
-        "key": "ctrl+pagedown",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
         "key": "ctrl+pageup",
-        "command": "workbench.action.terminal.focusPrevious",
+        "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
@@ -1942,5 +1929,9 @@
     {
         "key": "pageup",
         "command": "workbench.action.terminal.resizePaneRight"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.focusPrevious"
     }
 ]
