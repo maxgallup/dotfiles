@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+if [ -n "$1" ]; then
+    if [ "enable" = $1 ]; then 
+        echo "normal mode"
+        echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+    elif [ "disable" = $1 ]; then
+        echo "conservation mode"
+        echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+    fi
+fi
+
