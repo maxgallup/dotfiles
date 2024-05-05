@@ -72,3 +72,5 @@ if [ -f '/home/max/Desktop/google-cloud-sdk/completion.bash.inc' ]; then . '/hom
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
 
+if [ -f '/home/max/.cargo/env' ]; then . "$HOME/.cargo/env"; fi
+
