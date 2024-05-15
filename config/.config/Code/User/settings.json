@@ -57,9 +57,9 @@
     "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
     "julia.enableTelemetry": false,
     "workbench.panel.defaultLocation": "left",
-    "editor.rulers": [
-        80, 120
-    ],
+    // "editor.rulers": [
+    //     80, 120
+    // ],
     "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace",
     "git.openRepositoryInParentFolders": "never",
     "window.confirmBeforeClose": "always"

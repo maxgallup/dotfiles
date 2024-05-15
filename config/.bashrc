@@ -74,3 +74,5 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/loc
 
 if [ -f '/home/max/.cargo/env' ]; then . "$HOME/.cargo/env"; fi
 
+export PATH=/usr/lib/jvm/java-17-openjdk-17.0.9.0.9-3.fc39.x86_64/bin:$PATH
+
