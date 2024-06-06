@@ -52,6 +52,8 @@ fi
 [ -f "/home/max/.ghcup/env" ] && source "/home/max/.ghcup/env" # ghcup-env
 
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
@@ -72,7 +74,6 @@ if [ -f '/home/max/Desktop/google-cloud-sdk/completion.bash.inc' ]; then . '/hom
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
 
-if [ -f '/home/max/.cargo/env' ]; then . "$HOME/.cargo/env"; fi
 
 export PATH=/usr/lib/jvm/java-17-openjdk-17.0.9.0.9-3.fc39.x86_64/bin:$PATH
 
