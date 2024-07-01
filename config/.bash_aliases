@@ -64,3 +64,5 @@ alias sshconf='vim $HOME/.ssh/config'
 
 alias dnf='dnf5'
 
+alias sync-docs='rclone sync --verbose /home/max/Documents protondrive:Documents'
+
