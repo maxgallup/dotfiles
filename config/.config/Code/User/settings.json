@@ -39,7 +39,9 @@
   "workbench.editor.enablePreview": false,
   "editor.minimap.enabled": false,
   "window.titleBarStyle": "custom",
-  "cSpell.enableFiletypes": ["typst"],
+  "cSpell.enableFiletypes": [
+    "typst"
+  ],
   "zenMode.hideLineNumbers": false,
   "zenMode.centerLayout": false,
   "workbench.colorTheme": "Solarized Light",
@@ -55,7 +57,9 @@
   "julia.executablePath": "/opt/julia-1.9.3/bin/julia",
   "julia.enableTelemetry": false,
   "workbench.panel.defaultLocation": "left",
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
   "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace",
   "git.openRepositoryInParentFolders": "never",
   "window.confirmBeforeClose": "always",

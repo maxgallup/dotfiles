@@ -62,7 +62,7 @@ alias idea='cd $HOME && nohup /opt/ideaIC-2022.2.2/idea-IC-222.4167.29/bin/idea.
 
 alias sshconf='vim $HOME/.ssh/config'
 
-alias dnf='dnf5'
+alias dnf='sudo dnf5'
 
 alias sync-docs='rclone sync --verbose /home/max/Documents protondrive:Documents'
 

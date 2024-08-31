@@ -77,3 +77,7 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/loc
 
 export PATH=/usr/lib/jvm/java-17-openjdk-17.0.9.0.9-3.fc39.x86_64/bin:$PATH
 
+export GOPATH=$HOME/go
+
+# fun devhook project to be continued someday...
+# eval "$(cat /home/max/oss/devhook/devhook.sh)"
