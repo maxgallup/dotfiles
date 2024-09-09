@@ -10,8 +10,8 @@
     - {key: "/org/gnome/desktop/interface/document-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
     - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'CodeNewRoman Nerd Font Mono Bold 11'"}
     - {key: "/org/gnome/desktop/sound/allow-volume-above-100-percent", value: "true"}
-    - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
-    - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
+    - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
+    - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-green.jpg'"}
     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
     - {key: "/org/gnome/desktop/interface/show-battery-percentage", value: "true"}
     - {key: "/org/gnome/desktop/interface/clock-format", value: "'24h'"}

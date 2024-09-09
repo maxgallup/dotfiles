@@ -13,19 +13,19 @@
 #     name: flathub
 #     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
 
-- name: Flatpak Installs
-  become: true
-  tags: 
-    - apps
-    - flatpak
-  flatpak:
-    name: "{{item}}"
-  with_items:
-    - "com.discordapp.Discord"
-    - "com.spotify.Client"
-    - "com.brave.Browser"
-    - "org.signal.Signal"
-    - "com.jgraph.drawio.desktop"
-    - "org.kicad.KiCad"
-    - "org.inkscape.Inkscape"
+# - name: Flatpak Installs
+#   become: true
+#   tags: 
+#     - apps
+#     - flatpak
+#   flatpak:
+#     name: "{{item}}"
+#   with_items:
+#     - "com.spotify.Client"
+#     - "com.brave.Browser"
+#     - "org.signal.Signal"
+#     - "com.jgraph.drawio.desktop"
+    # - "org.inkscape.Inkscape"
+    # - "com.discordapp.Discord"
+    # - "org.kicad.KiCad"
 

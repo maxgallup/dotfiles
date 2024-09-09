@@ -18,5 +18,21 @@
     group: "{{ user }}"
     mode: 0644
 
+- name: Copy clone_file
+  copy:
+    src: "config_misc/clone_file"
+    dest: "{{ clone_file_path }}"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0644
+
+
+
+- name: Copy gnupg directory
+  tags: directories
+  copy:
+    src: config_misc/.gnupg
+    dest: "{{ home }}"
+
 
 

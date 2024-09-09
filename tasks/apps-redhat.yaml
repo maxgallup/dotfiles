@@ -1,5 +1,14 @@
 ---
 
+- name: dnf - remove some repositories
+  tags: apps
+  become: true
+  yum_repository:
+    state: absent
+    name: "{{item}}"
+  with_items:
+    - google-chrome
+    - copr:copr.fedorainfracloud.org:phracek:PyCharm
 
 - name: dnf - install packages
   tags: apps
@@ -67,6 +76,7 @@
       - vim
       - vlc
       - gnome-tweaks
+      - gimp
       - code
       - tlp
       - docker-ce

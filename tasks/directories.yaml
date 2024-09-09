@@ -15,6 +15,13 @@
     state: directory
     mode: '0755'
 
+- name: Create rclone directory
+  tags: directories
+  file:
+    path: "{{ home }}/.config/rclone"
+    state: directory
+    mode: '0755'
+
 # - name: Create Codium User directory
 #   tags: directories
 #   file:
@@ -29,9 +36,5 @@
     state: directory
     mode: '0755'
 
-- name: Copy gnupg directory
-  tags: directories
-  copy:
-    src: config_misc/.gnupg
-    dest: "{{ home }}"
+
 
