@@ -1,9 +1,11 @@
 - name: git - Documents
+  tags: git
   git:
     repo: maxgallup@git.hidrive.strato.com:/users/maxgallup/Documents.git
     dest: "{{ home }}/Documents"
 
 - name: git - Backups
+  tags: git
   git:
     repo: maxgallup@git.hidrive.strato.com:/users/maxgallup/backups.git
     dest: "{{ home }}/backups"
