@@ -3,11 +3,13 @@
   git:
     repo: maxgallup@git.hidrive.strato.com:/users/maxgallup/Documents.git
     dest: "{{ home }}/Documents"
+    accept_hostkey: true
 
 - name: git - Backups
   tags: git
   git:
     repo: maxgallup@git.hidrive.strato.com:/users/maxgallup/backups.git
     dest: "{{ home }}/backups"
+    accept_hostkey: true
 
 
