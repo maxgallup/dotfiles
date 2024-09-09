@@ -77,6 +77,7 @@
       - ffmpeg-free
       - input-remapper
       - dnf5
+      - htop
       - gnome-shell-extension-pop-shell
       - neofetch
       - vim

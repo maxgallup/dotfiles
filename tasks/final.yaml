@@ -1,11 +1,27 @@
 ---
 
 
+- name: Enable services
+  become: true
+  tags: systemd
+  systemd_service:
+    name: "{{ item }}"
+    state: started
+    enabled: true
+  with_items:
+    - input-remapper
+    - docker
+
+
 - name: Update default apps
   shell: ./scripts/configure-default-apps.sh
   tags: configure
 
 - name: Install Codium/Code extensions
   shell: ./scripts/configure-code-extensions.sh
+  tags: configure
+
+- name: Add user to docker group
+  shell: ./scripts/docker-user.sh
   tags: configure
 
