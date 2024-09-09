@@ -1,0 +1,33 @@
+#!/bin/bash
+
+INPUT=$1
+THRESHOLD_FILE=/sys/class/power_supply/BAT0/charge_stop_threshold
+
+
+
+if [ "on" = "$INPUT" ]; then
+    # Normally, battery should only charge to 80%
+    echo 80 | sudo tee $THRESHOLD_FILE
+    echo "Charge level set to 80%"
+
+elif [ "off" = "$INPUT" ]; then
+    # When using deskop mode, it should only charge to 45%
+    echo 45 | sudo tee $THRESHOLD_FILE
+    echo "Charge level set to 45%"
+
+elif [ "full" = "$INPUT" ]; then
+    # In case full battery is required for traveling set to 100%
+    echo 100 | sudo tee $THRESHOLD_FILE
+    echo "Charge level set to 100%"
+
+else
+    echo "Usage: charge on|off|full"
+    echo ""
+    echo "       on   - charges up to 80%"
+    echo "       off  - charges up to 45%"
+    echo "       full - charges up to 100%"
+    echo ""
+    echo "       currently set to "$(cat $THRESHOLD_FILE)"%"
+fi
+
+exit 0
