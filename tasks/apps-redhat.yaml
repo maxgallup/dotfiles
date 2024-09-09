@@ -1,58 +1,58 @@
 ---
 
 
-# --------------------------
-# -- Fedora only installs --
-# --------------------------
-
-# - name: dnf - Add tailscale repo
-  # tags: apps
-#   when: ansible_distribution == 'Fedora'
-#   become: true
-#   community.general.dnf_config_manager:
-#     name: tailscale
-#     baseurl: https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-#     enabled: yes
+- name: dnf - install packages
+  tags: apps
+  become: true
+  dnf:
+    update_cache: true
+    name: dnf-plugins-core
 
 
+# --------
+#  VSCODE
+# --------
 
-
-# TODO POP-SHELL
-# TODO TRY ALBERT again
-# TODO COSMIC WORKSPACES
-
-
-
-
-
-
-
-- name: Install VScode key
+- name: dnf - install VSCode key
   tags: apps
   become: true
   rpm_key:
     key: https://packages.microsoft.com/keys/microsoft.asc
 
 
-- name: Install VSCode Repo File
+- name: dnf - install VSCode repo file
   tags: apps
   become: true
   yum_repository:
-    name: code
+    name: vscode
     description: Visual Studio Code
     baseurl: https://packages.microsoft.com/yumrepos/vscode
     gpgcheck: true
     gpgkey: https://packages.microsoft.com/keys/microsoft.asc
-    file: vscode
 
 
-- name: dnf - add docker repo
+# --------
+#  DOCKER
+# --------
+
+- name: dnf - install Docker key
   tags: apps
   become: true
-  shell: dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+  rpm_key:
+    key: https://download.docker.com/linux/fedora/gpg
+
+- name: dnf - install docker repo file
+  tags: apps
+  become: true
+  yum_repository:
+    name: docker
+    description: Docker Engine
+    baseurl: https://download.docker.com/linux/fedora/docker-ce.repo
+    gpgcheck: true
+    gpgkey: https://download.docker.com/linux/fedora/gpg
 
 
-- name: dnf - Install packages
+- name: dnf - install packages
   tags: apps
   become: true
   dnf:
@@ -63,6 +63,10 @@
       - input-remapper
       - dnf5
       - gnome-shell-extension-pop-shell
+      - neofetch
+      - vim
+      - vlc
+      - gnome-tweaks
       - code
       - tlp
       - docker-ce
@@ -70,25 +74,4 @@
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
-
-
-
-
-# [code]
-# name=Visual Studio Code
-# baseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1
-# gpgcheck=1
-# gpgkey=https://packages.microsoft.com/keys/microsoft.asc
-
-
-
-#     - "discord"
-#     - "code"
-#     - "codium"
-#     - "docker-ce"
-#     - "draw.io"
-#     - "signal-desktop"
-#     - "tailscale"
-    # - "obs-studio"
-
 

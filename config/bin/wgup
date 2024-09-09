@@ -1,4 +1,0 @@
-#!/bin/bash
-
-wg-quick up wg$1
-

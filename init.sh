@@ -32,8 +32,8 @@ debug "Upgrading..."
 sudo $PACKAGE_MANAGER upgrade -y
 
 
-debug "Installing common packages..."
-sudo $PACKAGE_MANAGER install python3-pip vlc stow neofetch vim gnome-tweaks dconf-editor cmake net-tools -y
+debug "Installing common packages pre ansible..."
+sudo $PACKAGE_MANAGER install python3-pip stow dconf-editor cmake net-tools -y
 
 
 debug "Install ansible via pip..."
@@ -49,7 +49,7 @@ ansible-galaxy collection install -f community.general
 
 
 debug "Installing custom roles"
-ansible-galaxy install fubarhouse.golang jaredhocutt.gnome_extensions --ignore-errors
+ansible-galaxy install jaredhocutt.gnome_extensions --ignore-errors
 
 
 debug "Starting Playbook..."

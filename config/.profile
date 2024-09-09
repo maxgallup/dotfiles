@@ -30,11 +30,9 @@ fi
 ##### Environment Varbiables #####
 
 export GPG_TTY=$(tty)
-export GOPATH="$HOME/go"
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
 
 export DOCKER_ID_USER="maxgallup"
 
 export EDITOR="vim"
 
-. "$HOME/.cargo/env"

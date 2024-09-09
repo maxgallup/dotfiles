@@ -3,46 +3,35 @@
 - name: Make sure .ssh directory exists
   tags: directories
   file:
-    path: "/home/max/.ssh"
+    path: "{{ home }}/.ssh"
     state: directory
     owner: "{{ user }}"
     group: "{{ user }}"
 
-# - name: Create bin directory
-#   tags: directories
-#   file:
-#     path: "{{home}}/bin"
-#     state: directory
-#     mode: '0755'
-
 - name: Create Code User directory
   tags: directories
   file:
-    path: "{{home}}/.config/Code/User/"
+    path: "{{ home }}/.config/Code/User/"
     state: directory
     mode: '0755'
 
-- name: Create Codium User directory
-  tags: directories
-  file:
-    path: "{{home}}/.config/VSCodium/User/"
-    state: directory
-    mode: '0755'
+# - name: Create Codium User directory
+#   tags: directories
+#   file:
+#     path: "{{ home }}/.config/VSCodium/User/"
+#     state: directory
+#     mode: '0755'
 
 - name: Create oss directory
   tags: directories
   file:
-    path: "{{home}}/oss"
+    path: "{{ home }}/oss"
     state: directory
     mode: '0755'
-
 
 - name: Copy gnupg directory
   tags: directories
   copy:
     src: config_misc/.gnupg
-    dest: "{{home}}"
-
-
-
+    dest: "{{ home }}"
 

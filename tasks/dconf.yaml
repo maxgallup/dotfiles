@@ -239,21 +239,6 @@
     - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-up", value: "@as []"}
     - {key: "/org/gnome/desktop/wm/keybindings/move-to-workspace-down", value: "@as []"}
 
-
-
-
-# - name: Set color to blue
-#   tags: color
-#   community.general.dconf:
-#     key: "{{ item.key }}"
-#     value: "{{ item.value }}"
-#   loop:
-#     - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
-#     - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-blue.jpg'"}
-#     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(120,245,245,1.0)'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
-
 - name: Set color to Green
   tags: color
   community.general.dconf:
@@ -265,31 +250,4 @@
     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
     - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(90,249,201,1.0)'"}
     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
-
-# - name: Set color to orange
-#   tags: color
-#   community.general.dconf:
-#     key: "{{ item.key }}"
-#     value: "{{ item.value }}"
-#   loop:
-#     - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-orange.jpg'"}
-#     - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-orange.jpg'"}
-#     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(244,117,44,1.0)'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
-
-# - name: Set color to purple
-#   tags: color
-#   community.general.dconf:
-#     key: "{{ item.key }}"
-#     value: "{{ item.value }}"
-#   loop:
-#     - {key: "/org/gnome/desktop/background/picture-uri", value: "'file:///home/max/dotfiles/pics/monterey-dark-purple.jpg'"}
-#     - {key: "/org/gnome/desktop/background/picture-uri-dark", value: "'file:///home/max/dotfiles/pics/monterey-dark-purple.jpg'"}
-#     - {key: "/org/gnome/desktop/interface/color-scheme", value: "'prefer-dark'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/hint-color-rgba", value: "'rgba(214,108,252,1.0)'"}
-#     - {key: "/org/gnome/shell/extensions/pop-shell/active-hint", value: "true"}
-
-
-
 

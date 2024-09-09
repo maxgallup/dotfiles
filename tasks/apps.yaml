@@ -1,20 +1,5 @@
 ---
 
-# - name: Install common cross-distro packages
-#   tags: apps
-#   become: true
-#   package:
-#     name:
-#       - vlc
-#       - stow
-#       - neofetch
-#       - vim
-#       - gnome-tweaks
-#       - dconf-editor
-#       - cmake
-#       - net-tools
-
-
 - name: Install common pip packages
   tags: apps
   become: true
@@ -22,6 +7,11 @@
     name:
       - virtualenv
 
+# - name: Install Flathub Remote
+#   become: yes
+#   flatpak_remote:
+#     name: flathub
+#     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
 
 - name: Flatpak Installs
   become: true
@@ -38,62 +28,4 @@
     - "com.jgraph.drawio.desktop"
     - "org.kicad.KiCad"
     - "org.inkscape.Inkscape"
-    # - "org.gnome.Epiphany"
-    # - "com.mattjakeman.ExtensionManager"
-    # - "org.gnome.Boxes"
-    # - "com.usebottles.bottles"
-    # - "org.DolphinEmu.dolphin-emu"
-    # - "org.audacityteam.Audacity"
-    # - "cc.arduino.IDE2"
-    # - "com.slack.Slack"
-
-
-
-
-
-
-
-
-# ----------------------
-# install deb-get
-# ----------------------
-# - name: Install deb-get
-  # tags: apps
-#   shell: "curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get"
-#   tags: apps
-
-# ----------------------
-# deb-get installs
-# ----------------------
-# - name: Install Apps available through deb-get
-  # tags: apps
-#   shell: "deb-get install {{item}}"
-#   with_items:
-#     - "discord"
-#     - "code"
-#     - "codium"
-#     - "docker-ce"
-#     - "draw.io"
-#     - "signal-desktop"
-#     - "tailscale"
-    # - "obs-studio"
-    # - "spotify-client"
-#     - "protonvpn"
-    # - "pandoc"
-    # - "brave-browser"
-    # - "rpi-imager"
-    # - "portmaster"
-    # - "virtualbox-6.1"
-  # tags: apps
-
-
-
-
-
-
-# --------------------------------------
-# FLATPAK INSTALLS
-# --------------------------------------
-
-
 
