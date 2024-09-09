@@ -86,6 +86,8 @@
       - gimp
       - code
       - tlp
+      - llvm
+      - clang
       - docker-ce
       - docker-ce-cli
       - containerd.io
