@@ -1868,7 +1868,6 @@
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
-
   {
     "key": "ctrl+/",
     "command": "workbench.action.terminal.split",
@@ -1912,7 +1911,6 @@
     "key": "ctrl+shift+g",
     "command": "workbench.action.toggleCenteredLayout"
   },
-
   {
     "key": "pagedown",
     "command": "workbench.action.increaseViewSize"
@@ -1932,5 +1930,9 @@
   {
     "key": "ctrl+shift+b",
     "command": "explorer.newFolder"
+  },
+  {
+    "key": "pagedown",
+    "command": "workbench.action.terminal.resizePaneLeft"
   }
 ]
