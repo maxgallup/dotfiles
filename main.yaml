@@ -9,7 +9,8 @@
     - import_tasks: tasks/apps.yaml          # DONE
     - import_tasks: tasks/apps-redhat.yaml   # DONE
       when: ansible_distribution == 'Fedora'
-    - import_tasks: tasks/git-repos.yaml   # DONE
+    - import_tasks: tasks/git-repos.yaml   # TODO
+    - import_tasks: tasks/languages.yaml   # TODO
     - import_tasks: tasks/final.yaml   # DONE
 
 - hosts: all

@@ -14,10 +14,8 @@ extensions=(
 "tamasfe.even-better-toml"
 "nvarner.typst-lsp"
 "rust-lang.rust-analyzer"
-"golang.go"
 "streetsidesoftware.code-spell-checker"
 "tomoki1207.pdf"
-"znck.grammarly"
 )
 
 for e in "${extensions[@]}"; do
