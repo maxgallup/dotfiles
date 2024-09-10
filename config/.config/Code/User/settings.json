@@ -12,7 +12,7 @@
   "cmake.configureOnOpen": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
-  "workbench.preferredDarkColorTheme": "Rusty One Dark",
+  "workbench.preferredDarkColorTheme": "United GNOME",
   "workbench.preferredHighContrastLightColorTheme": "monokai-charcoal (gray)",
   "rust-analyzer.inlayHints.enable": false,
   "workbench.editorAssociations": {
