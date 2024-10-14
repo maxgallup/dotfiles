@@ -1,0 +1,166 @@
+rm -rf nushell/
+rm -rf nushell/ && ln -s ~/.config/nushell/ nushell/
+rm -rf nushell/ ; ln -s ~/.config/nushell/ nushell/
+rm -rf nushell/ ; ln -s ~/.config/nushell/ ./nushell/
+bash
+clear
+l
+ls
+cd .config/
+ls
+clear
+l
+clear
+l
+ls
+nu
+which nu
+type nuu
+nushell
+cat /etc/shells
+/home/max/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu
+clear
+echo $env.SHELL
+echo $env.SHELLA
+ansi
+ansi light_green
+ansi light_green_bold
+ansi light_green_bold hi
+ansi light_green_bold | hi
+cd
+clear
+cd Des
+cd Desktop/
+is-admin
+cd ../
+..
+cd ~
+cd Documents/
+l
+ls
+cd health
+..
+$env.PWD | path relative-to $nu.home-path
+cd ~/Documents/
+$env.PWD | path relative-to $nu.home-path
+path relative-to .
+cd health
+$env.PWD | path relative-to $nu.home-path
+$env.PWD | path relative-to ../
+$env.PWD | path relative-to $env.PWD/..
+$env.PWD
+(pwd)
+((pwd) | str split '/')
+cwd
+pwd 
+pwd | str split '/'
+man str
+str trim
+str 
+split 
+pwd
+pwd | split chars
+split chars -h
+split -d
+split -h
+split column -h
+pwd | split column '/'
+pwd | split column '/' | last
+last
+last --help
+pwd | split column '/' | last
+pwd | split column '/'
+pwd | split column '/' | last
+pwd | split column '/' | columns | last
+(pwd | split column '/' | columns | last)
+pwd |split column '/' | last (pwd | split column '/' | columns | last)
+pwd |split column '/' | last | select (pwd | split column '/' | columns | last)
+pwd |split column '/' | last | select (pwd | split column '/' | columns | last) | last
+pwd |split column '/' | last | select (pwd | split column '/' | columns | last)
+pwd |split column '/' | last | select (pwd | split column '/' | columns | last) | describe
+let col = split column '/' | last | select (pwd | split column '/' | columns | last)
+let col = pwd | split column '/' | columns | last
+$env.col
+$col
+let paths = pwd | split column '/'
+let col = $paths | columns | last
+$paths | last | select ($col)
+$paths | last | select ($col) | get ($col)
+ls
+..
+cd 
+match help
+help match
+$env.USER
+'$env.USER'
+"$env.USER"
+$relative_pwd
+let a = $env.USER
+$a
+cd Docume
+..
+cd ..
+ls
+cd /home/max
+pwd
+cd Documents
+pwd
+let user = $env.USER
+$user
+let dir = match ('/home/max') {<\n>$user => 'asdf'<\n>_ => 'nope'<\n>}
+$dir
+let dir = match ('max') {<\n>$user => 'asdf'<\n>_ => 'nope'<\n>}
+$dir
+ls
+..
+ls
+.
+ls
+..
+cd dotfiles/
+cd ../Documents/
+ls
+clear
+gs
+ls -l
+ls
+ls --help
+ls -a
+ls -ah
+ls -as
+ls -asl
+l
+clear
+gs
+source 
+refresh
+devbox shell
+refresh
+refresh-global
+zola
+devbox list
+just
+$env.HOME
+$env.HOME + 'asdf'
+$env.HOME + asdf
+vim $env.HOME + /Desktop
+sudo su
+clear
+devbox shellenv
+devbox global shellenv
+export TEST="asdf";
+help export
+devbox global shellenv --preserve-path-stack
+type refresh-global
+type
+type --help
+hash -r
+hash --help
+hash md5 -r
+hash md5 
+code ~/notes
+cd oss
+git clone https://github.com/jetify-com/devbox.git
+code devbox/
+chsh /bin/bash 
+chsh --shell /bin/bash

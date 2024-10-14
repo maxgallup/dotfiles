@@ -2,5 +2,7 @@ core.db
 
 config/bin/balena
 config/bin/prusa
+config/bin/rclone
 
 .uuid
+

@@ -68,7 +68,7 @@
 
 
 - name: dnf - install packages
-  tags: apps
+  tags: dnf
   become: true
   dnf:
     update_cache: true

@@ -1649,14 +1649,6 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+shift+[",
-    "command": "editor.foldAll"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "editor.unfoldAll"
-  },
-  {
     "key": "ctrl+shift+k",
     "command": "workbench.action.toggleZenMode"
   },
