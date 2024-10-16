@@ -900,7 +900,8 @@ $env.config = {
 
 # Aliases
 
-alias l = ls -asl
+alias l = ls
+alias ls = ls -asl
 alias gs = git status
 alias gc = git commit -m
 alias ga = git add
