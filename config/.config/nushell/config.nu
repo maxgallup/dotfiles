@@ -911,3 +911,6 @@ alias gl = git log --pretty=oneline
 alias sshconf = vim $env.HOME + /.ssh/config
 alias dnf = sudo dnf5
 alias sync-docs = rclone sync --verbose /home/max/Documents protondrive:Documents
+
+# Plugins
+

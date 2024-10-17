@@ -11,7 +11,7 @@ def create_left_prompt [] {
         $dir = '~'
     }
 
-    let path_color = (if (is-admin) { ansi red_bold } else { ansi green_bold })
+    let path_color = (if (is-admin) { ansi red_bold } else { ansi white_bold })
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
     let path_segment = $"($path_color)($dir)(ansi reset)"
 

@@ -67,5 +67,6 @@
   },
   "editor.formatOnSave": true,
   "clangd.path": "/home/max/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
-  "window.confirmBeforeClose": "keyboardOnly"
+  "window.confirmBeforeClose": "keyboardOnly",
+  "go.goroot": "/nix/store/mi0ybwsm6pmxzv9hsm6bcbqaq1pkf8wh-go-1.23.1/share/go"
 }
