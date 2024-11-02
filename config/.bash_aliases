@@ -41,5 +41,10 @@ alias ap='ansible-playbook main.yaml --ask-vault-pass -K'
 alias dp='docker ps -a'
 alias sshconf='vim $HOME/.ssh/config'
 alias dnf='sudo dnf5'
+
 alias sync-docs='rclone sync --verbose /home/max/Documents protondrive:Documents'
+
+alias nodeman='ssh -i ~/.ssh/id_hwsec mgp310@hwsec nodeman'
+
+alias ds='devbox shell'
 

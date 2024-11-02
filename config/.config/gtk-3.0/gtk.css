@@ -6,12 +6,7 @@ VteTerminal, vte-terminal {
 
 }
 
-/* VteTerminal, vte-terminal, .titlebar, .css, headerbar {
-    background-image:none;
-    background-color:transparent;
-    margin-top:-100px;
-    margin-bottom:50px;
-} */
+
 
 .titlebar, .css, headerbar {
     background-image:none; 
@@ -19,6 +14,17 @@ VteTerminal, vte-terminal {
     margin-top:-100px;
     margin-bottom:50px;
 }
+
+
+
+/* VteTerminal, vte-terminal, .titlebar, .css, headerbar {
+    background-image:none;
+    background-color:transparent;
+    margin-top:-100px;
+    margin-bottom:50px;
+} */
+
+
 
 
 

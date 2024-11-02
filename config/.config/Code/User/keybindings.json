@@ -1926,5 +1926,9 @@
   {
     "key": "pagedown",
     "command": "workbench.action.terminal.resizePaneLeft"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "quickSelect.cursorQuoteSelect"
   }
 ]
