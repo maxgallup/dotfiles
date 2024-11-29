@@ -48,3 +48,5 @@ alias nodeman='ssh -i ~/.ssh/id_hwsec mgp310@hwsec nodeman'
 
 alias ds='devbox shell'
 
+alias open='xdg-open'
+

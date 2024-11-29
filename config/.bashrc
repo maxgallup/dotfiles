@@ -39,4 +39,4 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/loc
 
 # if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
-nu
+# nu
