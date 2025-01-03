@@ -50,3 +50,4 @@ alias ds='devbox shell'
 
 alias open='xdg-open'
 
+alias ninja='/opt/binaryninja/binaryninja'

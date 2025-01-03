@@ -12,7 +12,7 @@
   "cmake.configureOnOpen": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
-  "workbench.preferredDarkColorTheme": "Nathan's Gruvbox",
+  "workbench.preferredDarkColorTheme": "Gruvbox Black",
   "workbench.preferredHighContrastLightColorTheme": "monokai-charcoal (gray)",
   "rust-analyzer.inlayHints.enable": false,
   "workbench.editorAssociations": {
@@ -67,7 +67,19 @@
   "editor.formatOnSave": true,
   "clangd.path": "/home/max/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
   "window.confirmBeforeClose": "keyboardOnly",
-  "go.goroot": "/nix/store/mi0ybwsm6pmxzv9hsm6bcbqaq1pkf8wh-go-1.23.1/share/go",
   "window.titleBarStyle": "custom",
   "python.terminal.activateEnvironment": false,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  },
+  "workbench.editor.showTabs": "none",
+  "zenMode.showTabs": "none",
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "[typst]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  }
 }

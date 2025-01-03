@@ -27,7 +27,6 @@ codium --install-extension rdnlsmith.linux-themes
 
 codium --install-extension golang.go
 # codium --install-extension RReverser.llvm
-# codium --install-extension bbenoist.Nix
 codium --install-extension nvarner.typst-lsp
 codium --install-extension rust-lang.rust-analyzer
 # codium --install-extension svelte.svelte-vscode
@@ -37,5 +36,5 @@ codium --install-extension rust-lang.rust-analyzer
 
 # codium --install-extension ilich8086.Untabify
 codium --install-extension streetsidesoftware.code-spell-checker
-codium --install-extension tomoki1207.pdf
+# codium --install-extension tomoki1207.pdf
 # codium --install-extension yzhang.markdown-all-in-one

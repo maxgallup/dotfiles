@@ -37,5 +37,5 @@ export DOCKER_ID_USER="maxgallup"
 export EDITOR="vim"
 
 
-if [ -e /home/max/.nix-profile/etc/profile.d/nix.sh ]; then . /home/max/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
 . "$HOME/.cargo/env"
