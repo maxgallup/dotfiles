@@ -37,6 +37,5 @@ fi
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
-# if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
+if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
-# nu

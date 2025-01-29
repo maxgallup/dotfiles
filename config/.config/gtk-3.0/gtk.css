@@ -1,5 +1,5 @@
-
-VteTerminal, vte-terminal {
+VteTerminal,
+vte-terminal {
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
@@ -8,12 +8,15 @@ VteTerminal, vte-terminal {
 
 
 
-.titlebar, .css, headerbar {
+
+/* Currently not using this because of Alacritty */
+
+/* .titlebar, .css, headerbar {
     background-image:none; 
     background-color:transparent;
     margin-top:-100px;
     margin-bottom:50px;
-}
+} */
 
 
 
@@ -23,8 +26,3 @@ VteTerminal, vte-terminal {
     margin-top:-100px;
     margin-bottom:50px;
 } */
-
-
-
-
-

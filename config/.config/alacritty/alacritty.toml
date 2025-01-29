@@ -1,0 +1,27 @@
+[window]
+decorations = "none"
+padding.x = 8
+padding.y = 4
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "CodeNewRoman Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "CodeNewRoman Nerd Font"
+style = "Bold"
+
+
+[cursor]
+style.shape = "Beam"
+thickness = 0.15
+
+[terminal]
+shell.program = "/home/max/.cargo/bin/nu"
+
+[colors]
+primary.background = "#000000"
+primary.foreground = "#f8f8f8"
