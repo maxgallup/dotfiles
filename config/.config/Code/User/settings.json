@@ -81,5 +81,6 @@
   "[typst-code]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
-  "window.confirmBeforeClose": "always"
+  "window.confirmBeforeClose": "always",
+  "terminal.integrated.defaultProfile.linux": "Nushell"
 }
