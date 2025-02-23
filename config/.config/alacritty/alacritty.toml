@@ -1,5 +1,6 @@
 [window]
 decorations = "none"
+opacity = 0.75
 padding.x = 8
 padding.y = 4
 

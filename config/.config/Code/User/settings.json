@@ -82,5 +82,5 @@
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
   "window.confirmBeforeClose": "always",
-  "terminal.integrated.defaultProfile.linux": "Nushell"
+  "terminal.integrated.defaultProfile.linux": "bash"
 }
