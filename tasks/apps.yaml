@@ -27,6 +27,7 @@
     - "com.jgraph.drawio.desktop"
     - "org.inkscape.Inkscape"
     - "com.mattjakeman.ExtensionManager"
+    - "com.prusa3d.PrusaSlicer"
     # - "com.discordapp.Discord"
     # - "org.kicad.KiCad"
 
