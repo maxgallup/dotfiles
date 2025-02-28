@@ -31,15 +31,15 @@ alias ga="git add "
 alias gp="git push"
 alias gpl="git pull"
 alias gl="git log --pretty=oneline"
-alias tmux='tmux -f $HOME/.config/tmux/.tmux.conf'
-alias tm='tmux -f $HOME/.config/tmux/.tmux.conf'
+alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
+alias tm='tmux -f ~/.config/tmux/.tmux.conf'
 alias ta="tmux attach"
 alias tl="tmux ls"
 alias tk="tmux kill-server"
 alias myip='curl ifconfig.me'
 alias ap='ansible-playbook main.yaml --ask-vault-pass -K'
 alias dp='docker ps -a'
-alias sshconf='vim $HOME/.ssh/config'
+alias sshconf='vim ~/.ssh/config'
 alias dnf='sudo dnf5'
 
 alias sync-docs='rclone sync --verbose /home/max/Documents protondrive:Documents'
