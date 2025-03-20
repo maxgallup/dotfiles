@@ -49,7 +49,6 @@
     "workbench.action.toggleSidebarVisibility",
     "language-julia.interrupt"
   ],
-  "zenMode.hideStatusBar": false,
   "terminal.integrated.scrollback": 50000,
   "window.commandCenter": false,
   "julia.symbolCacheDownload": true,
@@ -82,5 +81,8 @@
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
   "window.confirmBeforeClose": "always",
-  "terminal.integrated.defaultProfile.linux": "bash"
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "chat.commandCenter.enabled": false,
+  "makefile.configureOnOpen": false,
+  "window.customTitleBarVisibility": "windowed"
 }
