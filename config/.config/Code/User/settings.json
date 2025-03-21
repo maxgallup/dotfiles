@@ -84,5 +84,6 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "chat.commandCenter.enabled": false,
   "makefile.configureOnOpen": false,
-  "window.customTitleBarVisibility": "windowed"
+  "window.customTitleBarVisibility": "windowed",
+  "tinymist.preview.invertColors": "auto",
 }
