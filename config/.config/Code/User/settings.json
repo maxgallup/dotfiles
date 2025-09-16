@@ -29,7 +29,7 @@
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredLightColorTheme": "Gruvbox Black",
   "window.autoDetectHighContrast": false,
   "window.autoDetectColorScheme": true,
   "svelte.enable-ts-plugin": true,
@@ -56,7 +56,7 @@
   "julia.enableTelemetry": false,
   "workbench.panel.defaultLocation": "left",
   "editor.rulers": [
-    100
+    98
   ],
   "editor.fontFamily": "'CodeNewRoman Nerd Font Mono', 'monospace', monospace",
   "git.openRepositoryInParentFolders": "never",

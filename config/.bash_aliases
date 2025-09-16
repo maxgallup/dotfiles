@@ -42,7 +42,9 @@ alias dp='docker ps -a'
 alias sshconf='vim ~/.ssh/config'
 alias dnf='sudo dnf5'
 
-alias sync-docs='rclone sync --verbose /home/max/Documents protondrive:Documents'
+alias c='cargo check'
+
+alias sync-docs='rclone sync --protondrive-replace-existing-draft=true --verbose /home/max/Documents protondrive:Documents --exclude /home/max/Documents/.gitignore --exclude /home/max/Documents/.git'
 
 alias nodeman='ssh -i ~/.ssh/id_hwsec mgp310@hwsec nodeman'
 

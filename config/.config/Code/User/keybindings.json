@@ -1980,5 +1980,14 @@
     "key": "f2",
     "command": "-workbench.action.terminal.renameActiveTab",
     "when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
-  }
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.problems.focus"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "problemFocus"
+  },
 ]
