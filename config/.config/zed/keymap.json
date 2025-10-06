@@ -62,7 +62,8 @@
       "alt-up": "editor::AddSelectionAbove",
       "ctrl-shift-down": "editor::DuplicateLineDown",
       "ctrl-shift-up": "editor::DuplicateLineUp",
-      "ctrl-,": "editor::ToggleCodeActions"
+      "ctrl-,": "editor::ToggleCodeActions",
+      "ctrl-k": null
     }
   },
   {
@@ -73,7 +74,6 @@
       "ctrl-n": "workspace::NewTerminal",
       "ctrl-pageup": "pane::ActivateNextItem",
       "ctrl-pagedown": "pane::ActivatePreviousItem",
-
       "ctrl-/": "pane::SplitHorizontal",
       "alt-up": "workspace::ActivatePaneUp",
       "alt-down": "workspace::ActivatePaneDown"
