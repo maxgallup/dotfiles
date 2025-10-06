@@ -1,7 +1,6 @@
 {
   "workbench.startupEditor": "none",
   "telemetry.telemetryLevel": "off",
-  "files.autoSave": "afterDelay",
   "editor.tabSize": 4,
   "explorer.confirmDragAndDrop": false,
   "rst.preview.pythonPath": "python3",
@@ -12,7 +11,7 @@
   "cmake.configureOnOpen": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
-  "workbench.preferredDarkColorTheme": "Gruvbox Black",
+  "workbench.preferredDarkColorTheme": "Nathan's Gruvbox",
   "workbench.preferredHighContrastLightColorTheme": "monokai-charcoal (gray)",
   "rust-analyzer.inlayHints.enable": false,
   "workbench.editorAssociations": {
@@ -86,4 +85,14 @@
   "makefile.configureOnOpen": false,
   "window.customTitleBarVisibility": "windowed",
   "tinymist.preview.invertColors": "auto",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "files.autoSave": "afterDelay",
 }

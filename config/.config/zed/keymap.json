@@ -1,0 +1,82 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-j": "project_panel::ToggleFocus",
+      "ctrl-o": "outline_panel::ToggleFocus",
+      "ctrl-u": "workspace::ToggleLeftDock",
+      "ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-g": "git_panel::ToggleFocus",
+      "ctrl-i": "diagnostics::Deploy",
+      "ctrl-;": "diagnostics::ToggleWarnings",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-shift-p": "command_palette::Toggle",
+      "ctrl-`": "editor::GoToDefinition",
+      "ctrl-e": "editor::ToggleFocus",
+      "ctrl-shift-r": "editor::Rename",
+      "ctrl-b": "pane::GoBack",
+      "pagedown": [
+        "workspace::DecreaseOpenDocksSize",
+        {
+          "px": 25
+        }
+      ],
+      "pageup": [
+        "workspace::IncreaseOpenDocksSize",
+        {
+          "px": 25
+        }
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-r": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "enter": "project_panel::Open"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-j": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-down": "editor::MoveLineDown",
+      "ctrl-up": "editor::MoveLineUp",
+      "alt-down": "editor::AddSelectionBelow",
+      "alt-up": "editor::AddSelectionAbove",
+      "ctrl-shift-down": "editor::DuplicateLineDown",
+      "ctrl-shift-up": "editor::DuplicateLineUp",
+      "ctrl-,": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // "alt-up": "panel::NextPanelTab",
+      // "alt-down": "panel::PreviousPanelTab",
+      "ctrl-n": "workspace::NewTerminal",
+      "ctrl-pageup": "pane::ActivateNextItem",
+      "ctrl-pagedown": "pane::ActivatePreviousItem",
+
+      "ctrl-/": "pane::SplitHorizontal",
+      "alt-up": "workspace::ActivatePaneUp",
+      "alt-down": "workspace::ActivatePaneDown"
+    }
+  }
+]

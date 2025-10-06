@@ -1,0 +1,107 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "terminal": {
+    "dock": "left",
+    "button": true,
+    "working_directory": "current_project_directory",
+    "font_size": 10
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "cursor_shape": "bar",
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark"
+  },
+  "show_whitespaces": "trailing",
+  "project_panel": { "button": true },
+  "outline_panel": { "button": true },
+  "collaboration_panel": { "button": true },
+  "git_panel": { "button": true },
+
+  "notification_panel": { "button": false },
+  "agent": { "button": false, "enabled": false },
+  "debugger": { "button": false },
+  "diagnostics": { "button": true },
+  "search": { "button": true },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_branch_name": true,
+    "show_project_items": true,
+    "show_onboarding_banner": false,
+    "show_user_picture": false,
+    "show_sign_in": false,
+    "show_menus": false
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false,
+    "code_actions": false
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "scrollbar": {
+    // When to show the scrollbar in the editor (auto, system, always, never)
+    "show": "auto",
+    "cursors": true, // Show cursor positions in the scrollbar.
+    "git_diff": true, // Show git diff indicators in the scrollbar.
+    "search_results": true, // Show buffer search results in the scrollbar.
+    "selected_text": true, // Show selected text occurrences in the scrollbar.
+    "selected_symbol": true, // Show selected symbol occurrences in the scrollbar.
+    "diagnostics": "all", // Show diagnostics (none, error, warning, information, all)
+    "axes": {
+      "horizontal": true, // Show/hide the horizontal scrollbar
+      "vertical": true // Show/hide the vertical scrollbar
+    }
+  },
+  // Customize the tab bar appearance
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": true
+  },
+  "tabs": {
+    "git_status": true, // Color to show git status
+    "close_position": "right", // Close button position (left, right, hidden)
+    "show_close_button": "hover", // Close button shown (hover, always, hidden)
+    "file_icons": false, // Icon showing file type
+    // Show diagnostics in file icon (off, errors, all). Requires file_icons=true
+    "show_diagnostics": "off"
+  },
+  "status_bar": {
+    // Show/hide a button that displays the active buffer's language.
+    // Clicking the button brings up the language selector.
+    // Defaults to true.
+    "active_language_button": true,
+    // Show/hide a button that displays the cursor's position.
+    // Clicking the button brings up an input for jumping to a line and column.
+    // Defaults to true.
+    "cursor_position_button": true
+  },
+  "enable_language_server": true,
+  "global_lsp_settings": {
+    // Show/hide the LSP button in the status bar.
+    // Activity from the LSP is still shown.
+    // Button is not shown if "enable_language_server" if false.
+    "button": true
+  },
+  "edit_predictions": {
+    "mode": "eager", // Automatically show (eager) or hold-alt (subtle)
+    "enabled_in_text_threads": true // Show/hide predictions in agent text threads
+  },
+
+  "show_edit_predictions": true
+}
